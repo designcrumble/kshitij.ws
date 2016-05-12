@@ -1,0 +1,47 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #333;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+
+@media screen and (max-width: 73.375em) {
+	.codropsheader {
+		text-align: center;
+	}
+	.codropsheader h1,
+	.codropsheader nav,
+	.demos {
+		float: none;
+		margin: 0 auto;
+		padding: 0.15em 0;
+	}
+	.codropsheader > span {
+		padding: 0;
+	}
+	.codropsheader > span span:after {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 30.25em) {
+	.codropsheader nav { display: none; }
+}
