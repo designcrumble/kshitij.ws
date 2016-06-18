@@ -1,0 +1,263 @@
+/*=======================================
+=            Utility Classes            =
+=======================================*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a{
+	outline: none !important;
+	cursor: pointer;
+	&:focus{
+	outline: none !important;
+	}
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 100%;
+}
+
+
+/***********************************************************************************************/
+/* list styling  */
+/***********************************************************************************************/
+ul, h1, h2, h3, h4, h5, h6, p{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+ul li, {
+	display: inline-block;
+	list-style: none;
+	text-transform: uppercase;
+	
+	&:last-child {
+		padding-right: 0;
+	}
+
+	&:first-child {
+		padding-left: 0;
+	}
+}
+.mainmenu ul li {
+	padding:0 0.5em !important;
+}
+
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+
+input,
+textarea,
+select {
+	outline: none;
+}
+
+
+/*============================================
+=           Mp Masonry Portfolio            =
+============================================*/
+.item {
+	width: 100%;
+	background-color: white;
+	min-height: 100px;
+	padding: 5px;
+	margin: 10px 0px;
+}
+
+.item:hover {
+	opacity: 0.5;
+}
+.item p {
+
+}
+.item.h150{
+	width: 100%;
+	min-height: 150px;
+}
+
+.item.h200{
+	width: 100%;
+	min-height: 200px;
+
+}
+
+.item.h250{
+	width: 100%;
+	min-height: 200px;
+}
+.padding{
+	padding: 5px 5px;
+}
+/*=====  End of MP Masonry Portfolio  ======*/
+
+
+/***********************************************************************************************/
+/* UTILITY CLASSES */
+/***********************************************************************************************/
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.padding-top{
+	padding-top: 2em !important;
+}
+
+.padding-bottom{
+	padding-bottom: 2em !important;
+}
+
+.padding-right{
+	padding-right: 2em !important;
+}
+
+.padding-left{
+	padding-left: 2em !important;
+}
+
+.margin-top{
+	margin-top: 2em !important;
+}
+
+.margin-bottom{
+	margin-bottom: 2em !important;
+}
+
+.margin-right{
+	margin-right: 2em !important;
+}
+
+.margin-left{
+	margin-left: 2em !important;
+}
+
+.margin-top-2x{
+	margin-top: 4em !important;
+}
+
+.margin-bottom-2x{
+	margin-bottom: 4em !important;
+}
+
+.pos-absolute{
+	position: absolute !important;
+}
+.pos-relative{
+	position:relative !important;
+}
+.pos-fixed{
+	position: fixed !important;
+}
+/***********************************************************************************************/
+/* General Accent Theme styling like Primary , Dark , Light*/
+/***********************************************************************************************/
+.light{
+		color: @light !important;
+ 	p{
+		color:@very-light-text !important;
+	}
+	a{
+		background-color:@light !important;
+		color:@dark-text !important;
+	}
+}
+.light-text{
+	color: @light !important;
+	p{
+		color:@very-light-text !important;
+	}
+	a{
+		color:@light !important;
+	}
+}
+.dark{
+		color: @dark-text !important;
+ 	p{
+		color:@light-text !important;
+	}
+	a{
+		background-color:@dark-text !important;
+		color:@light !important;
+	}
+}
+
+.dark-bg{
+	background-color: @dark-text;
+}
+/***********************************************************************************************/
+/* Preloader*/
+/***********************************************************************************************/
+
+.loader {
+
+    border-top: 16px solid @dark-text; /* Gray */
+    width: 120px;
+    height: 120px;
+    animation: spin 2s  infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+   25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*=====  End of Utility Classes  ======*/

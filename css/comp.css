@@ -27,58 +27,6 @@ body {
 	background: #6c3cf2;
 }
 
-#circle {
-    width: 3em;
-    height: 3em;
-    background: #ff005a;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px;
-    border-radius: 60px;
-    bottom:3em ;
-    margin-bottom: -26em;
-    margin-left: -4em;
-}
-
-#square {
-    width: 4em;
-    height: 4em;
-    background: #00ff96;
-}
-
-#diamond {
-    width: 2em;
-    height: 2em;
-    background: #00ff96;
-/* Rotate */
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-/* Rotate Origin */
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    margin: 11em 0 30em 24em;
-}
-
-#triangle {
-    width: 0;
-    height: 0;
-    border-left: 6em solid #9000ff;
-    border-top: 3em solid transparent;
-    border-bottom: 3em solid transparent;
-    margin:-8em;
-    /* Rotate */
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -ms-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-}
-
 .links a{
 	color:#fff !important;
 	transition: width 0.3s ease;
@@ -109,7 +57,7 @@ body {
   overflow:visible;
   width:200px;
   height:250px;
-
+  position:absolute;
   
 }
 .overlay {
