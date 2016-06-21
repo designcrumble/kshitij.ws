@@ -1,6 +1,6 @@
 
 //Isotope
-$(document).ready(function(){
+$(window).load(function(){
         $(".portfolio-masonry").isotope({
             transitionDuration: '0.3s',
             itemSelector: ".selector"
