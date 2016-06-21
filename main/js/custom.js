@@ -1,16 +1,6 @@
 
-// ScrollReveal Config
-
-window.sr = ScrollReveal({reset:true});
-
-// Customizing a reveal set
-// sr.reveal( 'header', { duration: 1000 } );
-sr.reveal( '.head-text', { duration: 2000 } );
-sr.reveal('.scrollr', { duration: 2000 });
-sr.reveal( '.btn', { duration: 2100 } );
-sr.reveal( '.scroll-port', { duration: 2100 } );
-
 //Isotope
+$(document).ready(function(){
         $(".portfolio-masonry").isotope({
             transitionDuration: '0.3s',
             itemSelector: ".selector"
@@ -40,6 +30,20 @@ sr.reveal( '.scroll-port', { duration: 2100 } );
                 })
             })
         });
+});
+
+// ScrollReveal Config
+
+window.sr = ScrollReveal({reset:true});
+
+// Customizing a reveal set
+// sr.reveal( 'header', { duration: 1000 } );
+sr.reveal( '.head-text', { duration: 2000 } );
+sr.reveal('.scrollr', { duration: 2000 });
+sr.reveal( '.btn', { duration: 2100 } );
+sr.reveal( '.scroll-port', { duration: 2100 } );
+
+
     
 
 //Navbar Config
