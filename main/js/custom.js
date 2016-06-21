@@ -77,7 +77,6 @@ $(window).scroll(function() {
     }
     else{
         $('.navbar-collapse').css({"height": "12em;"});
-
         var navbarColor = "255,255,255";
         var navBackColor = 'rgb(' + navbarColor + ')';
         $('.navbar').css({"background-color": navBackColor});

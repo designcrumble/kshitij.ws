@@ -9,6 +9,16 @@
   Author URI : designcrumble.com
   
 **********************************************************************************/
+/*=================================
+=            Variables            =
+=================================*/
+/***********************************************************************************************/
+/* LESS VARIABLES */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* LESS MIXINS */
+/***********************************************************************************************/
+/*=====  End of Variables  ======*/
 /*=======================================
 =            Utility Classes            =
 =======================================*/
@@ -388,39 +398,88 @@ Index of Layout
 .navbar-inverse .navbar-nav > li > a {
   color: #2b2b2b;
 }
-.navbar-inverse .navbar-nav > li > a:before,
-.navbar-inverse .navbar-nav > li > a:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  top: 50%;
-  margin-top: -0.5px;
-  color: #2b2b2b;
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a::after,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 0;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+  }
+  .navbar-inverse .navbar-nav > li > a:before,
+  .navbar-inverse .navbar-nav > li > a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    color: #2b2b2b;
+  }
+  .navbar-inverse .navbar-nav > li > a:before {
+    left: -2.5px;
+  }
+  .navbar-inverse .navbar-nav > li > a:after {
+    right: 2.5px;
+    background: #2b2b2b;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    color: #2b2b2b;
+    cursor: pointer;
+  }
+  .navbar-inverse .navbar-nav > li > a:hover:before {
+    color: #2b2b2b;
+    background: #2b2b2b;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .navbar-inverse .navbar-nav > li > a:hover:after {
+    color: #2b2b2b;
+    background: transparent;
+    width: 100%;
+    transition: all 0.5s;
+  }
 }
-.navbar-inverse .navbar-nav > li > a:before {
-  left: -2.5px;
-}
-.navbar-inverse .navbar-nav > li > a:after {
-  right: 2.5px;
-  background: #2b2b2b;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: #2b2b2b;
-  cursor: pointer;
-}
-.navbar-inverse .navbar-nav > li > a:hover:before {
-  color: #2b2b2b;
-  background: #2b2b2b;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-.navbar-inverse .navbar-nav > li > a:hover:after {
-  color: #2b2b2b;
-  background: transparent;
-  width: 100%;
-  transition: all 0.5s;
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav > li > a:before,
+  .navbar-inverse .navbar-nav > li > a:after {
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    color: #2b2b2b;
+  }
+  .navbar-inverse .navbar-nav > li > a:before {
+    left: -2.5px;
+  }
+  .navbar-inverse .navbar-nav > li > a:after {
+    right: 2.5px;
+    background: #2b2b2b;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    color: #2b2b2b;
+    cursor: pointer;
+  }
+  .navbar-inverse .navbar-nav > li > a:hover:before {
+    color: #2b2b2b;
+    background: #2b2b2b;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .navbar-inverse .navbar-nav > li > a:hover:after {
+    color: #2b2b2b;
+    background: transparent;
+    width: 100%;
+    transition: all 0.5s;
+  }
 }
 .navbar-inverse .navbar-nav > .active {
   background-color: transparent;
@@ -429,19 +488,6 @@ Index of Layout
 }
 .navbar-inverse .navbar-nav > .active:hover {
   background-color: transparent;
-}
-.navbar-inverse .navbar-nav > li > a::after,
-.navbar-inverse .navbar-nav > li > a:focus {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  z-index: 0;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
 }
 .navbar-inverse .navbar-nav > .active > a {
   font-weight: 900 !important;
@@ -1071,11 +1117,10 @@ header {
 /* 08  General styling */
 /***********************************************************************************************/
 .header-bg {
-  background-image: url("../images/vvbg.jpeg");
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   left: 0px;
   top: 0px;
@@ -1641,6 +1686,16 @@ figure.effect-sarah:hover p {
   }
 }
 @media only screen and (max-width: 479px) {
+  .small-logo-container {
+    padding-top: 1em;
+    padding-left: 1em;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .big-logo-container {
+    display: none;
+  }
   body {
     font-size: 14px;
   }
@@ -1662,11 +1717,7 @@ figure.effect-sarah:hover p {
     color: white;
   }
   .logo-img {
-    width: 30% !important;
+    width: 30%;
   }
 }
-
 /*=====  End of Responsive queries  ======*/
-.logo-img {
-  width: 10% !important;
-}
