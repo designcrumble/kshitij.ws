@@ -1,9 +1,3 @@
-/*
-Template Name: Gorgo
-Author: Levent Usta
-Author URI: http://www.aristotheme.com
-Description: A template by Aristotheme.
-*/
 
 /*=================================*/
 /*  Table of Contents
@@ -45,7 +39,7 @@ html {
 body {
     background: #FFFFFF;
     color: #2c2c2c;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Noto Sans', serif;
     font-size: 18px;
     line-height: 1.65;
     opacity: 0;
@@ -138,7 +132,7 @@ hr{
 pre,
 code,
 samp {
-    font-family: "Montserrat", Consolas, monospace;
+    font-family: "Noto Sans", Consolas, monospace;
     font-size: inherit;
 }
 
@@ -184,7 +178,7 @@ pre {
 
 /*===== Titles =====*/
 .site-title {
-    font-family: 'Righteous',helvetica,sans-serif;
+    font-family: 'Dosis',helvetica,sans-serif;
     font-size: 26px;
     color: #90D4C5;
     line-height: 1.5em;
@@ -598,7 +592,7 @@ pre {
 }
 .thumbnail-description {
     color: #2c2c2c;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Noto Sans', Arial, sans-serif;
     font-size: 16px;
     margin: 0 auto;
     max-height: 5em;
@@ -630,7 +624,7 @@ div.image img { width: 100%; }
 }
 /*===== Project Content =====*/
 .project-meta {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Noto Sans', Arial, sans-serif;
     font-size: 14px;
     color: #BBBBBB;
     margin-top: 28px;
@@ -981,7 +975,7 @@ nav[role="navigation"] {
 /*=================================*/
 .site-footer {
     color: #2c2c2c;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Noto Sans', Arial, sans-serif;
 }
 .site-footer p { margin: 0; font-size: 16px;display: inline;}
 .site-footer a,
