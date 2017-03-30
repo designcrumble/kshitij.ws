@@ -1,15 +1,10 @@
 // Initialize DatePicker
-		    $(document).ready(function(){
+		    $(window).bind("load",function(){
 
 
 
-		    	//Same Height For Divs
-
-
-
-$(window).on("load", function() {
-   // code here
-   //home-page
+		    	//Same Height for divs 
+					//home-page
 					var x = ".thumbnail-home";
 
 					function eqHeight(x){
@@ -36,8 +31,6 @@ $(window).on("load", function() {
 					x=".thumbnail-sdk"
 					eqHeight(x);
 
-});
-					
 
 		    	window.sr = ScrollReveal();
 				sr.reveal('.page-head' , { duration: 400 });
