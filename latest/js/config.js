@@ -7,8 +7,9 @@
 
 
 
-
-					//home-page
+$(window).bind("load", function() {
+   // code here
+   //home-page
 					var x = ".thumbnail-home";
 
 					function eqHeight(x){
@@ -35,6 +36,8 @@
 					x=".thumbnail-sdk"
 					eqHeight(x);
 
+});
+					
 
 		    	window.sr = ScrollReveal();
 				sr.reveal('.page-head' , { duration: 400 });
