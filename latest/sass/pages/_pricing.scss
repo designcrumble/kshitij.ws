@@ -1,0 +1,208 @@
+.pri-second{
+    margin-top: 4em;
+    .pri-thumbnail{
+        .more{
+            display: none;
+        }
+        margin-right:2em;
+        cursor:pointer;
+        background: transparent;
+        border: none;
+        border-radius: 0px;
+        width: 90%;
+        min-height: 20em;
+        box-shadow: -1.308px 24.966px 60.76px 1.24px rgba(0, 0, 0, 0.11);
+        h5{
+            color: black;
+        }
+        p{
+            margin: 2em;
+            color: dimgray;
+        }
+        &:hover{
+        	background: lightblue;
+            .more{
+                margin-top: 5em;
+                display: inline-block;
+            }
+            .less{
+                display: none;
+            }
+        	h5{
+        		color: white;
+        	}
+        	p{
+                margin: 2em !important;
+        		color: white;
+        	}
+        }
+        button{
+        
+        }
+    }
+}
+.Rectangle_4 {
+  background-image: -moz-linear-gradient( -90deg, rgb(144,209,254) 0%, rgb(10,137,226) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(144,209,254) 0%, rgb(10,137,226) 100%);
+  background-image: -ms-linear-gradient( -90deg, rgb(144,209,254) 0%, rgb(10,137,226) 100%);
+  box-shadow: -1.151px 21.97px 37.24px 0.76px rgba(0, 0, 0, 0.3),0px 11px 19.6px 0.4px rgba(14, 139, 226, 0.28);
+  position: absolute;
+  left: 5963px;
+  top: 1981px;
+  width: 349px;
+  height: 492px;
+  z-index: 775;
+}
+
+.thumbnail-pricing{
+    h5{
+        color:#01579c;
+    }
+            .more-content{
+          padding:1em;
+            display: none;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+        .less-content{
+                    a{
+                        color:$brand-primary;
+            margin:5em 0em;
+        }
+        }
+
+        &:hover{
+            cursor: pointer;
+            .more-content{
+                display: inline-block;
+                            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            }
+            .less-content{
+                display: none;
+                            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            }
+        }
+}
+
+
+.pri-third{
+    margin-top: 4em;
+    .pri-thumbnail{
+        h2{
+            font-size: 2em;
+            font-weight:500;
+            span{
+                font-size: 0.8em !important;
+                font-weight: 300;
+            }
+        }
+        .start{
+            display: block;
+            border-radius:0px;
+            padding:0.8em 5em;
+		    background-color: $brand-primary;
+            margin-left:auto;
+            margin-right: auto;
+                    -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+            &:hover{
+                cursor:pointer;
+                box-shadow: -1.308px 24.966px 60.76px 1.24px rgba(0, 0, 0, 0.31);
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        padding-top: 1em;
+        background: $white;
+        width:90%;
+        border: 0.1px solid rgba($body-color,0.1) !important;
+        box-shadow: -1.308px 24.966px 60.76px 1.24px rgba(0, 0, 0, 0.11);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
+        p{
+            margin: 1em 0em;
+            border-top: 0.1px solid rgba($body-color,0.1) !important;
+            padding-top:1em;
+            padding-left:2em;
+            padding-right:1em;
+        }
+    }
+    .mobb{
+        display: none;
+    }
+    .main-pricing{
+        border:none !important;
+        transform:scale(1.05);
+        border: none;
+        background-image: -moz-linear-gradient( -90deg, rgb(144,209,254) 0%, rgb(10,137,226) 100%);
+        background-image: -webkit-linear-gradient( -90deg, rgb(144,209,254) 0%, rgb(10,137,226) 100%);
+        background-image: -ms-linear-gradient( -90deg, rgb(144,209,254) 0%, rgb(10,137,226) 100%);
+        transition: all 0.5s ease-in-out;
+                    box-shadow: -1.308px 24.966px 60.76px 1.24px rgba(0, 0, 0, 0.41);
+        h2,h5,p{
+            color: $white;
+        }
+        p{
+            border-top: 0.1px solid rgba($white,0.1) !important;
+        }
+        .start{
+            background-color:$white;
+            color: $brand-primary;
+
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .started{
+        padding: 1em !important; 
+    }
+    .start{
+            display: block;
+            border-radius:0px;
+            padding:0.6em 4em;
+            background-color: $brand-primary;
+            margin-left:auto;
+            margin-right: auto;
+                    -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+            &:hover{
+                cursor:pointer;
+                box-shadow: -1.308px 24.966px 60.76px 1.24px rgba(0, 0, 0, 0.31);
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+   .weeb{
+       display: none;
+   }
+   .mobb{
+       display: block !important;
+   }
+   .start{
+           color:$white;
+           background-color: $brand-primary;
+
+        }
+}

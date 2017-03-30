@@ -1,0 +1,44 @@
+#success_message{ display: none;}
+button.round-button{
+	border-width: 1px;
+	border-color: $white;
+    padding: 2em;
+    margin-top: 0.5em;
+    background:$brand-primary;
+	border-style: solid;
+	padding-top: 13px !important;
+	padding-bottom: 13px !important;
+	border-radius: 30px;
+	-webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    -o-transition: all 0.35s ease-out;
+    -ms-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+	&:hover{
+		background:$white;
+        color: $brand-primary !important;
+        border-color:$brand-primary;
+		box-shadow: 0px 5px 31.04px 0.96px rgba(39, 148, 228, 0.14),0px 7px 12.61px 0.39px rgba(0, 0, 0, 0.08);
+		-webkit-transition: all 0.35s ease-out;
+	    -moz-transition: all 0.35s ease-out;
+	    -o-transition: all 0.35s ease-out;
+	    -ms-transition: all 0.35s ease-out;
+	    transition: all 0.35s ease-out;
+	}
+}
+.contact-card{
+	border: 0.1px solid rgba($body-color,0.3) !important;
+	cursor:pointer;
+	background: $white;
+	border-radius: 0px;
+
+	padding:1em;
+	h5{
+		color: $dark-gray;
+	}
+		-webkit-transition: all 0.5s ease-out;
+	    -moz-transition: all 0.5s ease-out;
+	    -o-transition: all 0.5s ease-out;
+	    -ms-transition: all 0.5s ease-out;
+	    transition: all 0.5s ease-out;
+}

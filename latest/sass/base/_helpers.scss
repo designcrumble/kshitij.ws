@@ -1,0 +1,106 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/**
+ * No Padding
+ */
+.no-padding{
+  padding: 0em;
+}
+/**
+ * Margin - 0px;
+ */
+.no-margin{
+  margin:0em;
+}
+
+/**
+ * Center Align
+ */
+.center-div{
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+}
+
+/**
+ * Padding
+ */
+.padding-top-10{
+  padding-top:10px;
+}
+
+.padding-bottom-10{
+  padding-bottom:10px;
+}
+
+/**
+ * Margin Helper Classes
+ */
+.margin-top-10{
+  margin-top: 10px;
+}
+.margin-bottom-10{
+  margin-bottom:10px;
+}
+
+
+/**
+ * Float-Right
+ */
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden { 
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+.card-small{
+  margin-top: 20px !important;
+}
+}

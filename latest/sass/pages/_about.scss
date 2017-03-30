@@ -1,0 +1,136 @@
+.about-blob {
+  background-color: rgb(255, 255, 255);
+  box-shadow: -1.308px 24.966px 60.76px 1.24px rgba(0, 0, 0, 0.11);
+  padding:2em 2em;
+}
+.about-social, .about-trapyz{
+  background-color:#f6fbfd;
+}
+.about-us-text{
+  margin:2em 0em;
+}
+.thumbnail-stories{
+  padding:2em !important;
+}
+
+
+.project {
+  background:$white;
+    margin-bottom: 30px;
+    vertical-align: top;
+    cursor: pointer;
+    width:100%;
+    box-shadow: -1.308px 24.966px 60.76px 1.24px rgba(0, 0, 0, 0.08),0px 16px 28.42px 0.58px rgba(14, 139, 226, 0.12);
+    span.actions > div{
+      display: hidden;
+    }
+}
+
+.project figure {
+    position: relative;
+    display: inline-block;
+    margin:0;
+
+    .on-hover{
+      display: none;
+      p{
+        text-align: left;
+        font-size: 0.6em;
+        padding:1em;
+        color:$white;
+      }
+    }
+}
+
+.project figure img {
+    width: 100%;
+}
+.project figure:hover {
+  .on-hover{
+    display: inline-block;
+  }
+  figcaption {
+    background:$brand-primary;
+    .project-details {
+    color: #fff;
+}
+}
+  .actions {
+    background-color: $brand-primary;
+    top: 0%;
+    font-size:1.1em;
+    font-weight:500;
+    padding-top:10%;
+}
+}
+
+.project figure .actions {
+    display: table-cell;
+    position: absolute;
+    bottom: 0px;
+    left:0;
+    right:0;
+    z-index: 1;
+    opacity: 1;
+    background-color: $brand-primary;
+    -ms-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    color:#fff;
+    font-size:1.5em;
+    padding:2%;
+    font-weight:400;
+    text-align:center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+.about-us-text{
+  padding:0 2em;
+}
+    .project figure .actions {
+    top: 20%;
+    left:0;
+    right:0;
+    font-size:1.5em;
+    padding:5%;
+}
+.project figure:hover .actions {
+    top: 0%;
+    font-size:2em;
+    padding-top:10%;
+}
+}
+
+@media (min-width: 1200px) {
+    .project figure .actions {
+    top: 80%;
+    left:0;
+    right:0;
+    font-size:1.1em;
+    padding:5%;
+    font-weight:400;
+}
+.project figure:hover .actions {
+    top: 0%;
+    font-size:1.5em;
+    padding-top:10%;
+}
+}
+
+@media (max-width: 768px) {
+.project figure {
+    .on-hover{
+      p{
+        text-align: left;
+        font-size: 0.8em;
+        padding:1em;
+        color:$white;
+      }
+    }
+}
+}
+

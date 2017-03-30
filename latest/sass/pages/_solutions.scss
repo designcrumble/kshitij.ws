@@ -1,0 +1,359 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the solutions page.
+// -----------------------------------------------------------------------------
+/* Layout Specs */
+
+.story{
+    hr{
+        border-color: $brand-primary;
+    }
+    h2{
+        color:black;
+        text-align: center;
+        font-weight: 400;
+    }
+    h3{
+        color: $brand-primary;
+    }
+    p{
+        color: grey;
+    }
+    background-color:#f6fbfd;
+}
+.sol-third{
+    .sol-thumbnail{
+        margin-right:2em;
+        cursor:pointer;
+        background: transparent;
+        border: none;
+        border-radius: 0px;
+        width: 90%;
+        min-height: 20em;
+        box-shadow: 3px 4px 3px 1px #888888;
+        h5{
+            color: black;
+        }
+        p{
+            margin: 2em;
+            color: dimgray;
+        }
+        // &:hover{
+        // 	background: blue;
+        // 	h5{
+        // 		color: white;
+        // 	}
+        // 	p{
+        // 		color: white;
+        // 	}
+        // }
+    }
+}
+.sol-fourth{
+
+    .sol-thumbnail{
+        margin-right:2em;
+        cursor:pointer;
+        background: transparent;
+        border: none;
+        border-radius: 0px;
+        width: 90%;
+        min-height: 20em;
+        box-shadow: 3px 4px 3px 1px #888888;
+        img{
+            margin: 2em;
+        }
+        h5{
+            color: black;
+            margin: 2em;
+        }
+        p{
+            margin: 2em;
+            color: dimgray;
+        }
+        // &:hover{
+        // 	background: blue;
+        // 	h5{
+        // 		color: white;
+        // 	}
+        // 	p{
+        // 		color: white;
+        // 	}
+        // }
+    }
+}
+.thumbnails-trapyz{
+
+    padding:2em;
+}
+.thumbnail-solutions{
+  padding-bottom:2em;
+  .card-small-heading{
+    color:#01579c;
+  }
+  li{
+    font-weight: 300;
+  }
+}
+
+
+.sol-fifth{
+    .right-border{
+        border-right: 1px solid lightslategrey;
+    }
+    .left-border{
+        border-left: 1px solid lightslategrey;
+    }
+    .bottom-border{
+        border-bottom: 1px solid lightslategrey;
+    }
+    h2{
+        color: #01579c;
+        margin:2rem; 
+    }
+    .sol-thumbnail{
+        .more{
+          padding:2em;
+            display: none;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        }
+                    -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        cursor:default;
+        background: $white;
+        border-right: 1px !important;
+        border-radius: 0px;
+        min-height: 20em;
+        img{
+            margin: 2em;
+        }
+        h5{
+            color: #01579c;
+            margin: 2em 1em;
+        }
+        p,a{
+            margin: 2rem;
+        }
+        a{
+          color:$brand-primary;
+        }
+        &:hover{
+        	background-color:#f6fbfd;
+                      -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+        	.more{
+                display: inline-block;
+
+            }
+            .less{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+.thumbnails{
+  border: 0.1px solid rgba($body-color,0.1) !important;
+  box-shadow: 0px 5px 5px 1px rgba(39, 148, 228, 0.01),0px 2px 2px 1.2px rgba(0, 0, 0, 0.01);
+  cursor:default;
+  background: $white;
+  border: none;
+  border-radius: 0px;
+  padding:1em;
+  h5{
+    color: $dark-gray;
+    -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+  }
+    -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+  &:hover{
+    transform: scale(1.05) !important;
+    border:none;
+    box-shadow: 0px 20px 38.8px 1.2px rgba(39, 148, 228, 0.05),0px 20px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+  }
+}
+
+
+.caption{
+  li{
+    margin-top: 1em;
+    color: $body-color;
+  }
+}
+
+//media queries 
+@media only screen and (max-width: 768px){
+   .right-border,.left-border,.bottom-border{
+       border:none !important;
+   }
+   .mobile-card{
+    border: 0.1px solid rgba($body-color,0.3) !important;
+  box-shadow: 0px 5px 5px 1px rgba(39, 148, 228, 0.01),0px 2px 2px 1.2px rgba(0, 0, 0, 0.01);
+  cursor:pointer;
+  background: $white;
+  border: none;
+  border-radius: 0px;
+  width: 90%;
+  padding:1em;
+  h5{
+    color: $dark-gray;
+  }
+    -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+  &:hover{
+    transform: scale(1.05) !important;
+    border:none;
+    box-shadow: 0px 20px 38.8px 1.2px rgba(39, 148, 228, 0.05),0px 20px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+  }
+   }
+}
+/*==================================
+=            View Hover            =
+==================================*/
+
+
+/* generic css */
+
+.view {
+  margin: 10px;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff;
+}
+
+.view .mask,
+.view .content {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.view img {
+  display: block;
+  position: relative
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+/*3*/
+
+.view-tenth img {
+  transform: scaleY(1);
+  transition: all .7s ease-in-out;
+}
+
+.view-tenth .mask {
+  background-color: rgba(246,253,255, 1);
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.view-tenth h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 20px 40px 0px 40px;
+  transform: scale(0);
+  color: #333;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.view-tenth p {
+  color: #333;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+
+.view-tenth a.info {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+
+
+
+.view-tenth:hover .mask {
+  opacity: 1;
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*=====  End of View Hover  ======*/
