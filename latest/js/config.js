@@ -7,7 +7,7 @@
 
 
 
-$(window).bind("load", function() {
+$(window).on("load", function() {
    // code here
    //home-page
 					var x = ".thumbnail-home";
