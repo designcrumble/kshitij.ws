@@ -7,7 +7,7 @@
 
 
 
-			    window.onload = function() {
+
 					//home-page
 					var x = ".thumbnail-home";
 
@@ -34,8 +34,8 @@
 					eqHeight(x);
 					x=".thumbnail-sdk"
 					eqHeight(x);
-			    };
-			    
+
+
 		    	window.sr = ScrollReveal();
 				sr.reveal('.page-head' , { duration: 400 });
 				sr.reveal('.wow' , 300);
