@@ -5,34 +5,37 @@
 
 		    	//Same Height For Divs
 
-				//home-page
-				var x = ".thumbnail-home";
-				 
-				function eqHeight(x){
-					var heights = $(x).map(function() {
-				        return $(this).height();
-				    }).get(),
 
-				    maxHeight = Math.max.apply(null, heights);
 
-				    $(x).height(maxHeight);
-				}
+			    window.onload = function() {
+					//home-page
+					var x = ".thumbnail-home";
 
-				eqHeight(x);
+					function eqHeight(x){
+						var heights = $(x).map(function() {
+					        return $(this).height();
+					    }).get(),
 
-				x = ".thumbnail-pricing";
-				eqHeight(x);
-				x= ".pri-thumbnail";
-				eqHeight(x);
-				x= ".contact-card";
-				eqHeight(x);
-				x = ".thumbnails-trapyz";
-				eqHeight(x);
-				x= ".thumbnail-solutions";
-				eqHeight(x);
-				x=".thumbnail-sdk"
-				eqHeight(x);
+					    maxHeight = Math.max.apply(null, heights);
 
+					    $(x).height(maxHeight);
+					}
+
+					eqHeight(x);
+					x = ".thumbnails-trapyz";
+					eqHeight(x);
+					x = ".thumbnail-pricing";
+					eqHeight(x);
+					x= ".pri-thumbnail";
+					eqHeight(x);
+					x= ".contact-card";
+					eqHeight(x);
+					x= ".thumbnail-solutions";
+					eqHeight(x);
+					x=".thumbnail-sdk"
+					eqHeight(x);
+			    };
+			    
 		    	window.sr = ScrollReveal();
 				sr.reveal('.page-head' , { duration: 400 });
 				sr.reveal('.wow' , 300);
