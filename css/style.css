@@ -127,8 +127,8 @@ img {
 
 hr{
     border: 0;
-    height: 4px;
-    margin: 40px 0;
+    height: 2px;
+    margin: 20px 0;
     background: #000;
 }
 
@@ -154,7 +154,7 @@ pre {
 
 
 .jumbotron{
-    height: 600px;
+    height: 400px;
     padding-top:8em;
 }
 
@@ -467,3 +467,10 @@ svg :hover{
 }
 
 /*=====  End of Bootstrap Overrides  ======*/
+
+.featured{
+  height: 170px;
+  width: 100%;
+  padding: 2em 0em;
+  border: 1px solid #F4F4F4;
+}
