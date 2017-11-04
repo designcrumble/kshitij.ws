@@ -1,0 +1,93 @@
+a {	
+	transition: all 0.4s ease;
+	&:hover {
+		cursor: pointer;
+		transition: all 0.4s ease;
+	}
+}
+button {
+	border: none;
+	transition: all 0.4s ease;
+	&:hover {
+		cursor: pointer;
+		transition: all 0.4s ease;
+	}
+}
+.btn {
+	margin: 1em;
+	padding: 1em 2em;
+	font-size: 0.85em;
+	font-weight: 700;
+	transition: all 0.4s ease;
+}
+.btn-primary {
+background: $brand-primary;
+box-shadow: 0 4px 6px 0 rgba(195,198,206,0.4);
+box-shadow: 0 2px 4px 0 rgba(3,217,201,0.39), 0 4px 6px 0 rgba(195,198,206,0.16);
+border-radius: 2px;
+color: white;
+transition: all 0.4s ease;
+	&:hover {
+		cursor: pointer;
+		color: white;
+		transform: scale(1.04);
+		box-shadow: 0 12px 20px 0 rgba(195,198,206,0.16	);
+		box-shadow: 0 8px 32px 0 rgba(3,217,201,0.39), 0 24px 48px 0 rgba(195,198,206,0.16);
+		transition: all 0.4s ease;
+	}
+}
+
+.btn-secondary {
+background: white;
+border-radius: 2px;
+color: $blue-grey;
+box-shadow: 0 4px 6px 0 rgba(195,198,206,0.16);
+	&:hover {
+		transform: scale(1.04);
+		color: $brand-primary;
+		box-shadow: 0 12px 20px 0 rgba(195,198,206,0.16	);
+	}
+}
+
+.btn-header {
+	border: 1px solid #EBEBEB;
+	border-radius: 2px;
+	font-weight: 500;
+	font-size: 1em;
+	padding: 1em 2em;
+	color: $brand-primary !important;
+	&:hover {
+		color: white !important;
+		background: $brand-primary;
+		border: 1px solid transparent;
+		cursor: pointer;
+	}
+}
+
+.btn__convert {
+	border: 1px solid $brand-primary !important;
+	margin: 1em auto;
+}
+
+.link {
+	transition: all 0.4s ease;
+	&:hover {
+		cursor: pointer;
+		transition: all 0.4s ease;
+	}
+
+	&--work {
+		color: #00ECEC;
+	}
+
+	&--maker {
+		color: #9B51E0;
+	}
+	&--design {
+		color: #FF1C6C;
+	}
+
+	&--dev {
+		color: #333333;
+	}
+}

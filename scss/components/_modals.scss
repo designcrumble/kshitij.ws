@@ -1,0 +1,158 @@
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 20; /* Sit on top */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    border: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+    img {
+        margin: 0;
+    }
+    .mg-bottom {
+        margin-bottom: 2rem;
+    }
+    h5 {
+        margin-bottom: 0.675rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    p {
+        font-size: 0.6rem;
+        color: $blue-grey;
+    }
+    @include respond-to('medium') {
+        h5 {
+            margin-bottom: 0.675rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        p {
+            font-size: 0.875rem;
+            color: $blue-grey;
+        }
+    }
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 0 auto;
+    margin-top: calc(  ( 100% - 77.75% )/2 );
+    width: 80%;
+    background-color: #fff;
+
+    @include respond-to('medium') {
+    }
+   /* width: 20%;  Could be more or less, depending on screen size */
+}
+
+.modal-top {
+    padding-top: 2rem;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+    text-align: center;
+    color: $dark-blue;
+}
+
+/* Modal Body */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-image {
+    height: 5rem;
+    overflow: hidden;
+    img {
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+        margin-top: -12rem;
+    }
+
+    @include respond-to('medium') {
+    height: auto;
+    overflow: hidden;
+        img {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+}
+.no-padding {
+padding: 0 !important;
+}
+
+.modal-btn {
+    padding-bottom: 2rem;
+    @include respond-to('medium') {
+    padding-top: 1rem;
+    }
+}
+// Mailchimp 
+.mc-field-group {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 300; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 300; opacity: 1}
+}

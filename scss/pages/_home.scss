@@ -1,0 +1,93 @@
+body {
+	height: 100%;
+	width: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 12px;
+	@include respond-to('medium') {
+		background: #fff;
+		font-size: 16px;
+	}
+}
+.main {
+	display: flex;
+	flex-direction:  column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 7rem;
+	width: 100%;
+	h1{
+		font-family: Colfax;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		font-size: 1.2rem;
+		margin-bottom: 0;
+		span {
+			font-size: 1rem;
+			font-style: italic;
+		}	
+	}
+	h4 {
+		font-family: Colfax;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		font-size: rem(10px);
+		margin-bottom: 0;
+	}
+	&__description {
+		max-width: 80%;
+		font-size: 1em;
+		font-weight: lighter;
+		line-height: 1.4;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 0.7em;
+		color: rgba(255,255,255,0.6)
+	}
+
+	p {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1rem;
+		letter-spacing: 0.36px;
+		color: #000;
+		span {
+			font-weight: 100;
+		}
+	}
+
+	@include respond-to('medium') {
+		height: 90%;
+		justify-content: center;
+		h1 {
+			font-size: 3rem;
+		}
+		h4 {
+			font-size: 1rem;
+		}
+		p {
+			font-size: 2rem;
+			line-height: rem(60px);
+			font-size: rem(36px);
+		}
+	}
+}
+
+
+.intro {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: rem(40px);
+}
+
+.profile {
+	margin-right: 1rem;
+}
+
+.padding-1 {
+	padding: 0 1rem;
+}
