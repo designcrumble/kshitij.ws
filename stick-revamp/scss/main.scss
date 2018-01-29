@@ -1,0 +1,35 @@
+// ----------- Using the Sass 7-1 Architecture  ----------- //
+// More details : https://sass-guidelin.es/#the-7-1-pattern
+
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+
+@import 'vendors/jquery-ui';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+@import 'layout/faq';
+
+@import 'components/buttons';
+
+@import 'components/dropdown';
+@import 'components/navigation';
+@import 'components/animations';
+
+@import 'pages/home';
+@import 'pages/login';
+@import 'pages/showcase';
+@import 'pages/careers';
+
+@import 'themes/theme';
+@import 'themes/admin';
+
+@import 'components/modals';

@@ -1,0 +1,133 @@
+.footer {
+	display: flex;
+	flex-direction: row;
+	background: 0;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0;
+	z-index: 14;
+	bottom: 0;
+	margin: 0 auto;
+	text-align: left;
+	color: white;
+	background: linear-gradient(99.09deg, #03D9C9 0%, #0A4FFF 106.36%);
+	h2 {
+		text-align: left;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__left {
+	    display: flex;
+	    flex-direction: row;
+	    font-size: 0.85em;
+		color: #fff;
+	    flex: 1;
+	    width: 80%;
+  	}
+  	&__right {
+  		display: flex;
+  		padding-top: 1rem;
+  		a {	
+  			opacity: 0.7;
+  			img {
+  				height: 1.2em;
+  				width: auto;
+  				margin: 0 auto;
+  				margin-right: 2rem;
+  				margin-bottom: 1rem;
+  			}
+  			&:hover {
+  				opacity: 1;
+  				transform: scale(1.1);
+  			}
+  		}
+  	}
+  	&-top {
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  		padding-bottom: 10rem;
+  		img {
+  			max-height: 4rem;
+  			margin: 0;
+  			margin-bottom: 1rem;
+  		}
+  	}
+  	&-bottom {
+  		display: flex;
+   		justify-content: center;
+  		align-items: center;
+  		padding-bottom: 2rem;
+  	}
+  	&-container {
+  		width: 80%;
+
+  	}
+  	&-menu {
+  		display: flex;
+  		flex-direction: column;
+		a {
+			color: white;
+			width: 25%;
+			margin-right: 5rem;
+		}
+  	}
+  	ul {
+  		margin: 1.5rem 0;
+  	}
+  	&-links {
+  		display: flex;
+  		flex-direction: row;
+  		justify-content: flex-start;
+  		flex-wrap: wrap;
+  	}
+  	&-link {
+  		max-width: 14rem;
+  		margin-right: 2rem;
+  		text-align: left;
+  	}
+  	&-text {
+  		text-align: left;
+  		color: white;
+  	}
+  @include respond-to('medium') {
+  	flex-direction: column;
+  	justify-content: center;
+  	margin:0 auto;
+	&__wrapper {
+		flex-direction: row;
+	}
+  }
+}
+
+.cta-footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(99.09deg, #03D9C9 0%, #0A4FFF 106.36%);
+	padding: 3rem 0;
+	&__wrapper {
+		width: 80%;
+		border-bottom: 1px solid white;
+		h2,h6 {
+			color: white;
+		}
+		h2 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 42px;
+			font-size: 30px;
+			letter-spacing: -0.01em;
+		}
+
+	}
+}

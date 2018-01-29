@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="796px" height="789px" viewBox="0 0 796 789" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>circles</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lp-home-2-copy-8" transform="translate(-644.000000, -61.000000)" fill="#FFFFFF">
+            <g id="circles" transform="translate(644.000000, 61.000000)">
+                <circle id="Oval-5" stroke-opacity="0" stroke="#FEFEFE" fill-opacity="0.06" cx="424" cy="424" r="424"></circle>
+                <circle id="Oval-5" fill-opacity="0.06" cx="424" cy="424" r="335"></circle>
+                <circle id="Oval-5" fill-opacity="0.3" cx="423.5" cy="424.5" r="252.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
