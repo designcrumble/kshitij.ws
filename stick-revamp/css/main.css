@@ -1015,6 +1015,11 @@ img {
     align-items: center;
     flex: 1;
     width: 100%; }
+  .header--desktop {
+    display: none; }
+  .header--mobile {
+    display: flex;
+    max-width: 100vw; }
   @media (min-width: 800px) {
     .header {
       max-width: 100%;
@@ -1022,7 +1027,11 @@ img {
       .header__wrapper {
         padding: 0 1rem; }
       .header__right {
-        display: flex; } }
+        display: flex; }
+      .header--desktop {
+        display: flex; }
+      .header--mobile {
+        display: none; } }
 
 .footer {
   display: flex;
@@ -1441,17 +1450,7 @@ html, body {
   z-index: 1;
   overflow: hidden; }
   .hero::after {
-    content: url("../assets/bg-overlay.png");
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: -700px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: right; }
+    display: none; }
   .hero__left {
     padding-top: 4rem; }
     .hero__left span {
@@ -1465,6 +1464,18 @@ html, body {
       height: 100%;
       padding-top: 6rem;
       justify-content: center; }
+      .hero::after {
+        content: url("../assets/bg-overlay.png");
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: -700px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: right; }
       .hero-wrapper {
         flex-direction: row; } }
 
@@ -1490,12 +1501,18 @@ html, body {
         transition: all 0.2s ease; }
   .about video {
     margin: 2rem auto;
-    height: 500px;
     border: 1px solid white;
     border-right: 2px solid white;
-    box-shadow: 0px 16px 40px rgba(16, 71, 122, 0.25); }
+    box-shadow: 0px 16px 40px rgba(16, 71, 122, 0.25);
+    width: 90%; }
     .about video:hover {
       cursor: pointer; }
+  @media (min-width: 800px) {
+    .about {
+      max-width: 100%;
+      overflow: hidden; }
+      .about video {
+        width: 70%; } }
 
 .how h5 {
   max-width: 60%;
@@ -1517,7 +1534,7 @@ html, body {
     margin: 0 auto; }
   .features img {
     height: 24rem;
-    box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.15); }
+    box-shadow: none; }
 
 .cta {
   display: flex;
@@ -1545,7 +1562,8 @@ section {
 
 .how__card, .features__card {
   max-width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 6rem; }
   .how__card__text, .features__card__text {
     max-width: 85%;
     margin: 0 auto; }
@@ -1558,6 +1576,26 @@ section {
       flex-direction: row; }
     .how__card, .features__card {
       max-width: 30%; } }
+
+.features__card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0rem; }
+  .features__card img {
+    height: auto;
+    width: 100%; }
+  .features__card:first-of-type {
+    margin-top: 0rem; }
+  .features__card__media {
+    width: 90%; }
+  .features__card__text {
+    width: 55%;
+    margin: 1rem 2rem;
+    margin-bottom: 5rem; }
 
 .laptop {
   background-size: contain;

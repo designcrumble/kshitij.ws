@@ -24,17 +24,7 @@ html,body {
 	z-index: 1;
 	overflow: hidden;
 	&::after {
-		content: url('../assets/bg-overlay.png');
-		display: block;
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		z-index: -1;
-		top:0;
-		right: -700px;
-		overflow: hidden;
-  		background-repeat: no-repeat;
-  		background-position: right;
+		display: none;
 	}
 	&__left {
 		padding-top: 4rem;
@@ -52,6 +42,19 @@ html,body {
 		height: 100%;
 		padding-top: 6rem;
 		justify-content: center;
+		&::after {
+			content: url('../assets/bg-overlay.png');
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			z-index: -1;
+			top:0;
+			right: -700px;
+			overflow: hidden;
+	  		background-repeat: no-repeat;
+	  		background-position: right;
+		}
 		&-wrapper {
 			flex-direction: row;
 		}
@@ -84,14 +87,21 @@ html,body {
 	}
 	video {
 		margin: 2rem auto;
-		height: 500px;
 		border: 1px solid white;
 		border-right: 2px solid white;
 		box-shadow: 0px 16px 40px rgba(16, 71, 122, 0.25);
+		width: 90%;
 		&:hover {
 			cursor: pointer;
 		}
 	}
+  	@include respond-to('medium') {
+	  	max-width: 100%;
+		overflow: hidden;
+		video {
+			width: 70%;
+		}
+  	}
 }
 
 .how {
@@ -120,7 +130,7 @@ html,body {
 	}
 	img {
 		height: 24rem;
-		box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.15);
+		box-shadow: none;
 	}
 }
 .cta {
@@ -160,6 +170,7 @@ section {
 	&__card {
 		max-width: 80%;
 		margin: 0 auto;
+		margin-bottom: 6rem;
 		&__text {
 			max-width: 85%;
 			margin: 0 auto;
@@ -178,7 +189,30 @@ section {
 }
 
 .features {
-
+	&__card {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: flex-end;
+		max-width: 100%;
+		margin: 0 auto;
+		margin-bottom: 0rem;
+		img {
+			height: auto;
+			width: 100%;
+		}	
+		&:first-of-type {
+			margin-top: 0rem;
+		}
+		&__media {
+			width: 90%;
+		}
+		&__text {
+			width: 55%;
+			margin: 1rem 2rem ;
+			margin-bottom: 5rem;
+		}	
+	}
 }
 
 .laptop {
