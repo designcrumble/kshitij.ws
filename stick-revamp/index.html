@@ -79,9 +79,9 @@
                   <ul>
                       <li><a href="#works" class="header-link">How It Works</a></li>
                       <li><a href="#features" class="header-link">Features</a></li>
-                      <li><a href="#" class="header-link">Careers</a></li>
+                      <li><a href="https://angel.co/blot-1/jobs" class="header-link">Careers</a></li>
                       <!-- <li><a href="#" class="header-link">Sign In</a></li> -->
-                      <li><a href="#" class="header-cta">Request an Invite</a></li>
+                      <li><a href="#signup" class="header-cta">Request an Invite</a></li>
                       <!-- <li><a href="http://dev.stick.ai/login">Login</a></li> -->
                       <!-- <li><a href="http://dev.stick.ai/signup" class="btn btn-header">Sign Up</a></li> -->
                       <!-- <li><a href="http://dev.stick.ai/signup" class="btn btn-header">REQUEST A DEMO</a></li> -->
@@ -105,7 +105,7 @@
             <div class="hero__left col-md-5 col-xs-12">
               <h1>Sell More, Faster <br>with <span>Smarter Decks</span></h1>
               <h4>Meet Stick, the visual sales presentation generator that customizes sales presentations to prospects for you.</h4>
-              <a href="#" class="cta btn btn-primary text-center">Request a Team Trial</a>
+              <a href="#signup" class="cta btn btn-primary text-center">Request a Team Trial</a>
             </div>
             <div class="hero__right col-xs-12 col-md-7">
               <img src="assets/product-hero.png" alt="">
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <section class="how">
+    <section class="how" id="works">
       <div class="how-wrapper container center-xs">
         <div class="how__content col-md-8 col-xs-12 center-xs center">
           <h2>How it Works</h2>
@@ -135,21 +135,21 @@
         </div>
         <div class="row how__cards">
           <div class="col-xs-12 col-md-4 how__card">
-            <img src="assets/template.gif" alt="">
+            <img src="assets/template.png" class="gif" alt="">
             <div class="how__card__text">
               <h3>1. Start with the Latest</h3>
               <h6>No more hiding in Desktop folders. With Stick, you can always choose to start from the latest Master Deck. </h6>
             </div>
           </div>
           <div class="col-xs-12 col-md-4 how__card">
-            <img src="assets/text-to-visual.gif" alt="">
+            <img src="assets/text-to-visual.png" class="gif" alt="">
             <div class="how__card__text">
               <h3>2. Transform your Words</h3>
               <h6>Copy and Paste Discovery Call notes, or type out a few bullet points and Stick transforms your text into branded visuals.</h6>
             </div>
           </div>
           <div class="col-xs-12 col-md-4 how__card">
-            <img src="assets/layout.gif" alt="">
+            <img src="assets/layout.png" class="gif" alt="">
             <div class="how__card__text">
               <h3>3. Two-Click Editing</h3>
               <h6>Don’t like Stick’s recommendation? No problem. Click to swap out the layout or icons for a better fit. We learn from you.</h6>
@@ -159,7 +159,7 @@
       </div>
     </section>
 
-    <section class="how features">
+    <section class="how features" id="features">
       <div class="features-wrapper center row center-xs">
         <div class="how__content col-xs-8 center-xs">
           <h2>Learn how Visuals help you Sell More</h2>
@@ -199,7 +199,7 @@
       </div>
     </section>
 
-    <section class="signUp">
+    <section class="signUp" id="signup">
       <div class="signUp-wrapper">
         <div class="how__content col-xs-12 center-xs middle-xs">
           <h2 class="center text-center  center">Request Access to Stick for your Team</h2>
@@ -378,6 +378,22 @@
           stickVideo.pause();
       }
   }, false);
+
+    $(document).ready(function()
+  {
+      $(".gif").hover(
+          function()
+          {
+            var src = $(this).attr("src");
+            $(this).attr("src", src.replace(/\.png$/i, ".gif"));
+          },
+          function()
+          {
+            var src = $(this).attr("src");
+            $(this).attr("src", src.replace(/\.gif$/i, ".png"));
+          });
+  });
+
   </script>
     <!-- <script src="assets/js/scripts.js"></script> -->
 </body>

@@ -28,7 +28,12 @@ html,body {
 	}
 	&__left {
 		padding-top: 4rem;
+		margin: 0 auto;
 
+		h1,
+		h4 {
+			text-align: center;
+		}
 		span {
 			color: $brand-primary;
 		}
@@ -54,6 +59,12 @@ html,body {
 			overflow: hidden;
 	  		background-repeat: no-repeat;
 	  		background-position: right;
+		}
+		&__left {
+			h1,
+			h4 {
+				text-align: left;
+			}
 		}
 		&-wrapper {
 			flex-direction: row;
@@ -191,11 +202,11 @@ section {
 .features {
 	&__card {
 		display: flex;
-		flex-direction: row-reverse;
+		flex-direction: column;
 		justify-content: center;
 		align-items: flex-end;
 		max-width: 100%;
-		margin: 0 auto;
+		margin: 0;
 		margin-bottom: 0rem;
 		img {
 			height: auto;
@@ -208,9 +219,18 @@ section {
 			width: 90%;
 		}
 		&__text {
-			width: 55%;
+			width: 90%;
 			margin: 1rem 2rem ;
 			margin-bottom: 5rem;
+		}
+		@include respond-to('medium') {
+			flex-direction: row-reverse;
+			margin: 0 auto;
+			&__text {
+				width: 55%;
+				margin: 1rem 2rem ;
+				margin-bottom: 5rem;
+			}
 		}	
 	}
 }
