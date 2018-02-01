@@ -45,7 +45,7 @@
 	<title>Stick.ai</title>
 
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 
     <!-- load and instantiate ScrollReveal first -->
@@ -73,8 +73,8 @@
         <header class="header header--desktop">
           <div class="container">
             <div class="header__wrapper row start-xs middle-md  padding-1">
-              <div class="header__left  padding-1">
-                    <div class="header__logo"><a href="/"><img src="assets/stick-logo@2x.png" alt=""></a></div>
+              <div class="header__left">
+                    <div class="header__logo"><a href="/"><img src="assets/stick-logo-normal.png" alt="" id="headerLogo"></a></div>
               </div>
               <div class="header__right">
                   <ul>
@@ -94,7 +94,7 @@
         <header class="header header--mobile">
           <div class="container">
             <div class="header__wrapper row start-xs middle-md  padding-1">
-              <div class="header__left  padding-1">
+              <div class="header__left">
                     <div class="header__logo"><a href="/"><img src="assets/stick-logo@2x.png" alt=""></a></div>
               </div>
             </div>
@@ -121,7 +121,7 @@
       <div class="about-wrapper row center-xs">
         <div class="about__content col-md-8 col-xs-12 center-xs">
           <h2>What is Stick?</h2>
-          <h5>A visual tool that will change the way how presentations are made.</h5>
+          <h5>A visual presentation generator that improves Sales outcomes and saves time.</h5>
           <video poster="assets/cover.png" controls="controls" id="stickVideo">
             <source src="assets/stick-intro.mp4" type="video/mp4">
           </video>
@@ -162,11 +162,48 @@
       </div>
     </section>
 
+    <section class="how testimonials" id="testimonials">
+      <div class="testimonials-wrapper container center-xs">
+        <div class="how__content col-md-8 col-xs-12 center-xs center">
+          <h2>Why people love using Stick</h2>
+          <h5>Read more on our blog</h5>
+        </div>
+        <div class="row testimonials__cards">
+          <div class="col-xs-12 col-md-4 testimonials__card">
+            <img src="assets/quote.svg" alt="" class="testimonials__img--quote">
+            <div class="testimonials__quote">Our design team makes beautiful slides, and yet I find myself putting together 'Franken-Decks' all the time. With Stick, I can stay on brand and professional.</div>
+            <div class="testimonials__person">
+              <img src="assets/img/testimonials/kate-stripe.jpg" alt="">
+              <div class="testimonials__details">Kate Jensen, Growth at Stripe</div>
+            </div>
+            <div class="testimonials__brand"><img src="assets/img/testimonials/stripe.png" alt=""></div>
+          </div>
+          <div class="col-xs-12 col-md-4 testimonials__card">
+            <img src="assets/quote.svg" alt="" class="testimonials__img--quote">
+            <div class="testimonials__quote">Now we can sell with a story that actually reflects the vision of our company.</div>
+            <div class="testimonials__person">
+              <img src="assets/img/testimonials/juan-accelo.jpg" alt="">
+              <div class="testimonials__details">Juan Parra, Head of Marketing at Accelo</div>
+            </div>
+            <div class="testimonials__brand"><img src="assets/img/testimonials/accelo.png" alt=""></div>
+          </div>
+          <div class="col-xs-12 col-md-4 testimonials__card">
+            <img src="assets/quote.svg" alt="" class="testimonials__img--quote">
+            <div class="testimonials__quote">This is one of the top 3 sales enablement tools to check out right now.</div>
+            <div class="testimonials__person">
+              <img src="assets/img/testimonials/cory-sep.jpg" alt="">
+              <div class="testimonials__details">Cory Bray, Author of Sales Enablement Playbook</div>
+            </div>
+            <div class="testimonials__brand"><img src="assets/img/testimonials/sep.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="how features" id="features">
       <div class="features-wrapper center row center-xs">
         <div class="how__content col-xs-12 col-md-8 center-xs">
-          <h2>Learn how Visuals help you Sell More</h2>
-          <h5>Read more on our blog, Show and Sell</h5>
+          <h2>Learn how Visuals Sell More</h2>
+          <a href="https://medium.com/show-and-sell"><h5>Read more on our blog</h5></a>
         </div>
         <div class="row features__cards">
           <div class="col-xs-12 col-md-12 features__card">
@@ -205,7 +242,7 @@
     <section class="signUp" id="signup">
       <div class="signUp-wrapper">
         <div class="how__content col-xs-12 center-xs middle-xs">
-          <h2 class="center text-center  center">Request Access to Stick for your Team</h2>
+          <h2 class="center text-center  center">Transform your Team with Stick</h2>
         </div>
 <!--         <form action="#" class="signup">
           <label for="name">Your Name
@@ -243,7 +280,7 @@
 
                         <div class="col-xs-12">
                           <div class="mc-field-group size1of2">
-                            <label for="mce-MMERGE1">How big is your team? </label><br/>
+                            <label for="mce-MMERGE1">How many people are on your Sales Team?</label><br/>
                             <input type="number" name="MMERGE1" class="" value="" id="mce-MMERGE1" placeholder="For Eg. 25">
                           </div>            
                         </div>
@@ -270,7 +307,7 @@
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_98aca0bb0842d1f43bf3806fc_368ca53688" tabindex="-1" value=""></div>
                             <div class="row modal-btn">
                               <div class="col-xs-12">
-                                <div class="clear"><input type="submit" value="SIGN UP FOR BETA" name="subscribe" id="mc-embedded-subscribe" class="" style="width: 100%;"></div>
+                                <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="" style="width: 100%;"></div>
                               </div>
                             </div>                    
                         </div>
@@ -287,7 +324,7 @@
           <div class="cta-footer__wrapper row">
             <div class="col-xs-8">
               <h6>Start using Stick today</h6>
-              <h2>Create an account or talk to our sales team!</h2>
+              <h2>Talk to our team about pricing options!</h2>
             </div>
             <div class="col-xs-12 col-md-4 footer-cta">
               <a href="mailto:hi@stick.ai" class="footer-primary">CONTACT SALES</a>
@@ -310,11 +347,11 @@
               <div class="row">
                 <ul class="footer-links">
                   <li class="footer-link"><a href="http://www.stick.ai">Home</a></li>
-                  <li class="footer-link"><a href="#">Product</a></li>
-                  <li class="footer-link"><a href="#">Blog</a></li>
-                  <li class="footer-link"><a href="#">Join Us</a></li>
+                  <li class="footer-link"><a href="#works">Product</a></li>
+                  <li class="footer-link"><a href="https://medium.com/show-and-sell">Blog</a></li>
+                  <li class="footer-link"><a href="https://angel.co/blot-1/jobs">Join Us</a></li>
                   <li class="footer-link"><a href="#">FAQs</a></li>
-                  <li class="footer-link"><a href="#">Success Stories</a></li>
+                  <li class="footer-link"><a href="#testimonials">Success Stories</a></li>
                   <li class="footer-link"><a href="#">Privacy</a></li>
                   <li class="footer-link"><a href="#">Terms</a></li>
                 </ul>
@@ -338,11 +375,15 @@
  <script src="assets/js/jquery-2.1.1.js"></script>
  <script>
    $(window).on("scroll", function() {
+      var oldSrc = 'assets/stick-logo-normal.png';
+      var newSrc = 'assets/stick-logo@2x.png';
       if ($(this).scrollTop() > 100) {
-         $("header").css("background","#fff");
-         $(".header-link").css("color","#252525");
+        $("#headerLogo").attr('src', newSrc);
+        $("header").css("background","#fff");
+        $(".header-link").css("color","#252525");
       }
       else {
+        $("#headerLogo").attr('src', oldSrc);
          $("header").css("background","none");
          $(".header-link").css("color","#fff");
       }

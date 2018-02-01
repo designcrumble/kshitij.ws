@@ -1,0 +1,110 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 4rem auto;
+  h5 {
+   font-size: 1.25em;
+  }
+  @include respond-to('medium') {
+    width: 30%;
+  }
+}
+
+label {
+  width: 100%;
+}
+
+input,textarea, select, option {
+  border: none;
+  color: $dark-blue;
+  background: rgba(3, 217, 201, 0.1);
+  width: 100%;
+  padding: 1em;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+  &::placeholder {
+    color: rgba($dark-blue, 0.3);
+  }
+  &:focus {
+   background: 0;
+   color: $brand-primary;
+   border-bottom: 1px solid $brand-primary;
+  }
+}
+input.btn {
+   margin:0;
+}
+label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+
+  color: #263238;
+}
+input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #8099A6;
+}
+label {
+   font-size: 0.8em;
+   color: $blue-grey;
+}
+
+input::active {
+  border-bottom: 1px solid $brand-primary;
+}
+
+input[type="submit"] {
+  background: #03D9C9;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+  &:hover {
+    cursor: pointer;
+    color: white;
+    background: darken($brand-primary, 1);
+  }
+}
+
+.select__wrapper{
+    position: relative;
+    &::after {
+    content: '\25BE';
+    top: 0rem;
+    position: absolute;
+    right: 1rem;
+    top: 35%;
+  }
+}
+.select {
+  width: 100%;
+   -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+   
+  option[value=""][disabled] {
+    color: $blue-grey;
+  }
+}
+
+textarea {
+  line-height: 1.8;
+}

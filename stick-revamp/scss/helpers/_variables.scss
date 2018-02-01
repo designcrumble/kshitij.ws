@@ -1,0 +1,46 @@
+
+// ----------- Variable Rules  ----------- //
+
+// use !default to definte any variable so that anyonce can overwrite it. 
+// $baseline: 1em !default;
+// // Developer’s own variable
+// $baseline: 2em;
+
+// Your library declaring `$baseline`
+// @import 'your-library';
+
+// $baseline == 2em;
+
+
+// ----------- Breakpoints  ----------- //
+
+// breakpoint variables : you can add more as necessary
+// we'll go mobile first as much as possible.
+
+$breakpoints: (
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+);
+
+
+/*------------------------------------*\
+    #UTILS - Color Variables
+\*------------------------------------*/
+
+$brand-primary: #03D9C9;
+$teal-dark: #00C0BF;
+$teal-darkest: #1A535C;
+$dark-blue: #0B132B;
+$grey: #EBEBEB;
+$red: #FF4545;
+$blue-grey: #9EB2B5;
+
+$primary-color: 				$brand-primary;
+$header-font-color:				$brand-primary;
+$body-font-color: 				$blue-grey;
+
+
+
+$primary-gradient:  linear-gradient(295.37deg, #0286FF -33.37%, #03D9C9 100%);
+$secondary-gradient:  linear-gradient(-100deg, #03D8C9 0%, #5753FE 97%);

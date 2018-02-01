@@ -1,0 +1,94 @@
+
+#faqs {
+    background: $primary-gradient;
+    width: 100%;
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+    .toggle-inner {
+        display: none;
+    }
+    
+    .section { 
+        background: #ffffff;
+        padding: 4rem 0;
+        margin: 2rem auto;
+        width: 100%;
+
+        &__title, &__brief {
+            width: 70%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 2.5rem;
+            margin: 1rem auto;
+            color: #333333;
+        }
+
+        &__brief {
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 1.5rem;
+            color: #4F4F4F;
+        }
+    }
+    .faq {
+        background: #ffffff;
+        padding: 2rem 0;
+        margin: 0 auto;
+        padding-left: 0;
+        width: 70%;
+        border-bottom: 1px solid #fafafa;
+        position: relative;
+
+        .icon {
+            position: absolute;
+            width: 1.5rem;
+            max-width: 2rem;
+            height: 1.5rem;
+            z-index: 2;
+            right: 0%;
+            margin-top: 2.5rem;
+            transition: all 0.3s ease;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .icon-tilt {
+            transform: rotate(180deg);
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+            .faq__title {
+                color: $brand-primary;
+            }
+
+        &__title {
+            /* What type of countries can you target? */
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 1.5rem;
+            color: #333333;
+            position: relative;
+        }
+        
+        .toggle-inner {
+            p {
+                line-height: 1.618;
+            }
+        }
+    }
+}
+    
