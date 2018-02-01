@@ -1,138 +1,105 @@
-let slide = 1;
-let anchor = '<h6>Since your content describes a process,<br/> let’s try <span> another layout </span>.</h6><button onclick="changeSlide(slide+1); return false;" class="btn__convert btn btn-primary">Yes, lets try it</button>';
-let final = '<h6>Boom. Did you know that using visuals to engage customers <br /> makes you<span> 2-3x </span>more likely to convert them?</h6><a id="signupBtn" href="#" class="btn__convert btn btn-secondary">GET EARLY ACCESS</a>';
-let visual = '<h6>Nice, you just saved <span>10-20 hours</span> a week!<br/> No more fiddling with formatting.</h6> <button onclick="changeSlide(slide+1); return false;" class="btn__convert btn btn-primary">Make It Better</button>';
-// Note : Replace If Else with Swtich Case for better Optimization.
-
-function changeSlide(slideNumber) {
-	// document.getElementById("slideshow").src = `../assets/img/slides/slide${slideNumber}.png`;
-
-	$('#slideshow'	).fadeIn( "slow", function() {
-		this.src = `../assets/img/slides/slide${slideNumber}.png`;
-    // Animation complete
-	});
-	if (slideNumber === 2) {
-		console.log(slideNumber);
-		document.getElementById("slideButton").innerHTML = "Transform My Text";
-		$('.guy_illustration').animate({
-		  opacity: .2,
-		});
-		$('.layouts_illustration').animate({
-		  opacity: .2,
-		});
-		$('.customer_illustration').animate({
-		  opacity: .2,
-		});
-		slide = slide + 1;
-	}
-
-	if (slideNumber === 3) {
-		console.log(slideNumber);
-		document.getElementById("slideaction").innerHTML = visual;
-		$('.guy_illustration').animate({
-		  opacity: 1,
-		});
-		slide = slide + 1;
-	}
-
-	if (slideNumber === 4) {
-		console.log(slideNumber);
-		document.getElementById("slideaction").innerHTML = anchor;
-		$('.layouts_illustration').animate({
-		  opacity: 1,
-		});
-		slide = slide + 1;
-	}
-
-	if (slideNumber === 5) {
-		console.log(slideNumber);
-		document.getElementById("slideaction").innerHTML = final;
-		$('.customer_illustration').animate({
-		  opacity: 1,
-		});
-		// Modal
-
-		// Get the modal
-		let modal = document.getElementById('demoSignup');
-
-		// Get the button that opens the modal
-		let btn = document.getElementById("signupBtn");
-
-		// Get the <span> element that closes the modal
-		let span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on the button, open the modal 
-		btn.onclick = function() {
-		    modal.style.display = "flex";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		    modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		    if (event.target == modal) {
-		        modal.style.display = "none";
-		    }
-		}		
-		console.clear();
-	}
-
-	return false;
-}
-
-
-
-// Modal
-
-// Get the modal
-let modal = document.getElementById('demoSignup');
-
-// Get the button that opens the modal
-let btn = document.getElementById("signupBtn");
-
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
-
-
-
 $(document).ready(function () {
-    $("#mc-embedded-subscribe").click(function () {
-		let fname = $('#MMERGE3').val();
-		let mail = $('#mce-EMAIL').val();
-		let team = $('#mce-MMERGE1').val();
-		let purpose = $('#mce-MMERGE2').val();
 
-        if (fname.length == 0) {
-            alert("Please input a first name");
-        } else if (email.length == 0) {
-            alert("Please input a last name");
-        } else if (team.length == 0) {
-            alert("Please input an age");
-        }
-        else if (purpose.length == 0) {
-            alert("Please input a last name");
-        }
-    });
+	// Scroll Reveal
+	window.sr = ScrollReveal();
+
+	var sections = document.getElementsByClassName('main');
+	function divreveal() {
+	  sr.reveal('div', { container: sections, duration: 2000, scale: 1, distance: '30px' });
+	  // sr.reveal('div', { container: footer, duration: 2000, scale: 1, distance: '30px' });
+	  // ds.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
+	}
+	        sr.reveal('header', { duration: 1000, scale: 1, distance: '10px' });
+	        sr.reveal('.hero', { duration: 1000, scale: 1, distance: '0px' });
+	        sr.reveal('.hero h1', { duration: 3000, scale: 1.1, distance: '150px' });
+	        sr.reveal('.hero h4', { duration: 3000, scale: 1.1, distance: '200px' });
+	        sr.reveal('.hero-cta', { duration: 3000, scale: 1.1, distance: '250px' });
+	        // sr.reveal('.main__description', { duration: 2000, scale: 1, distance: '80px' });
+	        sr.reveal('.stick-mockup', { duration: 3000, scale: 1.2, distance: '100px' });
+	        sr.reveal('.footer', { duration: 1000, scale: 1, distance: '30px' });
+	        sr.reveal('section div', {duration: 1000, scale: 1, distance: '30px' });
+
+  var stickVideo = document.getElementById('stickVideo');
+  var playButton = document.getElementById('playButton');
+
+  $('#stickVideo').click(function() {
+    if (this.paused == false) {
+        this.pause();
+    } else {
+        this.play();
+    }
+  });
+
+  playButton.addEventListener('click', function () {
+      if (stickVideo.paused) {
+          if (stickVideo.requestFullscreen) {
+              stickVideo.requestFullscreen();
+          }
+          else if (stickVideo.msRequestFullscreen) {
+              stickVideo.msRequestFullscreen();
+          }
+          else if (stickVideo.mozRequestFullScreen) {
+              stickVideo.mozRequestFullScreen();
+          }
+          else if (stickVideo.webkitRequestFullScreen) {
+              stickVideo.webkitRequestFullScreen();
+          }
+          stickVideo.play();
+      }
+      else {
+          stickVideo.pause();
+      }
+  }, false);
+
+
+	// Desktop - GIF on Hover
+	const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+	jQuery(document).ready(function($){
+	    if(!isMobile) {
+			$(".gif").hover(
+				function()
+				{
+					var src = $(this).attr("src");
+					$(this).attr("src", src.replace(/\.png$/i, ".gif"));
+				},
+				function()
+				{
+					var src = $(this).attr("src");
+					$(this).attr("src", src.replace(/\.gif$/i, ".png"));
+			});
+	    }
+	    else {
+	    	// var src = $(".gif").attr("src");
+    		$(".gif--1").attr("src", $(".gif--1").attr("src").replace(/\.png$/i, ".gif"));
+    		$(".gif--2").attr("src", $(".gif--2").attr("src").replace(/\.png$/i, ".gif"));
+    		$(".gif--3").attr("src", $(".gif--3").attr("src").replace(/\.png$/i, ".gif"));
+	    }
+	});
+
+	$("#mc-embedded-subscribe-form").submit(function(e){
+			let fname = $('#mce-MMERGE3').val();
+			let mail = $('#mce-EMAIL').val();
+			let reg = /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+
+			if (reg.test(mail)){
+			 	return 0;
+			 }
+			 else{
+			 	$("label[for='mce-EMAIL']").css('color','red').text("Please Enter Your Work Email");
+			 return false;
+			 }
+
+	        if (fname.length == 0) {
+	            $("label[for='mce-MMERGE3']").css('color','red').text("Please Enter Your Name");
+	        }
+	        if (mail.length == 0) {
+	        	$("label[for='mce-EMAIL']").css('color','red').text("Please Enter Your Work Email");
+	        }
+	        if (fname.length == 0 || mail.length == 0) {
+		        return false;
+	        }
+	});
+
+
 });
