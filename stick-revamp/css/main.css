@@ -1709,8 +1709,8 @@ section {
   box-shadow: 0px 32px 30px rgba(0, 0, 0, 0.025);
   border-radius: 2px;
   max-width: 80%;
-  margin: 0 2rem;
-  margin-bottom: 0rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
   padding: 2rem 2.5rem; }
   .testimonials__card img {
     height: auto;
@@ -1720,6 +1720,7 @@ section {
     .testimonials__card {
       flex-direction: column;
       margin: 0 auto;
+      margin-bottom: 0rem;
       max-width: 30%; }
       .testimonials__card__text {
         width: 55%;
