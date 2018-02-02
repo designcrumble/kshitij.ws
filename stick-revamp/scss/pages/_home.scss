@@ -87,15 +87,12 @@ html,body {
 .about {
 	display: flex;
 	flex-direction: column;
-	background: $primary-gradient;
+	background: white;
 	&__content {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		h2, h5, a{
-			color: white;
-		}
 		a {
 			padding-bottom: 0.75rem;
 			opacity: 0.75;
@@ -128,13 +125,18 @@ html,body {
 }
 
 .how {
+	background: $primary-gradient;
 	h5 {
 		max-width: 60%;
 		margin: 0 auto;
 		margin-bottom: 2rem;
 	}
+		h2,h3, h5,h6,p, a{
+			color: white;
+		}
 	&__content {
 		justify-content: center;
+
 	}
 	img {
 		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.075);
