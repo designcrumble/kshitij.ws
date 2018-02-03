@@ -81,8 +81,11 @@
                       <li><a href="#works" class="header-link">How It Works</a></li>
                       <li><a href="#features" class="header-link">Features</a></li>
                       <li><a href="https://angel.co/blot-1/jobs" class="header-link">Careers</a></li>
+                      <li><a href="https://medium.com/show-and-sell"  class="header-link" target="_blank">Blog</a></li>
                       <!-- <li><a href="#" class="header-link">Sign In</a></li> -->
-                      <li><a href="#signup" class="header-cta">Request an Invite</a></li>
+
+                      <li><a href="#signup" class="secondary-header-cta">Log In</a></li>
+                      <li><a href="#signup" class="header-cta">See it Live</a></li>
                       <!-- <li><a href="http://dev.stick.ai/login">Login</a></li> -->
                       <!-- <li><a href="http://dev.stick.ai/signup" class="btn btn-header">Sign Up</a></li> -->
                       <!-- <li><a href="http://dev.stick.ai/signup" class="btn btn-header">REQUEST A DEMO</a></li> -->
@@ -193,7 +196,7 @@
               <img src="assets/img/testimonials/cory-sep.jpg" alt="">
               <div class="testimonials__details">Cory Bray, Author of Sales Enablement Playbook</div>
             </div>
-            <div class="testimonials__brand"><img src="assets/img/testimonials/sep.jpg" alt=""></div>
+            <div class="testimonials__brand"><img src="assets/img/testimonials/sep.png" alt=""></div>
           </div>
         </div>
       </div>
@@ -202,7 +205,6 @@
       <div class="features-wrapper center row center-xs">
         <div class="how__content col-xs-12 col-md-8 center-xs">
           <h2>Learn how Visuals Sell More</h2>
-          <a href="https://medium.com/show-and-sell"><h5>Read more on our blog</h5></a>
         </div>
         <div class="row features__cards">
           <div class="col-xs-12 col-md-12 features__card">
@@ -302,7 +304,7 @@
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_98aca0bb0842d1f43bf3806fc_9cafbf218f" tabindex="-1" value=""></div>
                             <div class="row modal-btn">
                               <div class="col-xs-12">
-                              <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 100%; text-align: center;"></div>
+                              <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button" style="width: 100%; text-align: center;"></div>
                               </div>
                               </div>
                             </div>                    
@@ -363,11 +365,13 @@
       var newSrc = 'assets/stick-logo@2x.png';
       if ($(this).scrollTop() > 100) {
         $("#headerLogo").attr('src', newSrc);
+        $(".secondary-header-cta").css("border-color","#9EB2B5").css("color","#9EB2B5");
         $("header").css("background","#fff");
         $(".header-link").css("color","#252525");
       }
       else {
         $("#headerLogo").attr('src', oldSrc);
+         $(".secondary-header-cta").css("border-color","#ffffff").css("color","#ffffff");
          $("header").css("background","none");
          $(".header-link").css("color","#fff");
       }
