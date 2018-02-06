@@ -97,7 +97,7 @@ body {
 \*------------------------------------*/
 *, html, body {
   font-size: 16px;
-  font-family: "Colfax", sans-serif;
+  font-family: "Inter UI", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -112,19 +112,39 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-family: Inter UI;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 54px;
+  font-size: 36px;
+  color: #000000; }
   @media (min-width: 800px) {
     h1 {
-      font-size: 3rem; } }
+      line-height: 54px;
+      font-size: 36px; } }
 
 h2 {
   font-size: 2.30769rem; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-family: Inter UI;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 32px;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #4C67F2; }
 
 h4 {
-  font-size: 1.76471rem; }
+  font-size: 1.76471rem;
+  font-family: Inter UI;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 15px;
+  color: #D3D6E5; }
 
 h5 {
   font-size: 1.66667rem; }
@@ -1102,9 +1122,14 @@ textarea {
   line-height: 1.8; }
 
 a {
-  transition: all 0.4s ease; }
+  transition: all 0.4s ease;
+  color: black;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid transparent; }
   a:hover {
     cursor: pointer;
+    color: black;
+    border-bottom: 1px solid black;
     transition: all 0.4s ease; }
 
 button {
@@ -1114,68 +1139,11 @@ button {
     cursor: pointer;
     transition: all 0.4s ease; }
 
-.btn {
-  margin: 1em;
-  padding: 1em 2em;
-  font-size: 0.85em;
-  font-weight: 700;
-  transition: all 0.4s ease; }
-
-.btn-primary {
-  background: #03D9C9;
-  box-shadow: 0 4px 6px 0 rgba(195, 198, 206, 0.4);
-  box-shadow: 0 2px 4px 0 rgba(3, 217, 201, 0.39), 0 4px 6px 0 rgba(195, 198, 206, 0.16);
-  border-radius: 2px;
-  color: white;
-  transition: all 0.4s ease; }
-  .btn-primary:hover {
-    cursor: pointer;
-    color: white;
-    transform: scale(1.04);
-    box-shadow: 0 12px 20px 0 rgba(195, 198, 206, 0.16);
-    box-shadow: 0 8px 32px 0 rgba(3, 217, 201, 0.39), 0 24px 48px 0 rgba(195, 198, 206, 0.16);
-    transition: all 0.4s ease; }
-
-.btn-secondary {
-  background: white;
-  border-radius: 2px;
-  color: #9EB2B5;
-  box-shadow: 0 4px 6px 0 rgba(195, 198, 206, 0.16); }
-  .btn-secondary:hover {
-    transform: scale(1.04);
-    color: #03D9C9;
-    box-shadow: 0 12px 20px 0 rgba(195, 198, 206, 0.16); }
-
-.btn-header {
-  border: 1px solid #EBEBEB;
-  border-radius: 2px;
-  font-weight: 500;
-  font-size: 1em;
-  padding: 1em 2em;
-  color: #03D9C9 !important; }
-  .btn-header:hover {
-    color: white !important;
-    background: #03D9C9;
-    border: 1px solid transparent;
-    cursor: pointer; }
-
-.btn__convert {
-  border: 1px solid #03D9C9 !important;
-  margin: 1em auto; }
-
 .link {
   transition: all 0.4s ease; }
   .link:hover {
     cursor: pointer;
     transition: all 0.4s ease; }
-  .link--work {
-    color: #00ECEC; }
-  .link--maker {
-    color: #9B51E0; }
-  .link--design {
-    color: #FF1C6C; }
-  .link--dev {
-    color: #333333; }
 
 @-webkit-keyframes Gradient {
   0% {
@@ -1266,6 +1234,22 @@ body {
         font-size: 2rem;
         line-height: 3.75rem;
         font-size: 2.25rem; } }
+
+.hero {
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
+
+.body__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 960px; }
+
+@media (min-width: 800px) {
+  .body__container {
+    max-width: 960px; } }
 
 .intro {
   display: flex;
