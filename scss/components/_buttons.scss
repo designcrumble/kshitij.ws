@@ -1,43 +1,33 @@
-a {	
-	transition: all 0.4s ease;
-	color: black;
-	padding-bottom: 0.5rem;
-	border-bottom: 1px solid transparent;
-	&:hover {
-		cursor: pointer;
-		color: black;
-		border-bottom: 1px solid black;
-		transition: all 0.4s ease;
-	}
-}
-button {
-	border: none;
-	transition: all 0.4s ease;
-	&:hover {
-		cursor: pointer;
-		transition: all 0.4s ease;
-	}
+.button {
+    width: 200px;
+    height: 60px;
+    align-items: center;
 }
 
-.link {
-	transition: all 0.4s ease;
+.hero-cta__start {
+	text-align: left !important;
+	-webkit-clip-path: polygon(100% 0, 100% 71%, 91% 100%, 0 99%, 0 0);
+	clip-path: polygon(100% 0, 100% 71%, 91% 100%, 0 99%, 0 0);
+	transition: all 0.35s ease;
+	letter-spacing: -0.0085em;
+	font-size: rem(20px);
+	margin-bottom: 4em;
 	&:hover {
-		cursor: pointer;
-		transition: all 0.4s ease;
+		color: black !important;
+		background: white !important;
+		transition: all 0.1s ease;
 	}
+}
 
-	// &--work {
-	// 	color: #FF004D;
-	// }
-
-	// &--maker {
-	// 	color: #9B51E0;
-	// }
-	// &--design {
-	// 	color: #FF1C6C;
-	// }
-
-	// &--dev {
-	// 	color: #333333;
-	// }
+.hero-cta__how {
+	text-align: left !important;
+	transition: all 0.35s ease;
+	letter-spacing: -0.0085em;
+	font-size: rem(20px);
+	margin-bottom: 4em;
+	&:hover {
+		color: black !important;
+		background: white !important;
+		transition: all 0.1s ease;
+	}
 }

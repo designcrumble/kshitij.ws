@@ -21,6 +21,7 @@ $breakpoints: (
   'medium': (min-width: 800px),
   'large': (min-width: 1000px),
   'huge': (min-width: 1200px),
+  'xhuge': (min-width: 1550px),
 );
 
 
@@ -28,18 +29,29 @@ $breakpoints: (
     #UTILS - Color Variables
 \*------------------------------------*/
 
-$brand-primary: #03D9C9;
-$teal-dark: #00C0BF;
-$teal-darkest: #1A535C;
-$dark-blue: #0B132B;
-$grey: #EBEBEB;
-$red: #FF4545;
-$blue-grey: #9EB2B5;
+// Primary Colors
+$International-Orange: #FF4E00;
+$Ultramarine: #1F06A9;
+$Torch-Red: #FF004D;
 
-$primary-color: 				$brand-primary;
-$header-font-color:				$brand-primary;
-$body-font-color: 				$blue-grey;
+// Secondary Colors
+$Heather: #ADBEC5;
+$Light-Slate-Grey: #7D849E;
+$Lightest-Grey: #819299;
+$Bay-Of-Many: #344266;
+$Violet: #140C42;
+$Blue-Ribbon: #006DFF;
+$Electric-Violet: #A30DFF;
+$Golden-Fizz: #FFF33B;
+$Emerald: #4FDA76;
+
+// Gradients
+$primary-gradient: linear-gradient(135.41deg, #FF4E00 0%, #FF004D 100%);
+$secondary-gradient:  linear-gradient(224.59deg, #FF004D 0%, #FF4E00 100%);
 
 
-$primary-gradient:  linear-gradient(-100deg, #03D8C9 0%, #5753FE 97%);
-$primary-gradient:  linear-gradient(-100deg, #03D8C9 0%, #5753FE 97%);
+
+$primary-color: $International-Orange;
+$dark-bg:				$Violet;
+$light-bg: 		white;
+

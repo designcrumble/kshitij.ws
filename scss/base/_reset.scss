@@ -30,9 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color: #fff;
--webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	background-color: #fafafa;
 }
 ol, ul {
 	list-style: none;
@@ -58,4 +56,8 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+section {
+	overflow-x: hidden;
 }

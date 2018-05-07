@@ -36,3 +36,89 @@
 		background-position: 0% 50%
 	}
 }
+
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translate(0,0px);
+    -webkit-transform: translate(0,0px);
+    -o-transform: translate(0,0px); 
+    -moz-transform: translate(0,0px);
+  }
+  50% {
+    transform: translate(0,20px);
+    -webkit-transform: translate(0,20px);
+    -o-transform: translate(0,20px); 
+    -moz-transform: translate(0,20px);
+  }
+  100% {
+    transform: translate(0,0px);
+    -webkit-transform: translate(0,0px);
+    -o-transform: translate(0,0px); 
+    -moz-transform: translate(0,0px);
+  }
+}
+
+// @keyframes slide {
+//   0% {
+//     transform: translate(0,0px);
+//     -webkit-transform: translate(0,0px);
+//     -o-transform: translate(0,0px); 
+//     -moz-transform: translate(0,0px);
+//   }
+//   50% {
+//     transform: translate(20,0px);
+//     -webkit-transform: translate(20,0px);
+//     -o-transform: translate(20,0px); 
+//     -moz-transform: translate(20,0px);
+//   }
+//   100% {
+//     transform: translate(0,0px);
+//     -webkit-transform: translate(0,0px);
+//     -o-transform: translate(0,0px); 
+//     -moz-transform: translate(0,0px);
+//   }
+// }
+
+@keyframes scrolldown {
+  0% {
+  	background-color: black;
+  	opacity: 1;
+    transform: translate(0,0px);
+    -webkit-transform: translate(0,0px);
+    -o-transform: translate(0,0px); 
+    -moz-transform: translate(0,0px);
+  }
+  25% {
+  	background-color: black;
+  	opacity: 1;
+    transform: translate(0,0px);
+    -webkit-transform: translate(0,0px);
+    -o-transform: translate(0,0px); 
+    -moz-transform: translate(0,0px);
+  }
+  75% {
+  	background-color: white;
+  	opacity: 0;
+    transform: translate(0,75px);
+    -webkit-transform: translate(0,75px);
+    -o-transform: translate(0,75px); 
+    -moz-transform: translate(0,75px);
+  }
+  90% {
+  	background-color: white;
+  	opacity: 0;
+    transform: translate(0,0px);
+    -webkit-transform: translate(0,0px);
+    -o-transform: translate(0,0px); 
+    -moz-transform: translate(0,0px);
+  }
+  100% {
+  	background-color: black;
+  	opacity: 1;
+    transform: translate(0,0px);
+    -webkit-transform: translate(0,0px);
+    -o-transform: translate(0,0px); 
+    -moz-transform: translate(0,0px);
+  }
+}

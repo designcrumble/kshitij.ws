@@ -1,0 +1,350 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 12px;
+	background: 0;
+	// overflow-x: hidden;
+	@include respond-to('medium') {
+		background: 0;
+		font-size: 16px;
+	}
+}
+#contact-bubble {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	a {
+		color: white;
+		background: #17171A;
+		padding: 15px 30px;
+		letter-spacing: 0 !important;
+		border-radius: 2px;
+		font-size: 20px;
+		text-align: center;
+		&:hover {
+			color: #5B6FF9 !important;
+
+		}
+	}
+}
+#project {
+	min-height: 100%;
+	width: 100%;
+	padding-bottom: 100px;
+	.container {
+		height: 100%;
+	}
+
+}
+.project-hero {
+	min-height: 900px;
+	width: 100%;
+	background: black;
+	.container {
+		min-height: 800px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+	.row {
+		width: 100%;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		h1 {
+			line-height: 1.25;
+			margin-bottom: 20px;
+		}
+	}
+	&__image {
+		display: flex;
+		height: 100%;
+		width: 70%;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: auto;
+			min-height: 100%;
+			position:absolute;
+		}
+	}
+
+	.title {
+		color: white;
+		font-size: rem(48px);
+		span {
+			color: white;
+			font-weight: 300;
+		}
+		@include respond-to('medium') {
+			font-size: rem(64px);
+		}
+	}
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		h6 {
+			color: white;
+			margin-right: 2rem;
+			font-size: 14px;
+		}
+		@include respond-to('medium') {
+			font-size: 0.875rem;
+		}
+	}
+	&--olympic {
+		background: url('/olympic-2018/assets/olympic---bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	&--figma {
+		background: url('/figma-freebies/assets/figma--bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	&--fanbytes {
+		background: url('/fanbytes/assets/fanbytes--bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;		
+	}
+	&--stick {
+		background: url('/stick/assets/stick--bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;		
+	}
+}
+.project {
+	&-shots {
+		margin-top: -200px;
+	}
+	&-shot {
+		box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.025);
+		margin-bottom: 40px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+		@include respond-to('medium') {
+			margin-bottom: 120px;
+		}
+	}
+}
+.more-projects {
+	margin-bottom: 0px;
+	.title {
+		font-family: 'Maison Neue Bold';
+		font-style: normal;
+		font-weight: bold;
+		line-height: 23px;
+		font-size: 16px;
+		color: #000000;
+		margin: 0 auto;
+		margin-bottom: 60px;
+		text-transform: uppercase;
+		text-align: center;
+		max-width: 600px;
+		border-top: 1px solid rgba($Light-Slate-Grey, 0.2);
+		padding-top: 100px;
+
+	}
+	&__cards {
+		max-width: 990px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		@include respond-to('medium') {
+			flex-direction: row;
+		}
+
+	}
+	&__card {
+		flex: 1;
+		max-width: 300px;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		margin-bottom: 40px;
+		&:hover {
+			box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.025);
+		}
+		.image {
+			width: 100%;
+			img {
+				max-width: 100%;
+				object-fit: cover;
+			}
+		}
+		.title {
+			border: none;
+			margin: 0;
+			padding: 20px;
+			text-align: left;
+			text-transform: initial;
+			letter-spacing: 0;
+		}
+		@include respond-to('medium') {
+			margin-bottom: 0px;
+		}
+	}
+}
+.project-details {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 60px;
+	margin-bottom: 60px;
+	border-top: 1px solid rgba($Light-Slate-Grey, 0.2);
+	.container {
+		width: 100%;
+	}
+	&__container {
+		max-width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.title {
+		font-family: 'Maison Neue Bold';
+		font-style: normal;
+		font-weight: bold;
+		line-height: 23px;
+		font-size: 16px;
+		color: #000000;
+		margin-bottom: 60px;
+		text-transform: uppercase;
+
+	}
+	.brief-card {
+		margin-bottom: 60px;
+		max-width: 100%;
+		margin-right: 5%;
+		@include respond-to('medium') {
+			max-width: 45%;
+			&:nth-of-type(even) {
+				margin-left: 5%;
+				margin-right: 0;
+			}
+		}
+	}
+	.link a {
+		font-family: Maison Neue;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 29px;
+		font-size: 20px;
+		text-align: center;
+		background: black;
+		width: 100%;
+		min-height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #FFFFFF !important;
+		letter-spacing: 0 !important;
+		&:hover {
+			background: #0029FF !important;
+		}
+	}
+	.type {
+		font-family: 'Maison Neue Bold';
+		font-style: normal;
+		font-weight: bold;
+		line-height: 29px;
+		font-size: 20px;
+		color: #BDBDBD;
+	}
+	.content {
+		font-family: 'Maison Neue Bold';
+		font-style: normal;
+		font-weight: bold;
+		line-height: 29px;
+		font-size: 20px;
+		color: #000000;
+		p {
+			font-family: Maison Neue;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 36px;
+			font-size: 18px;
+			color: #3D3D3D;
+			margin: 40px 0;
+			@include respond-to('medium') {
+				line-height: 32px;
+				font-size: 16px;
+			}
+		}
+	}
+	.field {
+		h2 {
+			margin-top: 0;
+		}
+		h6.label {
+			font-weight: bold;
+			line-height: 48px;
+			font-size: 15px;
+			margin-bottom: 0rem;
+			color: #ADBEC5;
+		}
+	}
+	&--intro {
+		.title {
+			margin-bottom: 0px;
+		}
+		.brief-card {
+			max-width: 100%;
+		}
+	}
+}
+.project-intro {
+	box-shadow: inset 0px -1px 0px rgba(20, 12, 66, 0.05);
+	h6 {
+		font-style: normal;
+		font-weight: bold;
+		line-height: 33px;
+		font-size: 18px;
+		padding: 0;
+		margin-left: 0 !important;
+		text-transform: uppercase;
+		color: #F5D698;
+	}
+	&--solution {
+
+	}
+	.title {
+		padding: 8rem 0;
+		height: 100%;
+		font-weight: 300;
+		line-height: 89px;
+		font-size: 48px;
+		letter-spacing: -0.015em;
+		color: #FF9001;
+		box-shadow: inset 0px 1px 0px #FFAD43;
+	}
+	.detail {
+		padding: 8rem 0;
+		margin-top: 1rem;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 60px !important;
+		font-size: 24px;
+		letter-spacing: -0.015em;
+		color: #000000;
+	}
+}
+.case-study {
+	padding: 8rem 0;
+	img {
+		margin: 8rem 0;
+	}
+}
