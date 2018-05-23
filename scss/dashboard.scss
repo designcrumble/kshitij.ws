@@ -32,7 +32,7 @@
 @import 'themes/admin';
 
 html, body {
-  font-family: 'Avenir Next W01';
+  font-family: $font-family;
   width: 100vw;
   overflow-x: hidden;
 }
