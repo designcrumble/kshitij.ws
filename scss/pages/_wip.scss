@@ -90,6 +90,116 @@
 		margin-top: 235px !important;
 	}
 }
+.job-card {
+	width: 100%;
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	margin-bottom: 40px;
+	background: white;
+	box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05);
+	&__header {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+	&__logo {
+		width: 72px;
+		height: 72px;
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+	&__logo-title-company {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__title-company {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 20px;
+		.title {
+			font-style: normal;
+			font-weight: normal;
+			line-height: 30px;
+			font-size: 24px;
+			color: #000000;
+			margin-bottom: 0;
+		}
+		.company {
+			font-style: normal;
+			font-weight: bold;
+			line-height: 30px;
+			font-size: 16px;
+			color: #737A83;
+			opacity: 0.53;
+		}
+	}
+	&__duration {
+		font-style: normal;
+		font-weight: bold;
+		line-height: 30px;
+		font-size: 16px;
+		color: #B1BCC9;
+	}
+	&__body {
+		font-style: normal;
+		font-weight: normal;
+		line-height: 30px;
+		font-size: 16px;
+		color: #6E7B87;
+		margin: 20px 0;
+	}
+	&__actions {
+		border-top: 1px solid #f3f3f3;
+		padding-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__action {
+		background: #6FE2E5;
+		padding: 10px 25px;
+		font-style: normal;
+		font-weight: bold;
+		line-height: 30px;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #00646A;
+		&:hover {
+			color: white !important;
+		}
+	}
+	&--more {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		background: #fafafa;
+		box-shadow: none;
+		margin-bottom: 0;
+		.job-card__action {
+			text-transform: uppercase !important;
+			background: none !important;
+			&:hover {
+				color: black !important;
+				background: white !important;
+			}
+		}
+	}
+	&__role {
+		font-style: normal;
+		font-weight: normal;
+		line-height: 30px;
+		font-size: 16px;
+		color: #313E4A;
+	}
+
+}
+
 #about-cta {
 	margin-top: 120px;
 }

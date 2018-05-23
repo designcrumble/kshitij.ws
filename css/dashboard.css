@@ -205,6 +205,16 @@
 /*# sourceMappingURL=jquery.fullpage.min.css.map */
 /*------------------------------------*    #UTILS - Color Variables
 \*------------------------------------*/
+.no-padding {
+  padding: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.width-container {
+  max-width: 600px;
+  margin: 0 auto; }
+
 .text-center {
   text-align: center !important; }
 
@@ -290,13 +300,13 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   vertical-align: baseline; }
 
 body {
   font-size: 14px;
-  font-family: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
   @media (min-width: 800px) {
     body {
       font-size: 16px; } }
@@ -308,7 +318,7 @@ body {
 \*------------------------------------*/
 *, html, body {
   font-size: 16px;
-  font-family: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -318,11 +328,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 24px 0;
   color: #140C42;
-  font-family: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.333em;
   font-weight: 400;
   text-align: left;
-  font-family: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-style: normal; }
 
 h1 {
@@ -381,7 +391,7 @@ h5 {
   font-size: 1.66667rem;
   font-weight: bold;
   line-height: normal;
-  font-family: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -1442,14 +1452,17 @@ img {
   padding: 0;
   box-shadow: 0;
   z-index: 10;
-  top: 0;
-  left: 0;
-  height: 120px; }
+  top: 20px;
+  right: 100px; }
+  .header .container {
+    width: 95%; }
   .header-link {
     color: black !important; }
   .header ul {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    display: flex;
+    flex-direction: column; }
   .header li {
     display: inline;
     margin-left: 2em;
@@ -1475,11 +1488,6 @@ img {
     justify-content: space-between; }
     .header__wrapper--mobile {
       justify-content: space-between; }
-  .header__left {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex: 1; }
   .header__center {
     display: flex;
     flex-direction: row;
@@ -1565,6 +1573,8 @@ img {
   @media (min-width: 800px) {
     .header {
       max-width: 100%;
+      width: 10%;
+      position: fixed;
       overflow: hidden; }
       .header__wrapper {
         padding: 0 1rem; }
@@ -2275,7 +2285,7 @@ body {
   #mobile .responsive-image {
     margin-bottom: 40px; }
   #mobile .title {
-    font-family: Maison Neue;
+    font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -2284,7 +2294,7 @@ body {
     text-align: center;
     margin-bottom: 20px; }
   #mobile .desc {
-    font-family: Maison Neue;
+    font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-style: normal;
     font-weight: bold;
     line-height: 20px;
@@ -2301,7 +2311,7 @@ body {
     padding: 20px 40px;
     color: white;
     text-align: center;
-    font-family: "Maison Neue Light", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -2771,7 +2781,7 @@ html, body {
           margin-left: 5%;
           margin-right: 0; } }
   .project-details .link a {
-    font-family: Maison Neue;
+    font-family: 'Maison Neue';
     font-style: normal;
     font-weight: bold;
     line-height: 29px;
@@ -2802,7 +2812,7 @@ html, body {
     font-size: 20px;
     color: #000000; }
     .project-details .content p {
-      font-family: Maison Neue;
+      font-family: "Maison Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-style: normal;
       font-weight: normal;
       line-height: 36px;
@@ -2934,6 +2944,98 @@ html, body {
   @media (min-width: 800px) {
     #about {
       margin-top: 235px !important; } }
+
+.job-card {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background: white;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05); }
+  .job-card__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+  .job-card__logo {
+    width: 72px;
+    height: 72px; }
+    .job-card__logo img {
+      max-width: 100%;
+      object-fit: cover; }
+  .job-card__logo-title-company {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .job-card__title-company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px; }
+    .job-card__title-company .title {
+      font-style: normal;
+      font-weight: normal;
+      line-height: 30px;
+      font-size: 24px;
+      color: #000000;
+      margin-bottom: 0; }
+    .job-card__title-company .company {
+      font-style: normal;
+      font-weight: bold;
+      line-height: 30px;
+      font-size: 16px;
+      color: #737A83;
+      opacity: 0.53; }
+  .job-card__duration {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 16px;
+    color: #B1BCC9; }
+  .job-card__body {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 16px;
+    color: #6E7B87;
+    margin: 20px 0; }
+  .job-card__actions {
+    border-top: 1px solid #f3f3f3;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .job-card__action {
+    background: #6FE2E5;
+    padding: 10px 25px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00646A; }
+    .job-card__action:hover {
+      color: white !important; }
+  .job-card--more {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fafafa;
+    box-shadow: none;
+    margin-bottom: 0; }
+    .job-card--more .job-card__action {
+      text-transform: uppercase !important;
+      background: none !important; }
+      .job-card--more .job-card__action:hover {
+        color: black !important;
+        background: white !important; }
+  .job-card__role {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 16px;
+    color: #313E4A; }
 
 #about-cta {
   margin-top: 120px; }

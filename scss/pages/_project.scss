@@ -238,7 +238,7 @@ html,body {
 		}
 	}
 	.link a {
-		font-family: Maison Neue;
+		font-family: 'Maison Neue';
 		font-style: normal;
 		font-weight: bold;
 		line-height: 29px;
@@ -272,7 +272,7 @@ html,body {
 		font-size: 20px;
 		color: #000000;
 		p {
-			font-family: Maison Neue;
+			font-family: $font-family;
 			font-style: normal;
 			font-weight: normal;
 			line-height: 36px;

@@ -98,7 +98,7 @@ body {
 		margin-bottom: 40px;
 	}
 	.title {
-		font-family: Maison Neue;
+		font-family: $font-family;
 		font-style: normal;
 		font-weight: bold;
 		line-height: normal;
@@ -108,7 +108,7 @@ body {
 		margin-bottom: 20px;
 	}
 	.desc {
-		font-family: Maison Neue;
+		font-family: $font-family;
 		font-style: normal;
 		font-weight: bold;
 		line-height: 20px;
