@@ -27,7 +27,7 @@
 .pace-running .page-content {
     zoom:1;
     filter:alpha(opacity=10);
-    opacity:0.1;
+    opacity:0.01;
 }
 .pace-done .page-content {
     zoom:1;
