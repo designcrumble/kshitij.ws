@@ -24,7 +24,20 @@
   -ms-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
 }
-
+.pace-running .page-content {
+    zoom:1;
+    filter:alpha(opacity=10);
+    opacity:0.1;
+}
+.pace-done .page-content {
+    zoom:1;
+    filter:alpha(opacity=100);
+    opacity:1;
+    -webkit-transition:opacity 1s linear;
+    -moz-transition:opacity 1s linear;
+    -o-transition:opacity 1s linear;
+    transition:opacity 1s linear;
+}
 .pace .pace-progress:after {
   display: block;
   position: absolute;
