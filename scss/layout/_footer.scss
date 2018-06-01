@@ -105,10 +105,13 @@
 		font-style: normal;
 		font-weight: bold;
 		line-height: 104px;
-		font-size: 72px;
+	    font-size: 48px;
 		color: #000000;
 		text-align: center;
 		margin-left: -5px;
+		@include respond-to('medium') {
+			font-size: 72px;
+		}
 	}
 	ul {
 		margin: 60px auto;

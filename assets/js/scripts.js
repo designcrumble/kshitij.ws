@@ -44,14 +44,14 @@ $(document).ready(function () {
 	});
 
 	// Desktop - GIF on Hover
-	const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-	const mobileLink = '<a href="https://dribbble.com/itsKshitij" class="action">BROWSE MY PORTFOLIO ON DRIBBBLE</a>';
+	// const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+	// const mobileLink = '<a href="https://dribbble.com/itsKshitij" class="action">BROWSE MY PORTFOLIO ON DRIBBBLE</a>';
 
-	jQuery(document).ready(function($){
-		if(isMobile) {
-			$('body').replaceWith('<div id="mobile" class="mobile"><div class="container mobile__container"><div class="row"><div class="col-xs-12"><div class="responsive-image"><img src="/assets/img/responsive.png" alt="You shall not pass"></div><div class="title">Mobile Website in Development</div><div class="desc">You can browse the desktop version or comeback again in june 2018</div>' + mobileLink + '</div></div></div></div> ');
-		}
-	});
+	// jQuery(document).ready(function($){
+	// 	if(isMobile) {
+	// 		$('body').replaceWith('<div id="mobile" class="mobile"><div class="container mobile__container"><div class="row"><div class="col-xs-12"><div class="responsive-image"><img src="/assets/img/responsive.png" alt="You shall not pass"></div><div class="title">Mobile Website in Development</div><div class="desc">You can browse the desktop version or comeback again in june 2018</div>' + mobileLink + '</div></div></div></div> ');
+	// 	}
+	// });
 
 });
 

@@ -80,6 +80,7 @@ body {
 }
 #mobile {
 	display: flex;
+	display: none;	
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -153,11 +154,15 @@ body {
 		align-items: center;
 		margin: 0 auto;
 	}
+	&__left, &__right {
+		padding: 0px 40px;
+	}
 	&__left {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
+		padding-top: 4rem;
 
 	}
 	&__right {
@@ -258,6 +263,17 @@ body {
 			left: 0;
 			right: 0;
 			
+		}
+	}
+	@include respond-to('medium') {
+		&__left, &__right {
+			padding: 0px;
+		}
+		&__left {
+			align-items: center;
+		}
+		&__right {
+			padding-top: 4rem;
 		}
 	}
 }
