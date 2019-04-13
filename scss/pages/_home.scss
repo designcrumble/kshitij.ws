@@ -1,0 +1,254 @@
+body {
+}
+.body-container {
+	width: 100%;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+header {
+	padding-top: 100px;
+	position: relative;
+	&:before {
+		position: absolute;
+		top: -30px;
+		right: 10%;
+		border-radius: 100%;
+		content: '';
+		width: 350px;
+		height: 350px;
+		z-index: -1;
+		background: #0E0E0E;
+
+	}
+	&:after {
+		position: absolute;
+		top: 250px;
+		right: 23%;
+		border-radius: 100%;
+		content: '';
+		width: 150px;
+		height: 150px;
+		z-index: 2;
+		background: #0C0C0C;
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+	}
+	h1 {
+		background: -webkit-linear-gradient(0.1deg, #FFFFFF 15.51%, rgba(255, 255, 255, 0) 122.24%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.profile-thumb {
+		max-width: 450px;
+		margin: 150px 0;
+		margin-left: 350px;
+	}
+}
+section {
+	padding: 120px 0;
+	h6 {
+		font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 28px;
+
+color: #FFFFFF
+	}
+	.section-label {
+
+	}
+	.section-title {
+		margin-bottom: 100px;
+	}
+	.section-cta {
+		.btn--tertiary {
+			font-family: Space Mono;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: normal;
+			
+			color: #3B3B3C;
+		}
+	}
+	.section-list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 80px;
+		li {
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 40px;
+			background: #0C0C0C;
+			margin-bottom: 1px;
+		}
+		.list-start {
+			flex: 2;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.icon {
+				margin-right: 20px;
+				border-radius: 4px;
+				border: 1px solid #1c1c1c;
+			}
+		}
+		.list-middle {
+			flex: 5;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: -0.25px;
+			text-align: left;
+			color: #FFFFFF;
+		}
+		.list-end {
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			a {
+				font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 28px;
+text-align: right !important;
+color: #FAFAFA;
+			}
+		}
+		.list-title {
+			font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 28px;
+color: #FFFFFF;
+		}
+	}
+}
+
+.blog {
+	background: #0C0C0C;
+	li {
+		border-bottom: 1px solid #1f1f1f;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.list-start {
+		flex: 0.5 !important;
+	}
+	.list-middle {
+		font-style: normal !important;
+		font-weight: 500 !important;
+		font-size: 18px !important;
+		line-height: normal !important;
+		color: #FFFFFF;
+	}
+}
+
+.case-study {
+	&--blue {
+		background: #0C0C0C;
+		padding-bottom: 0;
+		hr {
+			background: #0C0C0C;
+			height: 3px;
+
+		}
+		h6, h4 {
+			color: white;
+		}
+		.case-study-brief {
+			background: white;
+			padding: 100px;
+			margin-top: 120px;
+			position: relative;
+			.content {
+				margin-left: 420px;
+				width: 350px;
+				a {
+					color: #000789;
+					font-weight: 700;
+					margin-bottom: 30px !important;
+					display: block;
+				}
+				h4 {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 28px;
+					margin: 60px 0;
+					margin-bottom: 30px;
+					color: #0C0C0C;
+				}
+			}
+			.banner {
+				background: #000789;
+				position: absolute;
+				bottom: 20%;
+				left: 5%;
+				padding: 40px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				min-height: 610px;
+				min-width: 375px;
+				justify-content: space-between;
+				.banner-image {
+					max-width: 175px;
+				}
+				a {
+					color: #fff;
+					font-weight: 700;
+				}
+				h3 {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 24px;
+					line-height: normal;
+					text-align: center;	
+					color: #FCFDFE;
+					span {
+						color: #B79B65;
+					}
+				}
+			}
+		}
+	}
+	&--buildfore{
+		margin: 40px;
+		margin-bottom: 0;
+		background: radial-gradient(360.00px at 50% 50%, #FFD233 0%, #FFC700 100%);
+		padding-bottom: 0;
+		h2, h6, h4 {
+			color: #110F0F;
+		}
+		h4 {
+			margin-bottom: 100px;
+		}
+		.prop {
+			position: absolute;
+			top: 50%;
+			left: -10%;
+			max-width: 300px;
+			img {
+				width: 100%;
+				object-fit: cover;
+				height: auto;
+			}
+		}
+		.prop--2 {
+			height: 500px;
+			width: 500px;
+			max-width: 600px;
+			left: 75%;
+			top: 15%;
+		}
+	}
+}
