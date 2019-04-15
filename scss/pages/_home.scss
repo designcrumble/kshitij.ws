@@ -121,6 +121,9 @@ font-size: 14px;
 line-height: 28px;
 text-align: right !important;
 color: #FAFAFA;
+&:hover {
+	color: #FFC700;
+}
 			}
 		}
 		.list-title {
@@ -153,9 +156,51 @@ color: #FFFFFF;
 }
 
 .case-study {
+	&--stick {
+		margin: 40px;
+		background: #32AAFF;
+		padding-bottom: 0;
+		.prop {
+			position: absolute;
+			top: 50%;
+			left: -10%;
+			max-width: 300px;
+			img {
+				width: 100%;
+				object-fit: cover;
+				height: auto;
+			}
+		}
+		.prop--2 {
+			height: 500px;
+			width: 500px;
+			max-width: 600px;
+			left: 75%;
+			top: 15%;
+		}
+		h6, h4, h2{
+			text-align: center;
+			margin: 0 auto;
+		}
+		h6 {
+			margin-bottom: 30px;
+		}
+		h2 {
+			margin-bottom: 15px;
+		}
+		h4 {
+			margin-bottom: 120px;
+		}
+		h2 {
+			color: #110F0F;
+			span {
+				color: white;
+			}
+		}
+	}
 	&--blue {
 		background: #0C0C0C;
-		padding-bottom: 0;
+		padding-bottom: 120px;
 		hr {
 			background: #0C0C0C;
 			height: 3px;

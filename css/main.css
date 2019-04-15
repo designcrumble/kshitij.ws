@@ -4,6 +4,12 @@
 .text-center {
   text-align: center !important; }
 
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
 .center {
   margin: 0 auto !important; }
 
@@ -170,7 +176,8 @@ h2 {
       letter-spacing: -0.45px;
       text-align: left;
       max-width: 630px;
-      color: #FFFFFF; } }
+      color: #FFFFFF;
+      word-spacing: -2px; } }
 
 h3 {
   font-size: 2rem;
@@ -1255,6 +1262,8 @@ section {
         line-height: 28px;
         text-align: right !important;
         color: #FAFAFA; }
+        section .section-list .list-end a:hover {
+          color: #FFC700; }
     section .section-list .list-title {
       font-style: normal;
       font-weight: bold;
@@ -1277,9 +1286,42 @@ section {
     line-height: normal !important;
     color: #FFFFFF; }
 
+.case-study--stick {
+  margin: 40px;
+  background: #32AAFF;
+  padding-bottom: 0; }
+  .case-study--stick .prop {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    max-width: 300px; }
+    .case-study--stick .prop img {
+      width: 100%;
+      object-fit: cover;
+      height: auto; }
+  .case-study--stick .prop--2 {
+    height: 500px;
+    width: 500px;
+    max-width: 600px;
+    left: 75%;
+    top: 15%; }
+  .case-study--stick h6, .case-study--stick h4, .case-study--stick h2 {
+    text-align: center;
+    margin: 0 auto; }
+  .case-study--stick h6 {
+    margin-bottom: 30px; }
+  .case-study--stick h2 {
+    margin-bottom: 15px; }
+  .case-study--stick h4 {
+    margin-bottom: 120px; }
+  .case-study--stick h2 {
+    color: #110F0F; }
+    .case-study--stick h2 span {
+      color: white; }
+
 .case-study--blue {
   background: #0C0C0C;
-  padding-bottom: 0; }
+  padding-bottom: 120px; }
   .case-study--blue hr {
     background: #0C0C0C;
     height: 3px; }
