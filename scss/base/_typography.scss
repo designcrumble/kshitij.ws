@@ -88,7 +88,6 @@ h1 {
 
     color: #ffffff;
     @include respond-to('medium'){
-        font-family: ITC Avant Garde Gothic Pro;
         font-style: normal;
         font-weight: bold;
         font-size: 50px;
@@ -106,7 +105,6 @@ h2 {
     letter-spacing: 0.01em;
     text-align: center;
     @include respond-to('medium'){
-        font-family: ITC Avant Garde Gothic Pro;
         font-style: normal;
         font-weight: bold;
         font-size: 64px;

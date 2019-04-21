@@ -24,7 +24,7 @@ header {
 	}
 	&:after {
 		position: absolute;
-		top: 250px;
+		top: 200px;
 		right: 23%;
 		border-radius: 100%;
 		content: '';
@@ -87,6 +87,28 @@ color: #FFFFFF
 			padding: 40px;
 			background: #0C0C0C;
 			margin-bottom: 1px;
+			transform: will-animate;
+			box-shadow: will-animate;
+			transition: all .2s cubic-bezier(.51,.92,.24,1.15);
+			&::after {
+				box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+				opacity: 0;
+				transition: opacity 0.3s ease-in-out;
+			  }
+			&:hover {
+				transform: scale(1.05);
+				box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+				border-bottom: 1px solid transparent;
+				cursor: pointer;	
+				.section-list li::after {
+					opacity: 1;
+				}
+				.list-end {
+					a {
+						color: #FFC700;
+					}
+				}
+			}
 		}
 		.list-start {
 			flex: 2;
@@ -116,22 +138,22 @@ color: #FFFFFF
 			justify-content: flex-end;
 			a {
 				font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 28px;
-text-align: right !important;
-color: #FAFAFA;
-&:hover {
-	color: #FFC700;
-}
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 28px;
+				text-align: right !important;
+				color: #FAFAFA;
+				&:hover {
+					color: #FFC700;
+				}
 			}
 		}
 		.list-title {
 			font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 28px;
-color: #FFFFFF;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 28px;
+			color: #FFFFFF;
 		}
 	}
 }
@@ -140,8 +162,7 @@ color: #FFFFFF;
 	background: #0C0C0C;
 	li {
 		border-bottom: 1px solid #1f1f1f;
-		padding-left: 0 !important;
-		padding-right: 0 !important;
+
 	}
 	.list-start {
 		flex: 0.5 !important;
@@ -154,15 +175,65 @@ color: #FFFFFF;
 		color: #FFFFFF;
 	}
 }
+.ventures {
+	&__header {
+		position: relative;
+		.venture-graphic {
 
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 200px;
+			transition: all 0.35s cubic-bezier(.51,.92,.24,1.15);
+		}
+	}
+}
 .case-study {
+	position: relative;
+	.cta-button {
+		display: none;
+		bottom: 40px;
+		left: 46%;
+		position: absolute;
+		padding: 15px 30px;
+		border-radius: 50px;
+		z-index: 10;
+		background: black;
+		color: white;
+		font-size: 14px;
+		line-height: 1;
+		padding-top: 18px;
+		font-weight: 500;
+		letter-spacing: -0.01em;
+	}
+	&:hover {
+		.cta-button {
+			display: block;
+		}
+	}
+}
+.case-study {
+	h2.bolt-heading {
+		span {
+			background: url(/assets/img/bolt-text-bg.png);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: cover;
+		}
+	}
 	&--stick {
 		margin: 40px;
 		background: #32AAFF;
 		padding-bottom: 0;
+		position: relative;
+		&:hover {
+			.cta-button {
+				display: block;
+			}
+		}
 		.prop {
 			position: absolute;
-			top: 50%;
+			top: 30%;
 			left: -10%;
 			max-width: 300px;
 			img {
@@ -172,11 +243,11 @@ color: #FFFFFF;
 			}
 		}
 		.prop--2 {
-			height: 500px;
-			width: 500px;
+			height: 350px;
+			width: 350px;
 			max-width: 600px;
-			left: 75%;
-			top: 15%;
+			left: 85%;
+			top: 55%;
 		}
 		h6, h4, h2{
 			text-align: center;
@@ -195,6 +266,31 @@ color: #FFFFFF;
 			color: #110F0F;
 			span {
 				color: white;
+			}
+		}
+	}
+	&--studiotime {
+		background: black;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+
+		h4 {
+			color: white;
+		}
+		h2 {
+			color: #414141;
+		}
+		.prop--2 {
+			max-width: 450px !important;
+			top: unset;
+			width: 590px !important;
+			height: 500px !important;
+			left: 85% !important;
+			bottom: 0% !important;
+			img {
+				object-fit: contain;
+				max-height: 100%;
 			}
 		}
 	}
@@ -261,6 +357,36 @@ color: #FFFFFF;
 					color: #FCFDFE;
 					span {
 						color: #B79B65;
+					}
+				}
+			}
+		}
+	}
+	&--sideway {
+		.case-study-brief {
+			.content {
+				a {
+					color: #A61D55;
+				}
+			}
+			.banner {
+				background: #551854;
+				position: absolute;
+				bottom: 20%;
+				left: 5%;
+				padding: 40px 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				min-height: 610px;
+				min-width: 375px;
+				justify-content: space-between;
+				.banner-image {
+					max-width: 375px;
+				}
+				h3 {
+					span {
+						color: #FFB400;
 					}
 				}
 			}
