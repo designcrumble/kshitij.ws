@@ -146,9 +146,9 @@ h1 {
   font-size: 2rem;
   font-family: "ITC Avant Garde Gothic Pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  line-height: 3.625rem;
-  font-size: 1.875rem;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
   color: #ffffff; }
   @media (min-width: 768px) {
     h1 {
@@ -158,13 +158,15 @@ h1 {
       line-height: 53px; } }
 
 h2 {
-  font-size: 2.30769rem;
   font-style: normal;
-  font-weight: 300;
-  line-height: 3.1875rem;
-  font-size: 2.25rem;
-  letter-spacing: 0.01em;
-  text-align: center; }
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.45px;
+  text-align: left;
+  max-width: 630px;
+  color: #FFFFFF;
+  word-spacing: -2px; }
   @media (min-width: 768px) {
     h2 {
       font-style: normal;
@@ -1071,16 +1073,18 @@ img {
     order: 1; } }
 
 footer {
-  background: radial-gradient(762.01px at 50.12% 50.39%, rgba(13, 13, 13, 0.8) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #0c0c0c 0%, #161616 100%), #121212;
-  padding: 120px 0;
+  padding: 60px 20px;
   padding-bottom: 40px; }
   footer .footer-label {
     margin-bottom: 80px;
     color: white; }
-  footer .footer-copy {
-    line-height: 64px; }
-    footer .footer-copy span {
-      color: #FFC700; }
+  @media (min-width: 768px) {
+    footer h2 {
+      line-height: 64px; } }
+  footer .footer-copy span {
+    color: #FFC700;
+    color: #167aff;
+    text-decoration: underline; }
   footer .footer-links {
     margin-top: 80px; }
     footer .footer-links h4 {
@@ -1104,6 +1108,9 @@ footer {
           color: #FAFAFA; }
         footer .footer-links ul li:last-of-type a {
           margin-right: 0; }
+  @media (min-width: 768px) {
+    footer {
+      padding: 120px 0; } }
 
 button {
   border: none;
@@ -1114,7 +1121,7 @@ button {
 
 .nav {
   position: absolute;
-  top: 100px;
+  top: 40px;
   left: 0;
   right: 0;
   width: 100%;
@@ -1122,7 +1129,8 @@ button {
   display: flex;
   flex-direction: center;
   align-items: center;
-  z-index: 10; }
+  z-index: 10;
+  padding: 20px; }
   .nav .left {
     display: flex;
     flex-direction: column;
@@ -1135,10 +1143,17 @@ button {
       font-size: 14px;
       line-height: normal;
       color: #969696;
-      margin-top: 10px; }
+      display: flex;
+      align-items: center; }
       .nav .left .current-activity span {
         font-weight: 900;
-        color: white; }
+        color: white;
+        margin: 0 4px; }
+    .nav .left #currentActivityIcon {
+      padding-top: 4px;
+      max-width: 32px; }
+    .nav .left #currentActivity {
+      margin: 0; }
   .nav .nav-link.logo {
     font-style: normal;
     font-weight: bold;
@@ -1158,6 +1173,38 @@ button {
         mix-blend-mode: color-dodge; }
   .nav .right {
     display: flex; }
+    .nav .right a {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: normal;
+      text-align: center;
+      background: rgba(31, 33, 37, 0.4);
+      border-radius: 25px;
+      padding: 16px 24px;
+      padding-top: 18px;
+      color: #F7FAFA;
+      transition: all 0.2s ease-in-out; }
+      .nav .right a:hover {
+        background: black; }
+  @media (min-width: 768px) {
+    .nav {
+      top: 100px; } }
+
+/* Here is the animation (keyframes) */
+@keyframes fading {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+::-moz-selection {
+  background: #009FE2;
+  color: #003580; }
+
+::selection {
+  background: #009FE2;
+  color: #003580; }
 
 .body-container {
   width: 100%;
@@ -1200,7 +1247,7 @@ header {
     margin-left: 350px; }
 
 section {
-  padding: 120px 0; }
+  padding: 60px 0; }
   section h6 {
     font-style: normal;
     font-weight: bold;
@@ -1229,7 +1276,7 @@ section {
       align-items: center;
       justify-content: space-between;
       padding: 40px;
-      background: #0C0C0C;
+      background: #08090B;
       margin-bottom: 1px;
       transform: will-animate;
       box-shadow: will-animate;
@@ -1285,19 +1332,22 @@ section {
       font-size: 20px;
       line-height: 28px;
       color: #FFFFFF; }
+  @media (min-width: 768px) {
+    section {
+      padding: 120px 0; } }
 
-.blog {
-  background: #0C0C0C; }
-  .blog li {
-    border-bottom: 1px solid #1f1f1f; }
-  .blog .list-start {
-    flex: 0.5 !important; }
-  .blog .list-middle {
-    font-style: normal !important;
-    font-weight: 500 !important;
-    font-size: 18px !important;
-    line-height: normal !important;
-    color: #FFFFFF; }
+.blog li {
+  margin-bottom: 2px; }
+
+.blog .list-start {
+  flex: 0.5 !important; }
+
+.blog .list-middle {
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: normal !important;
+  color: #FFFFFF; }
 
 .ventures__header {
   position: relative; }
@@ -1374,7 +1424,7 @@ section {
   background: black;
   padding-bottom: 0;
   margin-bottom: 0;
-  margin-top: 0; }
+  margin: 0; }
   .case-study--studiotime h4 {
     color: white; }
   .case-study--studiotime h2 {
@@ -1391,7 +1441,6 @@ section {
       max-height: 100%; }
 
 .case-study--blue {
-  background: #0C0C0C;
   padding-bottom: 120px; }
   .case-study--blue hr {
     background: #0C0C0C;
@@ -1491,6 +1540,111 @@ section {
     left: 75%;
     top: 15%; }
 
+.body-web-dark {
+  background-color: #101318; }
+
+#web h1 {
+  color: white;
+  background: none;
+  -webkit-text-fill-color: unset;
+  max-width: 650px; }
+
+#web header .flex-col-start {
+  padding: 20px; }
+  #web header .flex-col-start h6 {
+    margin-bottom: 10px; }
+
+#web header::after, #web header::before {
+  display: none; }
+
+@media (min-width: 768px) {
+  #web header .flex-col-start {
+    padding: 0px; } }
+
+#web footer {
+  background: none; }
+
+#web .client-work {
+  padding: 60px 20px; }
+  #web .client-work h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #F5F5F5;
+    margin-bottom: 5px; }
+  #web .client-work__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  #web .client-work-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.3); }
+    #web .client-work-card:nth-of-type(odd) {
+      margin-left: 0; }
+    #web .client-work-card:nth-of-type(even) {
+      margin-right: 0; }
+    #web .client-work-card .top {
+      flex: 1;
+      padding: 10px 15px; }
+      #web .client-work-card .top span {
+        font-weight: lighter; }
+      @media (min-width: 768px) {
+        #web .client-work-card .top {
+          padding: 10px 20px; } }
+    #web .client-work-card .middle {
+      flex: 3; }
+    #web .client-work-card .bottom {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      padding-right: 0; }
+      #web .client-work-card .bottom .tags {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #F5F5F5; }
+      #web .client-work-card .bottom a {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: normal;
+        text-align: center;
+        background: #1F2125;
+        border-radius: 25px;
+        padding: 8px 16px;
+        padding-top: 10px;
+        color: #F7FAFA;
+        transition: all 0.2s ease-in-out; }
+        #web .client-work-card .bottom a:hover {
+          background: black; }
+      @media (min-width: 768px) {
+        #web .client-work-card .bottom {
+          padding: 20px;
+          padding-right: 0; } }
+  @media (min-width: 768px) {
+    #web .client-work h3 {
+      font-size: 30px;
+      line-height: 32px;
+      width: 80%;
+      margin-bottom: 15px; }
+    #web .client-work-card {
+      width: calc(50% - 40px);
+      margin: 60px 20px; }
+      #web .client-work-card:nth-of-type(odd) {
+        margin-left: 0; }
+      #web .client-work-card:nth-of-type(even) {
+        margin-right: 0; } }
+
 html, body {
   width: 100%;
   background: none; }
@@ -1501,4 +1655,5 @@ html {
 body {
   min-height: 100%;
   background: white;
-  background: #121212; }
+  background: #121212;
+  background: #101318; }

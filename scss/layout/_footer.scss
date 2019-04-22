@@ -1,16 +1,21 @@
 footer {
-    background: radial-gradient(762.01px at 50.12% 50.39%, rgba(13, 13, 13, 0.8) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #0c0c0c 0%, #161616 100%), #121212;
     
-    padding: 120px 0;
+    padding: 60px 20px;
     padding-bottom: 40px;
     .footer-label {
         margin-bottom: 80px;
         color: white;
     }
+    h2 {
+        @include respond-to('medium') {
+            line-height: 64px;
+        }
+    }
     .footer-copy {
-        line-height: 64px;
         span {
             color: #FFC700;
+            color: #167aff;
+            text-decoration: underline;
         }
     }
     .footer-links {
@@ -44,5 +49,8 @@ footer {
                 }
             }
         }
+    }
+    @include respond-to('medium') {
+        padding: 120px 0;
     }
 }

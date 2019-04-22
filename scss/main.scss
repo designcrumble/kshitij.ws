@@ -26,6 +26,7 @@
 @import 'components/animations';
 
 @import 'pages/home';
+@import 'pages/web';
 
 @import 'themes/theme';
 @import 'themes/admin';
@@ -42,5 +43,5 @@ body {
 	min-height: 100%;
 	background: white;
 	background: #121212;
-	// background: #101318;
+	background: #101318;
 }

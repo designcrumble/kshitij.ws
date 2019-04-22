@@ -1,3 +1,7 @@
+::-moz-selection { background: #009FE2;
+color: #003580; }
+::selection { background: #009FE2;
+color: #003580; }
 body {
 }
 .body-container {
@@ -46,7 +50,7 @@ header {
 	}
 }
 section {
-	padding: 120px 0;
+	padding: 60px 0;
 	h6 {
 		font-style: normal;
 font-weight: bold;
@@ -85,7 +89,7 @@ color: #FFFFFF
 			align-items: center;
 			justify-content: space-between;
 			padding: 40px;
-			background: #0C0C0C;
+			background: #08090B;
 			margin-bottom: 1px;
 			transform: will-animate;
 			box-shadow: will-animate;
@@ -156,12 +160,14 @@ color: #FFFFFF
 			color: #FFFFFF;
 		}
 	}
+	@include respond-to(medium) {
+		padding: 120px 0;
+	}
 }
 
 .blog {
-	background: #0C0C0C;
 	li {
-		border-bottom: 1px solid #1f1f1f;
+		margin-bottom: 2px;
 
 	}
 	.list-start {
@@ -179,7 +185,7 @@ color: #FFFFFF
 	&__header {
 		position: relative;
 		.venture-graphic {
-
+			
 			position: absolute;
 			right: 0;
 			top: 0;
@@ -273,7 +279,7 @@ color: #FFFFFF
 		background: black;
 		padding-bottom: 0;
 		margin-bottom: 0;
-		margin-top: 0;
+		margin: 0;
 
 		h4 {
 			color: white;
@@ -295,7 +301,7 @@ color: #FFFFFF
 		}
 	}
 	&--blue {
-		background: #0C0C0C;
+
 		padding-bottom: 120px;
 		hr {
 			background: #0C0C0C;

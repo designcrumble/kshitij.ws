@@ -1,6 +1,6 @@
 .nav {
 	position: absolute;
-	top: 100px;
+	top: 40px;
 	left: 0;
 	right: 0;
 	width: 100%;
@@ -9,6 +9,7 @@
 	flex-direction: center;
 	align-items: center;
 	z-index: 10;
+	padding: 20px;
 	.left {
 		display: flex;
 		flex-direction: column;
@@ -21,11 +22,20 @@
 			font-size: 14px;
 			line-height: normal;
 			color: #969696;
-			margin-top: 10px;
+			display: flex;
+    		align-items: center;
 			span {
 				font-weight: 900;
 				color: white;
+				margin: 0 4px;
 			}
+		}
+		#currentActivityIcon {
+			padding-top: 4px;
+			max-width: 32px;
+		}
+		#currentActivity {
+			margin: 0;
 		}
 	}
 	.nav-link.logo {
@@ -55,5 +65,24 @@
 	}
 	.right {
 		display: flex;
+		a {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: normal;
+			text-align: center;
+			background: rgba(#1F2125, 0.4);
+			border-radius: 25px;
+			padding: 16px 24px;
+			padding-top: 18px;
+			color: #F7FAFA;
+			transition: all 0.2s ease-in-out;
+			&:hover {
+				background: black;
+			}
+		}
+	}
+	@include respond-to('medium') {
+		top: 100px;
 	}
 }
