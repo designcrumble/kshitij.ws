@@ -1127,7 +1127,7 @@ button {
   width: 100%;
   height: 80px;
   display: flex;
-  flex-direction: center;
+  flex-direction: column;
   align-items: center;
   z-index: 10;
   padding: 20px; }
@@ -1174,22 +1174,33 @@ button {
   .nav .right {
     display: flex; }
     .nav .right a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       font-style: normal;
       font-weight: bold;
-      font-size: 14px;
-      line-height: normal;
-      text-align: center;
-      background: rgba(31, 33, 37, 0.4);
-      border-radius: 25px;
-      padding: 16px 24px;
-      padding-top: 18px;
-      color: #F7FAFA;
-      transition: all 0.2s ease-in-out; }
+      font-size: 16px;
+      line-height: 28px;
+      color: #2F363F;
+      transition: all 0.2s ease-in-out;
+      line-height: 1; }
+      .nav .right a span {
+        margin: 0 8px;
+        color: #2F363F; }
+      .nav .right a .icon {
+        margin-top: -2px; }
+      .nav .right a span.lead-icon {
+        margin-left: 0; }
+      .nav .right a span.following-icon {
+        margin-right: 0;
+        margin-left: 8px; }
       .nav .right a:hover {
-        background: black; }
+        text-decoration: underline; }
   @media (min-width: 768px) {
     .nav {
-      top: 100px; } }
+      top: 100px; }
+      .nav .right a {
+        display: flex; } }
 
 /* Here is the animation (keyframes) */
 @keyframes fading {
@@ -1549,17 +1560,20 @@ section {
   -webkit-text-fill-color: unset;
   max-width: 650px; }
 
-#web header .flex-col-start {
-  padding: 20px; }
-  #web header .flex-col-start h6 {
-    margin-bottom: 10px; }
-
-#web header::after, #web header::before {
-  display: none; }
-
-@media (min-width: 768px) {
+#web header {
+  padding-top: 140px; }
   #web header .flex-col-start {
-    padding: 0px; } }
+    padding: 0 20px; }
+    #web header .flex-col-start h6 {
+      margin-bottom: 10px;
+      padding-top: 80px; }
+  #web header::after, #web header::before {
+    display: none; }
+  @media (min-width: 768px) {
+    #web header {
+      padding-top: 240px; }
+      #web header .flex-col-start {
+        padding: 0px; } }
 
 #web footer {
   background: none; }
@@ -1604,12 +1618,14 @@ section {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 15px;
-      padding-right: 0; }
+      padding: 20px 15px;
+      padding-right: 0;
+      padding-left: 0; }
       #web .client-work-card .bottom .tags {
         font-style: normal;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 11px;
+        flex: 1;
         line-height: 13px;
         text-transform: uppercase;
         color: #F5F5F5; }
@@ -1630,7 +1646,9 @@ section {
       @media (min-width: 768px) {
         #web .client-work-card .bottom {
           padding: 20px;
-          padding-right: 0; } }
+          padding-right: 0; }
+          #web .client-work-card .bottom .tags {
+            font-size: 13px; } }
   @media (min-width: 768px) {
     #web .client-work h3 {
       font-size: 30px;

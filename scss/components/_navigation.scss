@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 80px;
 	display: flex;
-	flex-direction: center;
+	flex-direction: column;
 	align-items: center;
 	z-index: 10;
 	padding: 20px;
@@ -66,23 +66,42 @@
 	.right {
 		display: flex;
 		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 14px;
-			line-height: normal;
-			text-align: center;
-			background: rgba(#1F2125, 0.4);
-			border-radius: 25px;
-			padding: 16px 24px;
-			padding-top: 18px;
-			color: #F7FAFA;
+			font-size: 16px;
+			line-height: 28px;
+			color: #2F363F;
 			transition: all 0.2s ease-in-out;
+			line-height: 1;
+			span {
+				margin: 0 8px;
+				color: #2F363F;
+			}
+			.icon {
+				margin-top: -2px;
+			}
+			span.lead-icon {
+				margin-left: 0;
+			}
+			span.following-icon {
+				margin-right: 0;
+				margin-left: 8px;
+			}
 			&:hover {
-				background: black;
+				text-decoration: underline;
 			}
 		}
 	}
 	@include respond-to('medium') {
 		top: 100px;
+		.right {
+			a {
+				display: flex;
+
+			}
+		}
 	}
 }

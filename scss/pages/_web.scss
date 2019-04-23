@@ -9,16 +9,19 @@
         max-width: 650px;
     }
     header {
+        padding-top: 140px;
         .flex-col-start {
-            padding: 20px ;
+            padding: 0 20px ;
             h6 {
                 margin-bottom: 10px;
+                padding-top: 80px;
             }
         }
         &::after, &::before {
             display: none;
         }
         @include respond-to('medium') {
+            padding-top: 240px;
             .flex-col-start {
                 padding: 0px;
             }
@@ -74,12 +77,14 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                padding: 10px 15px;
+                padding: 20px 15px;
                 padding-right: 0;
+                padding-left: 0;
                 .tags {
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 13px;
+                    font-size: 11px;
+                    flex: 1;
                     line-height: 13px;
                     text-transform: uppercase;
                     color: #F5F5F5;
@@ -103,6 +108,9 @@
                 @include respond-to('medium') {
                     padding: 20px;
                     padding-right: 0;
+                    .tags {
+                        font-size: 13px;
+                    }
                 }
             }
         }
