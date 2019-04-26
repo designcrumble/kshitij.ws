@@ -3,3 +3,11 @@
     0% { opacity: 1; }
     100% { opacity: 0; }
 }
+
+
+//Transitions
+.anim-fade-in {
+    opacity: 1 !important;
+    transform: translateY(20px) !important;
+    transition: opacity 0.2s ease-out, transform 0.2s !important;
+}

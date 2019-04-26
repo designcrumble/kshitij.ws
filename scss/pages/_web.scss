@@ -89,7 +89,7 @@
                     text-transform: uppercase;
                     color: #F5F5F5;
                 }
-                a {
+                a.btn--text {
                     font-style: normal;
                     font-weight: bold;
                     font-size: 12px;
@@ -118,7 +118,7 @@
             h3 {
                 font-size: 30px;
                 line-height: 32px;
-                width: 80%;
+                width: 90%;
                 margin-bottom: 15px;
             }
             &-card {

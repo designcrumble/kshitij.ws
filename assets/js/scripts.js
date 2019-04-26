@@ -1,4 +1,21 @@
-$(document).ready(function() {
+$('.body-container').hide(); // hide body-container while rendering
+
+$(document).ready(function(){ // When page is fully loaded...
+
+    // Preloader
+    $('.preloader').hide(); // hide preloader
+    $('.body-container').show(); // and show body-container
+
+	// Scroll Reveal
+	window.sr = ScrollReveal();
+
+	function divreveal() {
+	  sr.reveal('div', { container: sections, duration: 2000, scale: 1, distance: '30px' });
+	  // sr.reveal('div', { container: footer, duration: 2000, scale: 1, distance: '30px' });
+	  // ds.reveal('div', { duration: 2000, scale: 1, distance: '30px' });
+    }
+    sr.reveal('section div', {duration: 1000, scale: 1, distance: '30px', viewFactor: 0.05, });
+
 
     // CurrentActivity Function every 3 seconds
         // ToDo: Play  a sound when activity changes. Add Icon before currently
@@ -64,16 +81,44 @@ $(document).ready(function() {
     // ToDo: Animate in the elements
     $(".ventures #venture-sideway").hover(function() {
         $( '.venture-graphic img' ).attr("src","/assets/img/ventures/sideway.png");
+        $( '.venture-graphic img' ).css('translateY',"-50px");
     });
     $(".ventures #venture-bolt").hover(function() {
+        $( '.venture-graphic' ).css({
+            'opacity': 0,
+        });
         $( '.venture-graphic img' ).attr("src","/assets/img/ventures/bolt.png");
+        $( '.venture-graphic' ).addClass("anim-fade-in");
     });
     $(".ventures #venture-flexplates").hover(function() {
         $( '.venture-graphic img' ).attr("src","/assets/img/ventures/flexplates.png");
+        $( '.venture-graphic img' ).css('translateY',"-50px");
     });
     $(".ventures #venture-figmafreebies").hover(function() {
         $( '.venture-graphic img' ).attr("src","/assets/img/ventures/figmafreebies.png");
+        $( '.venture-graphic img' ).css('translateY',"-50px");
     });
 
 
  });
+
+
+//Snackbar - Notification
+function showSnackbar(value) {
+
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    x.innerHTML = value;
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+
+// onResize animation
+$(window).resize(function() {
+
+});

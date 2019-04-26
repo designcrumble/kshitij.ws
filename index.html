@@ -13,8 +13,42 @@
 	<link rel="icon" href="assets/img/favicon.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<noscript>
+			<style>
+				body {
+					opacity: 1;
+				}
+			</style>
+		</noscript>
+		<!-- load and instantiate ScrollReveal first -->
+		<script src="assets/js/scrollreveal.min.js"></script> 
+		<script>
+			window.sr = ScrollReveal();
+	
+			// Add class to <html> if ScrollReveal is supported 
+			// Note: this method is deprecated, and only works in version 3 
+			if (sr.isSupported()) {
+				document.documentElement.classList.add('sr');
+			}
+	
+		</script> 
+	
+		<style>
+	
+			/* Ensure elements load hidden before ScrollReveal runs */
+			.sr .fooReveal { visibility: hidden; }
+	
+		</style>
 </head>
 <body>
+	<div class='preloader'>
+			<div class='text-container'>
+				<span>Sicker</span>
+				<span>Than Your</span>
+				<span>Average.</span>
+			</div>
+		<div class='small'></div>
+	</div>
 	<div class="body-container">
 		<nav class="nav">
 			<div class="container">
@@ -315,7 +349,7 @@
 														<a href="#">ABOUT ME</a>
 													</li>
 													<li>
-														<a href="#">WORK</a>
+														<a href="/web.html">WORK</a>
 													</li>
 													<li>
 														<a href="#">WIP</a>
@@ -332,7 +366,43 @@
 					</footer>
 		</main>
 	</div>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script>
+	function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /*loop through a collection of all HTML elements:*/
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+	    elmnt = z[i];
+	    /*search for elements with a certain atrribute:*/
+	    file = elmnt.getAttribute("w3-include-html");
+	    if (file) {
+	      /*make an HTTP request using the attribute value as the file name:*/
+	      xhttp = new XMLHttpRequest();
+	      xhttp.onreadystatechange = function() {
+	        if (this.readyState == 4) {
+	          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+	          if (this.status == 404) {elmnt.innerHTML = "Block not found.";}
+	          /*remove the attribute, and call this function once more:*/
+	          elmnt.removeAttribute("w3-include-html");
+	          includeHTML();
+	        }
+	      } 
+	      xhttp.open("GET", file, true);
+	      xhttp.send();
+	      /*exit the function:*/
+	      return;
+	    }
+	  }
+	}
+	</script>
+	<script>
+	includeHTML();
+	</script>
 	<script src="/assets/js/jquery-3.4.0.min.js"></script>
+
+	<script src="/assets/js/jquery.blast.min.js"></script>
+	<script src="/assets/js/TweenMax.min.js"></script>
 	<script src="/assets/js/scripts.js"></script>
 </body>
 </html>

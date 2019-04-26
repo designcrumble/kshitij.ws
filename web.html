@@ -13,8 +13,42 @@
 	<link rel="icon" href="assets/img/favicon.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<noscript>
+			<style>
+				body {
+					opacity: 1;
+				}
+			</style>
+		</noscript>
+		<!-- load and instantiate ScrollReveal first -->
+		<script src="assets/js/scrollreveal.min.js"></script> 
+		<script>
+			window.sr = ScrollReveal();
+	
+			// Add class to <html> if ScrollReveal is supported 
+			// Note: this method is deprecated, and only works in version 3 
+			if (sr.isSupported()) {
+				document.documentElement.classList.add('sr');
+			}
+	
+		</script> 
+	
+		<style>
+	
+			/* Ensure elements load hidden before ScrollReveal runs */
+			.sr .fooReveal { visibility: hidden; }
+	
+		</style>
 </head>
 <body class="body-web-dark" id="web">
+		<div class='preloader'>
+				<div class='text-container'>
+					<span>Sicker</span>
+					<span>Than Your</span>
+					<span>Average.</span>
+				</div>
+			<div class='small'></div>
+		</div>
 	<div class="body-container">
 		<nav class="nav">
 			<div class="container">
@@ -103,7 +137,7 @@
 												<a target="_blank" href="https://interactive.olympicchannel.com/torch/" class="btn--text">Visit Web</a>
 											</div>
 										</div>
-		
+										
 										<div class="client-work-card">
 												<div class="top">
 														<h3>SlatPlanner <span>— Physical and Digital Planning</span></h3>
@@ -117,6 +151,23 @@
 													</span>
 													<a target="_blank" href="#" class="btn--text">Visit Web</a>
 												</div>
+											</div>
+
+											<div class="client-work-card">
+												<a target="_blank" href="https://useworkflow.com/" class="">
+												<div class="top">
+														<h3>Workflow<span>— An easier way to build better homes.</span></h3>
+													</div>
+													<div class="middle">
+														<img src="/assets/img/web/workflow-thumb.png" alt="thumb">
+													</div>
+												<div class="bottom">
+													<span class="tags">
+															UI/UX Design • Art Direction • Web Dev
+													</span>
+													<a target="_blank" href="https://useworkflow.com/" class="btn--text">Visit Web</a>
+												</div>
+												</a>
 											</div>
 							</div>
 						</div>
