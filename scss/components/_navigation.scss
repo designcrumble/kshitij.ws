@@ -106,3 +106,38 @@
 		}
 	}
 }
+
+
+//hamburger
+.hamburger-nav {
+
+	.hamburger-menu {
+		position: fixed;
+		width: 48px;
+		height: 48px;
+		background: black;
+		z-index: 21;
+		border-radius: 100%;
+		top: calc(50% - 24px);
+		left: 24px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 12px;
+	}
+	.nav-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: white;
+		z-index: 20;
+
+	}
+}

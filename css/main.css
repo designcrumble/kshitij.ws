@@ -1287,6 +1287,34 @@ button {
       .nav .right a {
         display: flex; } }
 
+.hamburger-nav .hamburger-menu {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background: black;
+  z-index: 21;
+  border-radius: 100%;
+  top: calc(50% - 24px);
+  left: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px; }
+
+.hamburger-nav .nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 20; }
+
 /* Here is the animation (keyframes) */
 @keyframes fading {
   0% {
@@ -1298,6 +1326,33 @@ button {
   opacity: 1 !important;
   transform: translateY(20px) !important;
   transition: opacity 0.2s ease-out, transform 0.2s !important; }
+
+#dontLeave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background-color: #0C0E12; }
+  #dontLeave h1 {
+    color: white;
+    font-size: 14vmin;
+    font-weight: 500; }
+  #dontLeave h6 {
+    position: absolute;
+    bottom: 4vmax; }
+  #dontLeave h6.second {
+    color: white;
+    font-weight: 500; }
+  #dontLeave h6.first {
+    bottom: 6vmax; }
 
 ::-moz-selection {
   background: #009FE2;
@@ -1496,7 +1551,8 @@ section {
     position: absolute;
     top: 30%;
     left: -10%;
-    max-width: 300px; }
+    max-width: 300px;
+    z-index: 3; }
     .case-study--stick .prop img {
       width: 100%;
       object-fit: cover;
@@ -1536,7 +1592,8 @@ section {
     width: 590px !important;
     height: 500px !important;
     left: 85% !important;
-    bottom: 0% !important; }
+    bottom: 0% !important;
+    z-index: 3; }
     .case-study--studiotime .prop--2 img {
       object-fit: contain;
       max-height: 100%; }
@@ -1629,7 +1686,8 @@ section {
     position: absolute;
     top: 50%;
     left: -10%;
-    max-width: 300px; }
+    max-width: 300px;
+    z-index: 3; }
     .case-study--buildfore .prop img {
       width: 100%;
       object-fit: cover;

@@ -122,3 +122,13 @@ function showSnackbar(value) {
 $(window).resize(function() {
 
 });
+
+
+//Navigation 
+$( ".hamburger-menu" ).click(function() {
+    $( ".menu" ).slideToggle( "slow", function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+    });
+});
+    

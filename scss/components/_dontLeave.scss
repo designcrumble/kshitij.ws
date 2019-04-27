@@ -1,0 +1,34 @@
+#dontLeave {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: #0C0E12;
+    h1 {
+        color: white;
+        font-size: 14vmin;
+        font-weight: 500;
+
+    }
+    h6 {
+        position: absolute;
+        bottom: 4vmax;
+
+    }
+    h6.second {
+        color: white;
+        font-weight: 500;
+    }
+    h6.first {
+        bottom: 6vmax;
+    }
+}

@@ -242,6 +242,7 @@ color: #FFFFFF
 			top: 30%;
 			left: -10%;
 			max-width: 300px;
+			z-index: 3;
 			img {
 				width: 100%;
 				object-fit: cover;
@@ -294,6 +295,7 @@ color: #FFFFFF
 			height: 500px !important;
 			left: 85% !important;
 			bottom: 0% !important;
+			z-index: 3;
 			img {
 				object-fit: contain;
 				max-height: 100%;
@@ -414,6 +416,7 @@ color: #FFFFFF
 			top: 50%;
 			left: -10%;
 			max-width: 300px;
+			z-index: 3;
 			img {
 				width: 100%;
 				object-fit: cover;
