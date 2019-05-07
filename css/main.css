@@ -128,7 +128,7 @@ body {
 \*------------------------------------*/
 *, html, body {
   font-size: 16px;
-  font-family: "ITC Avant Garde Gothic Pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -138,14 +138,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 24px 0;
   color: #000000;
-  font-family: "ITC Avant Garde Gothic Pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.333em;
   font-weight: 400;
   text-align: left; }
 
 h1 {
   font-size: 2rem;
-  font-family: "ITC Avant Garde Gothic Pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -193,7 +193,7 @@ h3 {
   color: #000000; }
 
 h4 {
-  font-family: "ITC Avant Garde Gothic Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 1.76471rem;
   font-style: normal;
   font-weight: 300;
@@ -242,7 +242,7 @@ p {
   font-size: 1.0625rem;
   line-height: 1.5em;
   color: #505050;
-  font-family: "ITC Avant Garde Gothic Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 26px;
   font-size: 14px;
   color: #404040;
@@ -258,7 +258,7 @@ p.lead {
   color: #383838; }
 
 p.special {
-  font-family: "ITC Avant Garde Gothic Pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-style: italic;
   font-weight: normal;
   line-height: 23px;
@@ -266,7 +266,7 @@ p.special {
   color: #000000; }
 
 a {
-  font-family: "ITC Avant Garde Gothic Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: white;
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
@@ -1127,8 +1127,7 @@ header {
   header .header-image {
     max-width: 70%;
     margin: 60px auto;
-    margin-top: 180px;
-    mix-blend-mode: multiply; }
+    margin-top: 180px; }
   header h1 {
     max-width: 315px;
     font-style: normal;
