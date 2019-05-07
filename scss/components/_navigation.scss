@@ -27,7 +27,7 @@
 			span {
 				font-weight: 900;
 				color: white;
-				margin: 0 4px;
+				margin: 0 6px;
 			}
 		}
 		#currentActivityIcon {
@@ -58,8 +58,7 @@
 		.nav-link {
 			margin-right: 20px;
 			a {
-				color: #fff;
-				mix-blend-mode: color-dodge;
+				color: #2F363F;
 			}
 		}
 	}
@@ -79,6 +78,7 @@
 			span {
 				margin: 0 8px;
 				color: #2F363F;
+
 			}
 			.icon {
 				margin-top: -2px;
@@ -91,8 +91,35 @@
 				margin-right: 0;
 				margin-left: 8px;
 			}
+			svg, span {
+				transition: all 0.1s ease-out;
+			}
+			.following-icon, .link-text {
+				display: none;
+			}
 			&:hover {
-				text-decoration: underline;
+				span {
+					padding: 0 4px; 
+					padding-left: 0px;
+					color: #38A1F3;
+					transition: all 0.2s ease-out;
+				}
+				svg {
+					fill: #38A1F3;
+					transition: all 0.2s ease-out;
+				}
+				path {
+					fill: #38A1F3;
+					transition: all 0.2s ease-out;
+				}
+				span.lead-icon {
+					padding: 0;
+				}
+			}
+			@include respond-to('medium') {
+				.following-icon, .link-text {
+					display: block;
+				}
 			}
 		}
 	}

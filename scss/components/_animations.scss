@@ -4,10 +4,88 @@
     100% { opacity: 0; }
 }
 
+@keyframes hover {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
+//slam effect
+@keyframes slam {
+	0% {
+	  transform: rotate3d(0, 0, 1, 5deg) scale3d(3, 3, 3) translate3d(-50px, -10px, 0);
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+		background: #E9344A;
+	}
+	18% {
+	  transform: rotate3d(0, 0, 1, 0deg) scale3d(1, 1, 1) translate3d(0, 0, 0);
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.65);
+		background: #FF4C24;
+	}
+	40% {
+	  transform: rotate3d(0, 0, 1, 1deg) scale3d(1.1, 1.1, 1.1) translate3d(-1px, -1px, 0);
+		box-shadow: 0px 0px 100px 2px rgba(0, 0, 0, 0.45);
+		background: #FFD600;
+	}
+	55% {
+		transform: rotate3d(0, 0, 1, 0deg) scale3d(1.0, 1.0, 1.0) translate3d(0px, 0px, 0);
+		background: #30BCE8;
+	}
+	to {
+	  transform: rotate3d(0, 0, 1, 0deg);
+		box-shadow: 0px 0px 125px 5px rgba(0, 0, 0, 0);
+		background: #780EFF;
+	}
+  }
+   
+  .slam {
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(.87, .58, .25, 1.29);
+	transform-origin: center center;
+	animation-name: slam;
+  }
+
+	// color effect
+// .color-change {
+// 		animation: colorchange 10s; /* animation-name followed by duration in seconds*/
+// 			 /* you could also use milliseconds (ms) or something like 2.5s */
+// 		-webkit-animation: colorchange 10s; /* Chrome and Safari */
+// 	}
+
+// 	@keyframes colorchange
+// 	{
+// 		0%   {background: #E9344A;}
+// 		25%  {background: #FF4C24;}
+// 		50%  {background: #FFD600;}
+// 		75%  {background: #30BCE8;}
+// 		100% {background: #780EFF;}
+// 	}
+
+// 	@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+// 	{
+// 		0%   {background: #E9344A;}
+// 		25%  {background: #FF4C24;}
+// 		50%  {background: #FFD600;}
+// 		75%  {background: #30BCE8;}
+// 		100% {background: #780EFF;}
+// 	}
+  
 //Transitions
 .anim-fade-in {
     opacity: 1 !important;
     transform: translateY(20px) !important;
     transition: opacity 0.2s ease-out, transform 0.2s !important;
 }
+
+.anim-hover {
+    animation: hover 6s ease-in-out infinite;
+}
+
+

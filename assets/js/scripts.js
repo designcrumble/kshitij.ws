@@ -2,6 +2,8 @@ $('.body-container').hide(); // hide body-container while rendering
 
 $(document).ready(function(){ // When page is fully loaded...
 
+
+
     // Preloader
     $('.preloader').hide(); // hide preloader
     $('.body-container').show(); // and show body-container
@@ -34,17 +36,20 @@ $(document).ready(function(){ // When page is fully loaded...
         let secondsIST = ISTTime.getSeconds()
 
         setInterval(function () {
-            console.log(hoursIST);
+            // set current time
+            $('#currentHour').text(hoursIST );
+            $('#currentMinutes').text(minutesIST);
+
             let x = "Crafting Interfaces"
-            let iconDest = "/assets/img/icons/defaultActivity.svg"
+            let iconDest = "/assets/img/icons/activity-crafting-ui.svg"
 
             if (hoursIST > 1) {
                 x = "Sleeping."
-                iconDest = "/assets/img/icons/activity--sleep.svg"
+                iconDest = "/assets/img/icons/activity-sleeping.svg"
             }
             if (hoursIST > 7 ) {
                 x = "Having Breakfast."
-                iconDest = "/assets/img/icons/food.svg"
+                iconDest = "/assets/img/icons/activity-eating.svg"
             }
             if (hoursIST > 9) {
                 x = "working on Sideprojects."
@@ -52,25 +57,25 @@ $(document).ready(function(){ // When page is fully loaded...
             }
             if (hoursIST > 11 ) {
                 x = "on Lunch Break."
-                iconDest = "/assets/img/icons/food.svg"
+                iconDest = "/assets/img/icons/activity-eating.svg"
             }
             if (hoursIST > 13) {
                 x = "Crafting Interfaces."
-                iconDest = "/assets/img/icons/interfaces.svg"
+                iconDest = "/assets/img/icons/activity-crafting-ui.svg"
             }
             if (hoursIST > 19 ) {
-                x = "Listening to Podcasts."
-                iconDest = "/assets/img/icons/activity--podcasts.svg"
+                x = "Listening to Skrillex."
+                iconDest = "/assets/img/icons/activity-music.svg"
             }
             if (hoursIST > 21) {
                 x = "Stuffing Dinner."
-                iconDest = "/assets/img/icons/food.svg"
+                iconDest = "/assets/img/icons/activity-eating.svg"
             }
             if (hoursIST > 23 ) {
                 x = "Playing Call of Duty."
-                iconDest = "/assets/img/icons/activity--play.svg"
+                iconDest = "/assets/img/icons/activity-gaming.svg"
             }
-            console.log(x);
+
             if ($('#currentActivity').text != x) {
                 $('#currentActivity').text(x);
             }
@@ -79,30 +84,36 @@ $(document).ready(function(){ // When page is fully loaded...
 
     // Ventures Hover Image Replacement
     // ToDo: Animate in the elements
-    $(".ventures #venture-sideway").hover(function() {
-        $( '.venture-graphic img' ).attr("src","/assets/img/ventures/sideway.png");
-        $( '.venture-graphic img' ).css('translateY',"-50px");
-    });
-    $(".ventures #venture-bolt").hover(function() {
-        $( '.venture-graphic' ).css({
-            'opacity': 0,
-        });
-        $( '.venture-graphic img' ).attr("src","/assets/img/ventures/bolt.png");
-        $( '.venture-graphic' ).addClass("anim-fade-in");
-    });
-    $(".ventures #venture-flexplates").hover(function() {
-        $( '.venture-graphic img' ).attr("src","/assets/img/ventures/flexplates.png");
-        $( '.venture-graphic img' ).css('translateY',"-50px");
-    });
-    $(".ventures #venture-figmafreebies").hover(function() {
-        $( '.venture-graphic img' ).attr("src","/assets/img/ventures/figmafreebies.png");
-        $( '.venture-graphic img' ).css('translateY',"-50px");
-    });
+    // $(".ventures #venture-sideway").hover(function() {
+    //     $( '.venture-graphic img' ).attr("src","/assets/img/ventures/sideway.png");
+    //     $( '.venture-graphic img' ).css('translateY',"-50px");
+    // });
+    // $(".ventures #venture-bolt").hover(function() {
+    //     $( '.venture-graphic' ).css({
+    //         'opacity': 0,
+    //     });
+    //     $( '.venture-graphic img' ).attr("src","/assets/img/ventures/bolt.png");
+    //     $( '.venture-graphic' ).addClass("anim-fade-in");
+    // });
+    // $(".ventures #venture-flexplates").hover(function() {
+    //     $( '.venture-graphic img' ).attr("src","/assets/img/ventures/flexplates.png");
+    //     $( '.venture-graphic img' ).css('translateY',"-50px");
+    // });
+    // $(".ventures #venture-figmafreebies").hover(function() {
+    //     $( '.venture-graphic img' ).attr("src","/assets/img/ventures/figmafreebies.png");
+    //     $( '.venture-graphic img' ).css('translateY',"-50px");
+    // });
 
 
  });
 
-
+// Header Hover
+// $("#indexIntro").mouseover(function() {
+//     $("#indexIntro").text("Freelance Digital Designer looking to become Nomad. I like minimal and functional design.");
+// });
+// $("#indexIntro").mouseout(function() {
+//     $("#indexIntro").text("Jobless Digital Designer looking to become Homeless. I like rad gradients and useless shapes. Just Kidding.");
+// });
 //Snackbar - Notification
 function showSnackbar(value) {
 
@@ -117,6 +128,20 @@ function showSnackbar(value) {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
+  
+  // Snackbar
+  function showSnackbar(value) {
+
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    x.innerHTML = value;
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 
 // onResize animation
 $(window).resize(function() {
@@ -132,3 +157,12 @@ $( ".hamburger-menu" ).click(function() {
     });
 });
     
+// Copy to Clipboard
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    showSnackbar('Email Address Copied to Clipboard');
+  }

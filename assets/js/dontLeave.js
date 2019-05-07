@@ -20,7 +20,6 @@ loopMeNot = (span, array) => {
        if(byeArray.length > index) {
         // var rand = byeArray[Math.floor(Math.random() * byeArray.length)];
         let rand = Math.floor(Math.random() * byeArray.length);
-        console.log(rand);
        $(this).text(byeArray[rand]).animate({
         transform: 'scale(1)',
         filter: 'blur(0px)'
@@ -44,7 +43,7 @@ document.addEventListener("mousemove", function(e) {
 });
 $(document).mouseleave(function () {
     if (mouseY < 100) {
-        if (popupCounter < 99) {
+        if (popupCounter < 3) {
             // alert("Please don't close the tab!");
             $('#dontLeave').toggle();
             loopMeNot(span,byeArray);

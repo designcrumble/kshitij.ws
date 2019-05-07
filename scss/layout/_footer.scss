@@ -1,5 +1,14 @@
 footer {
-    
+    h2 {
+        font-style: normal;
+        font-weight: bold !important;
+        max-width: 640px !important;
+        font-size: 30px;
+        line-height: 32px;/* or 94% */
+        letter-spacing: -0.25px;
+        
+        color: #FFFFFF;
+    }
     padding: 60px 20px;
     padding-bottom: 40px;
     .footer-label {
@@ -8,13 +17,15 @@ footer {
     }
     h2 {
         @include respond-to('medium') {
-            line-height: 64px;
+            font-size: 64px;
+            line-height: 60px;/* or 94% */
         }
     }
     .footer-copy {
         span {
             color: #FFC700;
             color: #167aff;
+            color: #FF5A60;
             text-decoration: underline;
         }
     }

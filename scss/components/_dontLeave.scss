@@ -15,20 +15,29 @@
     background-color: #0C0E12;
     h1 {
         color: white;
-        font-size: 14vmin;
-        font-weight: 500;
-
+        font-size: 14vmin !important;
+        font-weight: 500 !important;
+        letter-spacing: 2px !important;
     }
     h6 {
         position: absolute;
-        bottom: 4vmax;
-
+        bottom: 4vmin !important;
+        margin: 5px !important;
     }
     h6.second {
-        color: white;
-        font-weight: 500;
+        color: white !important;
+        font-weight: 500 !important;
     }
     h6.first {
-        bottom: 6vmax;
+        bottom: 6vmax !important;
+        color: #6B6D72 !important;
+    }
+    @include respond-to('medium') {
+        h6 {
+            bottom: 4vmin !important;
+        }
+        h6.first {
+            bottom: 7vmin !important;
+        }
     }
 }

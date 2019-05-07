@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<!-- Metatags-->
+	<meta charset="UTF-8">
+	<meta name="description" content="Split - Keep track of your subscriptions">
+	<meta name="keywords" content="app, split, payments, invoice, rent, ios app">
+	<meta name="author" content="Flexplates">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Kshitij Choudhary - Multidisciplinary Designer and Developer</title>
+
+	<link rel="icon" href="assets/img/favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<noscript>
+			<style>
+				body {
+					opacity: 1;
+				}
+			</style>
+		</noscript>
+		<!-- load and instantiate ScrollReveal first -->
+		<script src="assets/js/scrollreveal.min.js"></script> 
+		<script>
+			window.sr = ScrollReveal();
+	
+			// Add class to <html> if ScrollReveal is supported 
+			// Note: this method is deprecated, and only works in version 3 
+			if (sr.isSupported()) {
+				document.documentElement.classList.add('sr');
+			}
+	
+		</script> 
+	
+		<style>
+	
+			/* Ensure elements load hidden before ScrollReveal runs */
+			.sr .fooReveal { visibility: hidden; }
+	
+		</style>
+</head>
+<body>
+	<pre id="output" style="display: none; position: fixed; top: 0; z-index: 1000; width: 100vw; height: 100vh;
+	left: 0; right: 0; bottom: 0; background: white; flex-direction: column; justify-content: center; align-items: center; color: black; font-size: 10vmin; overflow: hidden;"></pre>
+	<script type="text/javascript">
+		var element = new Image;
+		var devtoolsOpen = false;
+		element.__defineGetter__("id", function() {
+			devtoolsOpen = true; // This only executes when devtools is open.
+			$('#output').css('display', 'flex');
+		});
+		setInterval(function() {
+			devtoolsOpen = false;
+			console.log(element);
+			document.getElementById('output').innerHTML += (devtoolsOpen ? "What you doin fam?\n" : "\n");
+			if(!devtoolsOpen) {
+				$('#output').css('display', 'none');
+			}
+		}, 1000);
+	</script>
+	<div id="dontLeave">
+		<h1> <span id="dontLeaveText">Bye </span> 
+			<!-- <span id="dontLeaveEmoji"> &#x1F97A</span> -->
+		</h1>
+		<h6 class="first">I'll be looking out for your message</h6>
+		<h6 class="second">hello@kshitij.ws</h6>
+	</div>
+		<div>
+				<span id="coordinates"></span>  
+			</div>
+	<div class='preloader'>
+			<div class='text-container'>
+				<span>Sicker</span>
+				<span>Than Your</span>
+				<span>Average.</span>
+			</div>
+		<div class='small'></div>
+	</div>
+	<div class="body-container">
+		<!-- <nav class="hamburger-nav">
+			<button class="hamburger-menu">
+				button
+			</button>
+			<div class="nav-container">
+				Nav
+			</div>
+		</nav> -->
+		<nav class="nav">
+			<div class="container">
+				<div class="row between-xs">
+					<div class="col-xs-12 col-md-5 col-md-offset-1 left">
+						<div class="nav-links-container left">
+							<a class="logo nav-link">Kshitij.</a>
+							<div class="current-activity">
+								currently <span>
+									<img src="/assets/img/icons/activity-crafting-ui.svg" alt="" id="currentActivityIcon" style="display: inline-block;">
+								</span> <span id="currentActivity">Crafting Interfaces.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 start-xs end-md  right">
+						<div class="nav-links-container">
+							<div class="nav-link">
+								<a href="https://twitter.com/howbadeh" target="_blank"><span class="lead-icon icon">
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.4665 2.35992C14.9154 2.60881 14.3288 2.76881 13.7065 2.83992C14.3465 2.44881 14.8265 1.86214 15.0576 1.15103C14.471 1.50659 13.8132 1.75548 13.1199 1.8977C12.5688 1.29326 11.7688 0.919922 10.8799 0.919922C9.19098 0.919922 7.82209 2.28881 7.82209 3.99548C7.82209 4.22659 7.85765 4.4577 7.91098 4.70659C5.36876 4.56437 3.0932 3.35548 1.58209 1.50659C1.31543 1.95103 1.15543 2.48437 1.15543 3.05326C1.15543 4.10214 1.68876 5.04437 2.50654 5.59548C2.00876 5.5777 1.52876 5.45326 1.11987 5.20437V5.23992C1.11987 6.73325 2.16876 7.95992 3.59098 8.24437C3.34209 8.31548 3.07543 8.35103 2.79098 8.35103C2.59543 8.35103 2.39987 8.33326 2.22209 8.2977C2.6132 9.52437 3.75098 10.3955 5.08431 10.431C4.03543 11.2488 2.71987 11.7466 1.27987 11.7466C1.03098 11.7466 0.79987 11.7288 0.533203 11.6933C1.88431 12.5644 3.50209 13.0621 5.22654 13.0621C10.8621 13.0621 13.9554 8.40437 13.9554 4.33326L13.9376 3.92437C14.5421 3.53326 15.0576 2.96437 15.4665 2.35992Z" fill="#2F363F"/>
+										</svg>										
+								</span><span>howbadeh</span> <span class="icon following-icon">
+										<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 5.1804V3.65412H13.2891V3.57457L10.7436 1.02912L11.7678 0L16.1875 4.41974L11.7678 8.83452L10.7436 7.8054L13.2891 5.25994V5.1804H0Z" fill="#2F363F"/>
+										</svg>											
+								</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<header class="header--may">
+				<div class="time-zone"><div class="slam">BLR <span>17:28</span></div> </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="header-image">
+								<img src="/assets/img/header/header--may.png" alt="Kshitij Choudhary — Digital Designer">
+							</div>
+							<h1>
+								<span>I help brands tell</span>
+								meaningful stories
+							</h1>
+							<a href="#client-work" class="header-cta">check out my work <span class="icon-follow">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 18L15 12L9 6" stroke="#FA6D73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>										
+							</span></a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- <header>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-10 col-md-offset-1">
+							<div class="flex-col-start">
+								<h1 style="padding-top: 240px;" id="indexIntro">Jobless Digital Designer looking to become Homeless. I like rad gradients and useless shapes. Just Kidding.</h1>
+								<div class="profile-thumb">
+										<img src="/assets/img/profile-thumb.png" alt="Buildfore Case Study">
+									</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</header> -->
+			<section class="ventures">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-10 col-md-offset-1">
+							<div class="flex-col-start">
+									<div class="flex-col-start ventures__header">
+											<h6 class="section-label">A list of my little ventures on the interwebs</h6>
+											<h2 class="section-title">Sippin’ great coffee and testing big ideas.</h2>
+											<div class="venture-graphic" id="venture-graphic">
+												<img src="/assets/img/ventures/bolt.png" alt="useBolt Invoice Platform Image">
+											</div>
+									</div>
+								<ul class="section-list">
+									<li class="venture-item venture-item--sideway" id="venture-sideway">
+										<div class="list-start">
+											<div class="icon"><img src="/assets/img/homepage/sideway-monogram.svg" alt="Sideway"></div>
+											<div class="list-title">Sideway</div>
+										</div>
+										<div class="list-middle">
+												A community of designers shipping in real life. 
+										</div>
+										<div class="list-end">
+											<a href="#" class="list-link">looksideway.com</a>
+										</div>
+									</li>
+									<li class="venture-item venture-item--bolt" id="venture-bolt">
+											<div class="list-start">
+												<div class="icon"><img src="/assets/img/homepage/bolt-monogram.svg" alt="Sideway"></div>
+												<div class="list-title">Bolt</div>
+											</div>
+											<div class="list-middle">
+													Hassle Free Invoices for agencies
+											</div>
+											<div class="list-end">
+												<a href="#" class="list-link">usebolt.co</a>
+											</div>
+										</li>
+										<li class="venture-item venture-item--flexplates" id="venture-flexplates">
+												<div class="list-start">
+													<div class="icon"><img src="/assets/img/homepage/flexplates-monogram.svg" alt="Sideway"></div>
+													<div class="list-title">Flexplates</div>
+												</div>
+												<div class="list-middle">
+														A marketplace for beautiful landing pages.
+												</div>
+												<div class="list-end">
+													<a href="#" class="list-link">flexplat.es</a>
+												</div>
+											</li>
+											<li class="venture-item venture-item--figmafreebies" id="venture-figmafreebies">
+													<div class="list-start">
+														<div class="icon"><img src="/assets/img/homepage/sideway-monogram.svg" alt="Sideway"></div>
+														<div class="list-title">FigmaFreebies</div>
+													</div>
+													<div class="list-middle">
+															A collection of design resources for the figma community.
+													</div>
+													<div class="list-end">
+														<a href="#" class="list-link">figmafreebi.es</a>
+													</div>
+												</li>
+								</ul>
+								<div class="section-cta">
+									<a href="#" class="btn btn--tertiary">More on madebywknd.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="case-study case-study--buildfore">
+				<a href="#" class="cta-button">View Project</a>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="flex-col-start pos-relative">
+									<div class="prop anim-hover"><img src="/assets/img/buildfore/prop-1.png" alt="helmet"></div>
+									<div class="prop prop--2"><img src="/assets/img/buildfore/prop-2.png" alt="hammer"></div>
+									<h6>www.buildfore.com</h6>
+									<h2>Construction <br/>Just Got Better.</h2>
+									<h4>Branding • Product Design • UI/UX Design</h4>
+									<div class="case-study-image">
+										<img src="/assets/img/buildfore/thumb.png" alt="Buildfore Case Study">
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="case-study case-study--blue">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="flex-col-start pos-relative">
+										<div class="row">
+											<div class="col-xs-6 col-xs-offset-5">
+													<h6>www.usebolt.co</h6>
+													<h2 class="bolt-heading">Bold Ideas. <br/><span>Bolder Execution.</span></h2>
+													<h4>Branding • Product Design • Development</h4>
+											</div>
+										</div>
+
+										<div class="case-study-brief">
+												<div class="banner">
+													<h3>The Bolt <span>Experience</span></h3>
+														<div class="banner-image">
+															<img src="/assets/img/bolt-banner.png" alt="">
+														</div>
+														<a href="www.usebolt.co">www.usebolt.co</a>
+												</div>
+												<div class="content">
+														<hr>
+														<h4>
+																Hassle free invoicing for freelancers &amp; agencies. 
+														</h4>
+														<a href="#">Learn More.</a>
+												</div>
+											
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="case-study case-study--stick case-study--studiotime">
+					<a href="http://studiotime.io" target="_blank" class="cta-button">View Project</a>
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="flex-col-center pos-relative">
+											<div class="prop prop--2"><img src="/assets/img/studiotime/prop-1.png" alt="hammer"></div>
+											<h6>www.studiotime.io</h6>
+											<h2>The Airbnb of <br/> <span>Music Studios.</span>  </h2>
+											<h4>UI/UX Design</h4>
+											<div class="case-study-image">
+												<img src="/assets/img/studiotime/thumb.png" alt="studiotime Case Study">
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="case-study case-study--blue case-study--sideway">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="flex-col-start pos-relative">
+											<div class="row">
+												<div class="col-xs-6 col-xs-offset-5">
+														<h6>www.looksideway.com</h6>
+														<h2>Re—Imagine <br/>Community.</h2>
+														<h4>Branding • Product Design • Web Dev</h4>
+												</div>
+											</div>
+	
+											<div class="case-study-brief">
+													<div class="banner">
+														<h3>Community <span>Imagined</span></h3>
+															<div class="banner-image">
+																<img src="/assets/img/sideway-banner.png" alt="">
+															</div>
+															<a href="www.usebolt.co">www.looksideway.com</a>
+													</div>
+													<div class="content">
+															<hr>
+															<h4>
+																Sideway is a commuity of designers who ship IRL. Engage in meaningful conversations.
+															</h4>
+															<a href="#">Learn More.</a>
+													</div>
+												
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+			<section class="blog">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-md-10 col-md-offset-1">
+								<div class="flex-col-start">
+									<h6 class="section-label">Some of my thoughts around the web</h6>
+									<h2 class="section-title">Blog.</h2>
+									<ul class="section-list">
+										<li>
+											<div class="list-start">
+												<div class="icon"><img src="/assets/img/homepage/sideway-monogram.svg" alt="Sideway"></div>
+											</div>
+											<div class="list-middle">
+													A community of designers shipping in real life. 
+											</div>
+											<div class="list-end">
+												<a href="#" class="list-link">Read More</a>
+											</div>
+										</li>
+										<li>
+												<div class="list-start">
+													<div class="icon"><img src="/assets/img/homepage/bolt-monogram.svg" alt="Sideway"></div>
+												</div>
+												<div class="list-middle">
+														Hassle Free Invoices for agencies
+												</div>
+												<div class="list-end">
+													<a href="#" class="list-link">Read More</a>
+												</div>
+											</li>
+											<li>
+													<div class="list-start">
+														<div class="icon"><img src="/assets/img/homepage/flexplates-monogram.svg" alt="Sideway"></div>
+
+													</div>
+													<div class="list-middle">
+															A marketplace for beautiful landing pages.
+													</div>
+													<div class="list-end">
+														<a href="#" class="list-link">Read More</a>
+													</div>
+												</li>
+												<li>
+														<div class="list-start">
+															<div class="icon"><img src="/assets/img/homepage/sideway-monogram.svg" alt="Sideway"></div>
+														</div>
+														<div class="list-middle">
+																A collection of design resources for the figma community.
+														</div>
+														<div class="list-end">
+															<a href="#" class="list-link">Read More</a>
+														</div>
+													</li>
+									</ul>
+									<div class="section-cta">
+										<a href="#" class="btn btn--tertiary">More on Medium</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer>
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-xs-offset-0 col-md-11 col-md-offset-1">
+									<div class="footer-content">
+											<div class="footer-label">
+													My Motto
+											</div>
+											<h2 class="footer-copy">
+													Save time, move faster, ship sooner.
+													<span>hello@kshitij.ws</span>
+											</h2>
+											<div class="footer-links">
+												<h4>Btw, that’s the end of this page.</h4>
+												<ul class="list-linear">
+													<li>
+														<a href="#">ABOUT ME</a>
+													</li>
+													<li>
+														<a href="/web.html">WORK</a>
+													</li>
+													<li>
+														<a href="#">WIP</a>
+													</li>
+													<li>
+														<a href="#">TWITTER</a>
+													</li>
+												</ul>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+		</main>
+	</div>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script>
+	function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /*loop through a collection of all HTML elements:*/
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+	    elmnt = z[i];
+	    /*search for elements with a certain atrribute:*/
+	    file = elmnt.getAttribute("w3-include-html");
+	    if (file) {
+	      /*make an HTTP request using the attribute value as the file name:*/
+	      xhttp = new XMLHttpRequest();
+	      xhttp.onreadystatechange = function() {
+	        if (this.readyState == 4) {
+	          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+	          if (this.status == 404) {elmnt.innerHTML = "Block not found.";}
+	          /*remove the attribute, and call this function once more:*/
+	          elmnt.removeAttribute("w3-include-html");
+	          includeHTML();
+	        }
+	      } 
+	      xhttp.open("GET", file, true);
+	      xhttp.send();
+	      /*exit the function:*/
+	      return;
+	    }
+	  }
+	}
+	</script>
+	<script>
+	includeHTML();
+	</script>
+	<script src="/assets/js/jquery-3.4.0.min.js"></script>
+	<script src="/assets/js/dontLeave.js"></script>
+	<script src="/assets/js/jquery.blast.min.js"></script>
+	<script src="/assets/js/TweenMax.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+	<script src="/assets/js/scripts.js"></script>
+</body>
+</html>
