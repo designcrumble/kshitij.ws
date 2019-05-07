@@ -1,0 +1,378 @@
+// font imports
+// @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700');
+
+/*------------------------------------*\
+    # Simple Typography Settings
+\*------------------------------------*/
+
+// Font Family
+$font-family: 'ITC Avant Garde Gothic Pro', Playfair Display,-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-1: 'ITC Avant Garde Gothic Pro', Playfair Display,-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-2: 'ITC Avant Garde Gothic Pro',-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+// Base Font for HTML
+$base-font-size: 16px;
+
+// Paragraph Styles
+$paragraph-color      : #505050;
+$paragraph-size       : rem(17px);
+$paragraph-line-height: 1.5em;
+$paragraph-margin     : 20px;
+
+// Header Styles
+$header-color      : #000000;
+$header-size       : rem(48px);
+$header-line-height: 1.333em;
+$header-margin     : $paragraph-margin * 1.2;
+
+// Blockquote Styles
+$blockquote-color      : #212121;
+$blockquote-size       : rem(28px);
+$blockquote-line-height: 1.5em;
+$blockquote-margin     : $paragraph-margin * 1.5;
+
+// Links
+$link-color: white;
+
+// hr
+$hr-margin: 30px;
+
+// Type Misc
+$font-weight-bold: 800;
+$border-color: #DADADA;
+
+
+body {
+    font-size: 14px;
+
+    @include respond-to('medium'){
+        font-size: 16px;
+    }
+}
+
+
+
+/*------------------------------------*\
+    # Type
+\*------------------------------------*/
+
+// Make type normal across browsers
+*, html, body {
+    font-size: $base-font-size;
+    font-family: $font-family-1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    outline: none;
+}
+
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 $header-margin 0;
+    color: $header-color;
+    font-family: $font-family;
+    line-height: $header-line-height;
+    font-weight: 400;
+    text-align: left;
+}
+
+h1 {
+    font-size: $header-size/1.5;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+
+    color: #ffffff;
+    @include respond-to('medium'){
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 53px;
+    }
+
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.45px;
+    text-align: left;
+    max-width: 630px;
+    color: #FFFFFF;
+    word-spacing: -2px;
+    @include respond-to('medium'){
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 60px;
+        letter-spacing: -0.45px;
+        text-align: left;
+        max-width: 630px;
+        color: #FFFFFF;
+        word-spacing: -2px;
+    }
+}
+
+h3 {
+    font-size: $header-size / 1.5;
+    font-style: normal;
+    font-weight: 500;
+    line-height: rem(34px);
+    font-size: rem(24px);
+    letter-spacing: 0.02em;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+h4 {
+    font-family: $font-family-2;
+    font-size: $header-size / 1.7;
+    font-style: normal;
+    font-weight: 300;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 12px;
+    color: #000000;
+    @include respond-to('medium'){
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 28px;
+        
+        color: #110F0F;
+    }
+
+}
+
+h5 {
+    font-size: $header-size / 1.8;
+    font-style: normal;
+    font-weight: 300;
+    line-height: rem(22px);
+    font-size: rem(16px);
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+h6 {
+    font-size: $header-size / 2;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #7B929E;
+}
+h6.section-label     {
+    font-family: 'Space Mono';
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: normal;
+letter-spacing: -0.5px;
+margin-bottom: 35px;
+color: #3B3B3C;
+}
+
+
+// Paragraphs
+p {
+    margin-top: $paragraph-margin;
+    font-size: $paragraph-size;
+    line-height: $paragraph-line-height;
+    color: $paragraph-color;
+    font-family: $font-family-2;
+    line-height: 26px;
+    font-size: 14px;
+    color: #404040;
+    max-width: 350px;
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+p.lead {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 16px;
+    color: #383838;
+}
+p.special {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 23px;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+// Links
+a {
+    font-family: $font-family-2;
+    color: $link-color;
+    text-decoration: none;
+    @include transition(all .2s ease);
+
+    &:hover {
+        color: darken($link-color, 10%);
+    }
+}
+
+
+// Lists
+ul, ol {
+    margin: 0;
+
+    li {
+        margin-right: 10px;
+        line-height: $paragraph-line-height;
+        color: $paragraph-color;
+    }
+
+    ul, ol {
+        margin-top: 0;
+    }
+}
+
+ul {
+
+    li {
+        list-style: none;
+    }
+
+    ul {
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+ol {
+
+    li {
+        list-style: none;
+    }
+}
+
+
+// hr
+hr {
+    height: 1px;
+    margin: $hr-margin 0;
+    border: none;
+    background-color: $border-color;
+}
+
+
+// Blockquote
+blockquote {
+    margin: $blockquote-margin 0;
+    font-size: $blockquote-size;
+    line-height: $blockquote-line-height;
+    color: $blockquote-color;
+    text-align: center;
+    font-style: normal !important;
+}
+
+
+// Tables
+table {
+    width: 100%;
+    margin: $blockquote-margin 0;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid $border-color;
+    text-align: left;
+}
+
+th {
+    font-weight: $font-weight-bold;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
+// Figure
+figure {
+    margin: $blockquote-margin 0;
+
+    img {
+        margin: 0;
+    }
+}
+
+figcaption {
+    margin-top: 10px;
+    color: lighten($paragraph-color, 10%);
+    font-size: $paragraph-margin * 0.8;
+}
+
+
+// Code
+pre {
+    display: block;
+    margin: 0 0 40px 0;
+    padding: 20px;
+    background-color: lighten($border-color, 12%);
+    border: 1px solid $border-color;
+    overflow: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    code {
+        position: static;
+        padding: 0;
+        border: none;
+        line-height: 1.5em;
+    }
+}
+
+code {
+    position: relative;
+    top: -0.2em;
+    padding: 3px;
+    font-family: Courier New, Courier, monospace;
+    font-size: $paragraph-size / 1.4;
+    color: darken($border-color, 40%);
+    line-height: 1em;
+    pointer-events: none;
+    border: 1px solid $border-color;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+
+// Misc Styles
+em, i, .italic {
+    font-style: italic;
+}
+
+strong, b, .bold {
+    font-weight: $font-weight-bold;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+}
+

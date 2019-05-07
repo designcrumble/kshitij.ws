@@ -1,0 +1,25 @@
+{
+  "name": "kshitij.ws",
+  "version": "1.0.0",
+  "description": "Personal Website Kshitij.ws",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designcrumble/kshitij.ws.git"
+  },
+  "author": "kshitij",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designcrumble/kshitij.ws/issues"
+  },
+  "homepage": "https://github.com/designcrumble/kshitij.ws#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

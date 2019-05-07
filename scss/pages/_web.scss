@@ -1,0 +1,146 @@
+.body-web-dark {
+    background-color: #101318;
+}
+#web {
+    h1 {
+        color: white;
+        background: none;
+        -webkit-text-fill-color: unset;
+        max-width: 650px;
+    }
+    header {
+        padding-top: 140px;
+        h1 {
+            text-align: left;
+            margin: 0;
+        }
+        .flex-col-start {
+            padding: 0 20px ;
+            h6 {
+                margin-bottom: 10px;
+                padding-top: 80px;
+                color: #FAFAFA;
+                opacity: 0.5;
+            }
+        }
+        &::after, &::before {
+            display: none;
+        }
+        @include respond-to('medium') {
+            padding-top: 240px;
+            .flex-col-start {
+                padding: 0px;
+            }
+        }
+    }
+    footer {
+        background: none;
+    }
+}
+.client-work {
+    padding: 60px 20px;
+    h2, h6 {
+        padding: 0;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #F5F5F5;
+        margin-bottom: 5px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px;
+        border-bottom: 1px solid rgba(66, 66, 66, 0.3);;
+        &:nth-of-type(odd) {
+            margin-left: 0;
+        }
+        &:nth-of-type(even) {
+            margin-right: 0;
+        }
+        .top {
+            flex: 1;
+            padding: 10px 15px;
+            span {
+                font-weight: lighter;
+            }
+            @include respond-to('medium') {
+                padding: 10px 20px;
+            }
+        }
+        .middle {
+            flex: 3;
+        }
+        .bottom {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 15px;
+            padding-right: 0;
+            padding-left: 0;
+            .tags {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 11px;
+                flex: 1;
+                line-height: 13px;
+                text-transform: uppercase;
+                color: #F5F5F5;
+            }
+            a.btn--text {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: normal;
+                text-align: center;
+                background: #1F2125;
+                border-radius: 25px;
+                padding: 8px 16px;
+                padding-top: 10px;
+                color: #F7FAFA;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    background: black;
+                }
+            }
+            @include respond-to('medium') {
+                padding: 20px;
+                padding-right: 0;
+                .tags {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    @include respond-to(medium) {
+        padding: 60px 20px;
+        h3 {
+            font-size: 30px;
+            line-height: 32px;
+            width: 90%;
+            margin-bottom: 15px;
+        }
+        &-card {
+            width: calc(50% - 40px);
+            margin: 60px 20px;
+            &:nth-of-type(odd) {
+                margin-left: 0;
+            }
+            &:nth-of-type(even) {
+                margin-right: 0;
+            }
+        }    
+    }
+}
