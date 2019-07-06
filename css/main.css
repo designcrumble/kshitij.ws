@@ -1106,7 +1106,12 @@ header .flex-col-start h6, header h6 {
       font-weight: 900; }
     @media (min-width: 768px) {
       .header--may .freelance {
-        display: block; } }
+        display: block;
+        left: 0px; } }
+    @media (min-width: 1200px) {
+      .header--may .freelance {
+        display: block;
+        left: 40px; } }
   .header--may .time-zone {
     position: fixed;
     bottom: 100px;
@@ -1125,9 +1130,12 @@ header {
   padding-top: 100px;
   position: relative; }
   header .header-image {
-    max-width: 70%;
+    max-width: 90%;
     margin: 60px auto;
     margin-top: 180px; }
+    @media (min-width: 768px) {
+      header .header-image {
+        max-width: 70%; } }
   header h1 {
     max-width: 315px;
     font-style: normal;
@@ -1317,8 +1325,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 10;
-  padding: 20px; }
+  z-index: 10; }
   .nav .left {
     display: flex;
     flex-direction: column;
@@ -1404,6 +1411,7 @@ button {
           display: block; } }
   @media (min-width: 768px) {
     .nav {
+      padding: 20px;
       top: 100px; }
       .nav .right a {
         display: flex; } }
@@ -1667,6 +1675,32 @@ section {
   font-size: 18px !important;
   line-height: normal !important;
   color: #FFFFFF; }
+
+.clients {
+  padding-bottom: 0; }
+  .clients h6 {
+    margin: 0 auto;
+    align-self: center;
+    text-align: center; }
+  .clients .client-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .clients .client-list .client {
+      margin-right: 24px;
+      margin-bottom: 24px;
+      max-width: 20%; }
+  @media (min-width: 768px) {
+    .clients .client-list .client {
+      max-width: 120px;
+      flex: 1;
+      overflow: hidden; }
+      .clients .client-list .client img {
+        object-fit: contain;
+        width: 100%;
+        height: auto; } }
 
 .ventures {
   padding-top: 250px; }
@@ -1952,6 +1986,60 @@ section .section-list--mobile {
   @media (min-width: 768px) {
     section .section-list--mobile {
       display: none; } }
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  max-width: 335px;
+  bottom: 30px;
+  font-size: 17px; }
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
 
 .body-web-dark {
   background-color: #101318; }

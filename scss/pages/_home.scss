@@ -177,6 +177,40 @@ color: #FFFFFF
 		color: #FFFFFF;
 	}
 }
+.clients{
+	padding-bottom: 0;
+	h6 {
+		margin: 0 auto;
+		align-self: center;
+		text-align: center;
+
+	}
+	.client-list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		.client {
+			margin-right: 24px;
+			margin-bottom: 24px;
+			max-width: 20%;
+
+		}
+	}
+	@include respond-to('medium') {
+		.client-list .client {
+			max-width: 120px;
+			flex: 1;
+			overflow: hidden;
+			img {
+				object-fit: contain;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
 .ventures {
 	padding-top: 250px;
 	&__header {
@@ -533,3 +567,47 @@ section{
 		}
 	}
 }
+
+#snackbar {
+	visibility: hidden;
+	min-width: 250px;
+	margin: 0 auto;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	max-width: 335px;
+	bottom: 30px;
+	font-size: 17px;
+  }
+  
+  #snackbar.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;} 
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;} 
+	to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }

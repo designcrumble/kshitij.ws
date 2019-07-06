@@ -34,7 +34,12 @@ header {
 			font-weight: 900;
         }
         @include respond-to('medium') {
-            display: block;
+			display: block;
+			left: 0px;
+		}
+        @include respond-to('huge') {
+			display: block;
+			left: 40px;
         }
     }
 	.time-zone {
@@ -82,9 +87,12 @@ header {
 	// 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
 	// }
 	.header-image {
-		max-width: 70%;
+		max-width: 90%;
 		margin: 60px auto;
-        margin-top: 180px;
+		margin-top: 180px;
+		@include respond-to('medium') {
+			max-width: 70%;
+		}
 	}
 	h1 {
 		max-width: 315px;

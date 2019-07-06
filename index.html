@@ -80,6 +80,7 @@
 
 </head>
 <body>
+	<div id="snackbar"></div>
 	<pre id="output" style="display: none; position: fixed; top: 0; z-index: 1000; width: 100vw; height: 100vh;
 	left: 0; right: 0; bottom: 0; background: white; flex-direction: column; justify-content: center; align-items: center; color: black; font-size: 10vmin; overflow: hidden;">
 	<div class='preloader'>
@@ -113,7 +114,7 @@
 		<nav class="nav">
 			<div class="container">
 				<div class="row start-xs between-md">
-					<div class="col-xs-10 col-md-5 col-md-offset-1 left">
+					<div class="col-xs-11 col-md-5 col-md-offset-1 left">
 						<div class="nav-links-container left">
 							<a class="logo nav-link">Kshitij.</a>
 							<div class="current-activity">
@@ -123,7 +124,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-2 col-md-6 start-xs end-md  right">
+					<div class="col-xs-1 col-md-6 start-xs end-md  right">
 						<div class="nav-links-container">
 							<div class="nav-link">
 								<a href="https://twitter.com/howbadeh" target="_blank"><span class="lead-icon icon">
@@ -144,7 +145,9 @@
 		<main>
 			<header class="header--may">
 				<!-- <div class="time-zone"><div class="slam">BLR <span>17:28</span></div> </div> -->
-				<div class="freelance"><div class="slam color-change">Available for Freelance</div>  </div>
+				<a href="javascript:void(0);" onclick="copyToClipboard('#contactAddress')">
+					<div class="freelance"><div class="slam color-change">Available for Freelance</div>  </div>
+				</a>
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
@@ -164,6 +167,46 @@
 					</div>
 				</div>
 			</header>
+			<section class="clients">
+				<div class="container">
+					<div class="row center-xs">
+						<div class="col-xs-12">
+							<div class="flex-col-start ventures__header">
+								<h6 class="section-label">Select clients</h6>
+								<div class="client-list" id="client-list">
+									<a href="https://buildfore.com" class="client" target="_blank">
+										<img src="/assets/img/clients/buildfore.png" alt="BuildFore">
+									</a>
+									<a href="http://studiotime.io" class="client" target="_blank">
+										<img src="/assets/img/clients/studiotime.png" alt="studiotime">
+									</a>
+									<a href="https://stick.ai" class="client" target="_blank">
+										<img src="/assets/img/clients/stick.png" alt="stick">
+									</a>
+									<a href="https://ettrics.com" class="client" target="_blank">
+										<img src="/assets/img/clients/ettrics.png" alt="ettrics">
+									</a>
+									<a href="https://uber.com" class="client" target="_blank">
+										<img src="/assets/img/clients/uber.png" alt="uber">
+									</a>
+									<a href="https://fanbytes.co.uk" class="client" target="_blank">
+										<img src="/assets/img/clients/fanbytes.png" alt="fanbytes">
+									</a>
+									<a href="https://atticus.law" class="client" target="_blank">
+										<img src="/assets/img/clients/atticus.png" alt="atticus">
+									</a>
+									<a href="https://www.robinsmorton.com" class="client" target="_blank">
+										<img src="/assets/img/clients/rm.png" alt="Robins &amp; Morton">
+									</a>
+									<a href="http://builtbyfin.com/" class="client" target="_blank">
+										<img src="/assets/img/clients/fin.png" alt="fin">
+									</a>
+								</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="ventures">
 				<div class="container">
 					<div class="row center-xs start-md">
@@ -438,7 +481,35 @@
 						 </div>
 					 </div>
 				</section>
-				<footer>
+				<section class="blog">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-md-10 col-md-offset-1">
+									<div class="flex-col-start">
+										<h6 class="section-label">Some of my thoughts around the web</h6>
+										<h2 class="section-title">Blog.</h2>
+										<ul class="section-list">
+											<li>
+												<div class="list-start">
+													<div class="icon" style="padding: 8px;"><img src="/assets/img/icons/medium.svg" alt="Medium"></div>
+												</div>
+												<div class="list-middle">
+														Introducing Sideway: A community of designers shipping in real life. 
+												</div>
+												<div class="list-end">
+													<a href="https://blog.usejournal.com/introducing-sideway-the-first-step-towards-a-different-kind-of-design-community-ef43ae9d62b3" class="list-link" target="_blank">Read More</a>
+												</div>
+											</li>
+										</ul>
+										<div class="section-cta">
+											<a href="https://medium.com/@kshitijchoudhary" class="btn btn--tertiary" target="_blank">More on Medium</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				<footer id="footer">
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12 col-xs-offset-0 col-md-11 col-md-offset-1">
@@ -505,7 +576,7 @@
 	<script>
 	includeHTML();
 	</script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		var element = new Image;
 		var devtoolsOpen = false;
 		element.__defineGetter__("id", function() {
@@ -522,7 +593,7 @@
 				$('.preloader').css('display', 'none');
 			}
 		}, 1000);
-	</script>
+	</script> -->
 	<script src="/assets/js/jquery-3.4.0.min.js"></script>
 	<script src="/assets/js/dontLeave.js"></script>
 	<script src="/assets/js/jquery.blast.min.js"></script>
