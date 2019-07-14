@@ -35,7 +35,11 @@ header {
         }
         @include respond-to('medium') {
 			display: block;
-			left: 0px;
+			left: -80px;
+		}
+        @include respond-to('large') {
+			display: block;
+			left: -60px;
 		}
         @include respond-to('huge') {
 			display: block;

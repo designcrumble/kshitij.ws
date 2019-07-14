@@ -1107,7 +1107,11 @@ header .flex-col-start h6, header h6 {
     @media (min-width: 768px) {
       .header--may .freelance {
         display: block;
-        left: 0px; } }
+        left: -80px; } }
+    @media (min-width: 1024px) {
+      .header--may .freelance {
+        display: block;
+        left: -60px; } }
     @media (min-width: 1200px) {
       .header--may .freelance {
         display: block;
@@ -1586,12 +1590,13 @@ section {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 40px;
       background: #08090B;
       margin-bottom: 1px;
       transform: will-animate;
       box-shadow: will-animate;
       transition: all 0.2s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
+      section .section-list li a, section .section-list--mobile li a {
+        padding: 40px; }
       section .section-list li .list-cover-link, section .section-list--mobile li .list-cover-link {
         display: flex;
         justify-content: space-between;
@@ -2101,7 +2106,8 @@ section .section-list--mobile {
       margin-right: 0; }
     .client-work-card .top {
       flex: 1;
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      padding-left: 0; }
       .client-work-card .top span {
         font-weight: lighter; }
       @media (min-width: 768px) {

@@ -66,12 +66,15 @@ color: #FFFFFF
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-between;
-			padding: 40px;
+
 			background: #08090B;
 			margin-bottom: 1px;
 			transform: will-animate;
 			box-shadow: will-animate;
 			transition: all .2s cubic-bezier(.51,.92,.24,1.15);
+			a {
+				padding: 40px;
+			}
 			.list-cover-link {
 				display: flex;
 				justify-content: space-between;
