@@ -128,7 +128,7 @@ body {
 \*------------------------------------*/
 *, html, body {
   font-size: 16px;
-  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -138,14 +138,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 24px 0;
   color: #000000;
-  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.333em;
   font-weight: 400;
   text-align: left; }
 
 h1 {
   font-size: 2rem;
-  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -258,7 +258,7 @@ p.lead {
   color: #383838; }
 
 p.special {
-  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", Playfair Display, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-style: italic;
   font-weight: normal;
   line-height: 23px;
@@ -1089,7 +1089,7 @@ header .flex-col-start h6, header h6 {
     display: none;
     position: fixed;
     bottom: 160px;
-    left: 40px;
+    left: 0px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1135,11 +1135,11 @@ header {
   position: relative; }
   header .header-image {
     max-width: 90%;
-    margin: 60px auto;
-    margin-top: 180px; }
+    margin: 60px auto; }
     @media (min-width: 768px) {
       header .header-image {
-        max-width: 70%; } }
+        max-width: 70%;
+        margin-top: 180px; } }
   header h1 {
     max-width: 315px;
     font-style: normal;
@@ -1325,11 +1325,7 @@ button {
   left: 0;
   right: 0;
   width: 100%;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 10; }
+  height: 80px; }
   .nav .left {
     display: flex;
     flex-direction: column;
@@ -1596,7 +1592,10 @@ section {
       box-shadow: will-animate;
       transition: all 0.2s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
       section .section-list li a, section .section-list--mobile li a {
-        padding: 40px; }
+        padding: 10px; }
+        @media (min-width: 768px) {
+          section .section-list li a, section .section-list--mobile li a {
+            padding: 40px; } }
       section .section-list li .list-cover-link, section .section-list--mobile li .list-cover-link {
         display: flex;
         justify-content: space-between;
@@ -1632,6 +1631,11 @@ section {
         margin-right: 20px;
         border-radius: 4px;
         border: 1px solid #1c1c1c; }
+        section .section-list .list-start .icon img, section .section-list--mobile .list-start .icon img {
+          margin-right: 0;
+          object-fit: cover;
+          width: 100%;
+          height: auto; }
     section .section-list .list-middle, section .section-list--mobile .list-middle {
       flex: 5;
       font-style: normal;
@@ -1668,18 +1672,47 @@ section {
     section {
       padding: 120px 0; } }
 
+.blog ul {
+  display: flex !important;
+  width: 90% !important;
+  max-width: 90% !important; }
+  @media (min-width: 768px) {
+    .blog ul {
+      margin: none;
+      width: 100% !important;
+      max-width: 100% !important; } }
+
 .blog li {
   margin-bottom: 2px; }
 
 .blog .list-start {
-  flex: 0.5 !important; }
+  flex: 1 !important;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px; }
+  @media (min-width: 768px) {
+    .blog .list-start {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px; } }
 
 .blog .list-middle {
   font-style: normal !important;
   font-weight: 500 !important;
-  font-size: 18px !important;
+  font-size: 14px !important;
   line-height: normal !important;
   color: #FFFFFF; }
+  @media (min-width: 768px) {
+    .blog .list-middle {
+      font-size: 18px; } }
+
+.blog .list-end {
+  display: none !important; }
+  @media (min-width: 768px) {
+    .blog .list-end {
+      display: flex !important; } }
 
 .clients {
   padding-bottom: 0; }
@@ -1968,9 +2001,19 @@ section .section-list--mobile {
     width: 100%;
     padding: 16px 14px; }
     section .section-list--mobile li .icon {
-      margin-right: 10px !important; }
+      margin-right: 10px !important;
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      min-height: 32px; }
+      @media (min-width: 768px) {
+        section .section-list--mobile li .icon {
+          width: 48px;
+          height: 48px;
+          min-width: 48px;
+          min-height: 48px; } }
     section .section-list--mobile li .list-start {
-      flex: 1; }
+      flex: initial; }
     section .section-list--mobile li .list-title {
       font-weight: bold;
       font-size: 14px;

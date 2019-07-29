@@ -16,7 +16,7 @@ header {
         display: none;
 		position: fixed;
 		bottom: 160px;
-		left: 40px;
+		left: 0px;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
@@ -93,9 +93,9 @@ header {
 	.header-image {
 		max-width: 90%;
 		margin: 60px auto;
-		margin-top: 180px;
 		@include respond-to('medium') {
 			max-width: 70%;
+			margin-top: 180px;
 		}
 	}
 	h1 {
