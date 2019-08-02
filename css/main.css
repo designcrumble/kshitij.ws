@@ -1325,7 +1325,8 @@ button {
   left: 0;
   right: 0;
   width: 100%;
-  height: 80px; }
+  height: 80px;
+  z-index: 1; }
   .nav .left {
     display: flex;
     flex-direction: column;
@@ -2355,6 +2356,162 @@ section .section-list--mobile {
     line-height: 170%;
     /* or 126px */
     letter-spacing: 0.15px; } }
+
+#buildfore {
+  background: #070707; }
+  #buildfore img {
+    user-select: none; }
+  #buildfore .page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto; }
+    #buildfore .page-header a {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 0; }
+    @media (min-width: 768px) {
+      #buildfore .page-header {
+        width: 55%; } }
+  #buildfore .page-label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #FAFAFA; }
+  #buildfore h3 {
+    font-family: Graphik, "ITC Avant Garde Gothic Pro", "itc-avant-garde-gothic-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 175% */
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+    max-width: 620px;
+    margin: 0 auto; }
+  #buildfore .header--buildfore {
+    background: yellow;
+    height: 1000px;
+    margin-bottom: 520px;
+    background: radial-gradient(929px at 50% 50%, #2F00B6 0%, #270094 100%); }
+    #buildfore .header--buildfore .header-image {
+      margin: 0;
+      padding: 0;
+      max-width: unset;
+      width: 100%;
+      margin: 0 auto; }
+      #buildfore .header--buildfore .header-image img {
+        margin: 0;
+        object-fit: cover;
+        width: 100%;
+        height: auto; }
+    #buildfore .header--buildfore a.header-cta {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      /* identical to box height, or 137% */
+      text-align: center;
+      letter-spacing: -0.25px;
+      padding-left: 16px;
+      color: #FFFFFF;
+      margin-top: 24px; }
+    #buildfore .header--buildfore .header__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 120px; }
+    #buildfore .header--buildfore h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 34px;
+      max-width: 90%;
+      /* or 107% */
+      text-align: center;
+      letter-spacing: -0.25px;
+      color: #FFFFFF; }
+      @media (min-width: 768px) {
+        #buildfore .header--buildfore h1 {
+          font-size: 5vw;
+          line-height: 5.35vw;
+          max-width: 70%; } }
+  #buildfore .image-explainer {
+    margin: 100px 0; }
+  #buildfore .buildfore__brandguide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #buildfore .buildfore__brandguide .prop {
+      position: absolute;
+      top: 50px;
+      right: 12%;
+      z-index: 2;
+      width: 160px; }
+      @media (min-width: 768px) {
+        #buildfore .buildfore__brandguide .prop {
+          top: 10px;
+          right: 16%;
+          width: auto; } }
+    #buildfore .buildfore__brandguide h1, #buildfore .buildfore__brandguide p {
+      text-align: center; }
+    #buildfore .buildfore__brandguide h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 48px;
+      /* or 107% */
+      text-align: center;
+      letter-spacing: -0.25px;
+      margin-bottom: 40px;
+      color: #FFFFFF;
+      position: relative; }
+      #buildfore .buildfore__brandguide h1:after {
+        content: url("/assets/img/buildfore/prop-3.png");
+        top: -10px;
+        display: inline-block;
+        right: 0;
+        z-index: 10;
+        position: absolute;
+        width: 160px; }
+      @media (min-width: 768px) {
+        #buildfore .buildfore__brandguide h1 {
+          font-size: 84px;
+          line-height: 90px; }
+          #buildfore .buildfore__brandguide h1:after {
+            width: auto; } }
+    #buildfore .buildfore__brandguide p {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      /* or 137% */
+      text-align: center;
+      letter-spacing: -0.25px;
+      max-width: 600px;
+      color: #FFFFFF;
+      opacity: 0.7;
+      margin-bottom: 120px; }
+    #buildfore .buildfore__brandguide .image-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #buildfore .buildfore__brandguide .image-grid img {
+        max-width: 100%;
+        margin-bottom: 40px; }
+        @media (min-width: 768px) {
+          #buildfore .buildfore__brandguide .image-grid img {
+            max-width: 49%; } }
 
 html, body {
   width: 100%;
