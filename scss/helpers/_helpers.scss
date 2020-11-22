@@ -2,6 +2,13 @@
 	text-align: center !important;
 }
 
+.flex-row {
+	display: flex;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
 .flex-col-center {
 	display: flex;
 	flex-direction: column;

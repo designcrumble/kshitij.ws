@@ -1,155 +1,148 @@
 #about {
-    #headerMessage {
-        position: relative;
-        &:before {
-            position: absolute;
-            content: '';
-            width: 10px;
-            height: 10px;
-            background: #00c8ff;
-            border-radius: 100px;
-            left: -30px;
-        }
-    }
-    h1,h2,h3,h4,h5,h6,p {
-        text-align: left;
-        margin: 0;  
-        max-width: initial;
-    }
-    h1 {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 28px;
-        max-width: 90%;
-        line-height: 170%;/* or 126px */
-        letter-spacing: 0.15px;
-        color: white;
-        background-image: none;
-        background: none;
-        -webkit-background-clip: initial;
-        -webkit-text-fill-color: initial;
-        margin: 0;
-        color: #F8F8F9;
-    }
-    h2 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 56px;
-        line-height: 67px;
-        letter-spacing: -0.25px;
-        margin-bottom: 60px;
-        color: #FFFFFF;
-    }
-    h5 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1;
-        letter-spacing: -0.25px;
-        color: #EEE;
-        margin-bottom: 20px;
-        opacity: 1;
-    }
-    h6 {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-        color: #FFFFFF;
-        opacity: 0.5;
-    }
-    p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 200%;/* or 36px */
-        letter-spacing: 0.15px;
-        
-        color: #FFFFFF;
-    }
     header {
-        border-bottom: 1px solid #2D2F34;
-        padding: 300px 0;
-        padding-bottom: 30px;
-        &:after, &:before {
-            display: none;
-            content: none;
-        }
         .header__content {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-        h6 {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-            color: #dedee0;
-            margin-top: 90px;
-            opacity: 1;
-        }
-    }
-    .bio__content img {
-        margin: 100px 0;
-    }
-    .bio {
-        &__header {
-            max-width: 960px;
-            margin: 0 auto;
-            margin-bottom: 160px;
-        }
-        &__section  {
-            max-width: 720px;
-            margin: 0 auto;
-            margin-bottom: 160px;
-        }
-        &__quick-overview {
-            max-width: 720px;
-            margin: 0 auto;
+            justify-content: flex-start;
             display: flex;
-            ul {
-                margin-left: 0;
-                margin-right: 0;
-                min-width: 50%;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            padding-top: 60px;
+        }
+        .page-header {
+            margin-bottom: 20px;
+        }
+        a {
+            margin: 0;
+            text-align: left;
+        }
+        .header-cta {
+            color: $brand-accent;
+            svg {
+                path {
+                    stroke: $brand-accent;
+                }
             }
         }
-        ul {
-            .list-title {
+        h1 {
+            font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160.8%;
+    letter-spacing: -0.0025em;
+    color: #FAFAFA;
+    text-align: left;
+    width: 95%;
+    max-width: 450px;
+    margin: 0;
+    margin-bottom: 20px;
+        }
+        p {
+            max-width: 575px;
+            font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+color: #FFFFFF;
+margin-bottom: 60px;
+opacity: 0.5;
+        }
+        @include respond-to('medium') {
+            .header__content {
+                padding: 0;
+                padding-top: 120px;
+            }
+            h1 {
+                font-size: 36px;
+                width: 95%;
+                max-width: 960px;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section--about {
+        h2 {
+
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 67px;
+letter-spacing: -0.25px;
+margin-bottom: 60px;
+color: #0ECFF0;
+        }
+        &__content {
+            margin-bottom: 180px;
+            h1,h2,h3,h4,h5,h6, p, li {
+                text-align: left;
+            }
+            p {
                 font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 202.2%;
+/* or 36px */
+letter-spacing: -0.25px;
+
+color: #FFFFFF;
+
+opacity: 0.8;
+max-width: 720px;
+            }
+            h5 {
                 font-weight: 500;
                 font-size: 24px;
                 line-height: 29px;
                 letter-spacing: -0.25px;
-                margin-bottom: 40px;
+                
                 color: #FFFFFF;
             }
-            li {
-                position: relative;
+            h6.label {
                 font-style: normal;
                 font-weight: 500;
-                font-size: 18px;
-                line-height: 202.2%;/* or 36px */
+                font-size: 16px;
+                line-height: 24px;
                 letter-spacing: -0.25px;
-               margin-left: 40px;
                 color: #FFFFFF;
                 margin-bottom: 10px;
-                opacity: 0.8;
-                &:before {
-                    content: "—";
-                    position: absolute;
-                    left: -40px;
+                opacity: 0.5;
+            }
+
+            ul, ol {
+                margin: 0;
+                padding: 0;
+                margin-right: 80px;
+                li {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 202.2%;
+                    /* or 36px */
+                    letter-spacing: -0.25px;
+                    
+                    color: #FFFFFF;
+                    
+                    opacity: 0.8;
                 }
             }
-        }
-    }
-    @include respond-to('medium') {
-        h1 {
-            font-size: 74px;
-            line-height: 170%;/* or 126px */
-            letter-spacing: 0.15px;
+
+            ol {
+                padding-left: 20px; 
+                li {
+                    list-style-type: decimal;
+                    
+                }
+            }
+            &--workflow {
+                h5 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    margin-bottom: 60px;
+                }
+            }
         }
     }
 }

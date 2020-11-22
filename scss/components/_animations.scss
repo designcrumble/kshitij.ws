@@ -7,12 +7,15 @@
 @keyframes hover {
 	0% {
 		transform: translatey(0px);
+		filter: blur(0);
 	}
 	50% {
 		transform: translatey(-20px);
+		filter: blur(4px);
 	}
 	100% {
 		transform: translatey(0px);
+		filter: blur(0px);
 	}
 }
 
@@ -87,5 +90,3 @@
 .anim-hover {
     animation: hover 6s ease-in-out infinite;
 }
-
-
