@@ -5,13 +5,9 @@ $(document).ready(function(){ // When page is fully loaded...
 
 
 
-    setTimeout(
-		function() 
-		{
     // Preloader
     $('.preloader').hide(); // hide preloader
     $('.body-container').show(); // and show body-container
-		}, 2000);
 	// Scroll Reveal
 	window.sr = ScrollReveal();
 
