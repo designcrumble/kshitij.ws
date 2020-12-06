@@ -1,7 +1,7 @@
 {
   "name": "kshitij.ws",
   "version": "1.0.0",
-  "description": "Personal Website Kshitij.ws",
+  "description": "landing page for stick",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +18,16 @@
   "homepage": "https://github.com/designcrumble/kshitij.ws#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0"
-  }
+  },
+  "resolutions": {
+    "**/**/node-gyp": "5.0.0"
+  },
+  "dependencies": {
+    "natives": "^1.1.6",
+    "node-sass": "^4.14.1"
+  },
+  "optionalDependencies": {}
 }
