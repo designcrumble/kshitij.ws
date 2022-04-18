@@ -43,7 +43,7 @@ header {
 		}
         @include respond-to('huge') {
 			display: block;
-			left: 40px;
+			left: -100px;
         }
     }
 	.time-zone {

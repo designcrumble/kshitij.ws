@@ -1121,7 +1121,7 @@ header .flex-col-start h6, header h6 {
     @media (min-width: 1200px) {
       .header--may .freelance {
         display: block;
-        left: 40px; } }
+        left: -100px; } }
   .header--may .time-zone {
     position: fixed;
     bottom: 100px;
